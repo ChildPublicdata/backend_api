@@ -1,0 +1,641 @@
+[
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 관저동 2026",
+    "dong": "관저동",
+    "lat": 36.28921,
+    "lon": 127.3327,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 동서대로1047번길 16 (내동)",
+    "dong": "내동",
+    "lat": 36.33169,
+    "lon": 127.3785,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 청사로 189, (둔산동)",
+    "dong": "둔산동",
+    "lat": 36.36268276,
+    "lon": 127.3849022,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 만년동 157번지",
+    "dong": "만년동",
+    "lat": 36.36668272,
+    "lon": 127.3741618,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 가수원동 618-10번지",
+    "dong": "가수원동",
+    "lat": 36.29294953,
+    "lon": 127.3501235,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 둔산남로 15, 106동  (둔산동, 은하수아파트)",
+    "dong": "둔산동",
+    "lat": 36.3503705,
+    "lon": 127.3794282,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 대덕대로 270, 정부청사  역(둔산동)",
+    "dong": "둔산동",
+    "lat": 36.35692456,
+    "lon": 127.3798109,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 가수원중로65번길 22, (가수원동)",
+    "dong": "가수원동",
+    "lat": 36.29818966,
+    "lon": 127.3524962,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 둔산동 1381번지",
+    "dong": "둔산동",
+    "lat": 36.3571224,
+    "lon": 127.3884891,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 괴정동 138-5번지",
+    "dong": "괴정동",
+    "lat": 36.33605747,
+    "lon": 127.3757319,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 둔지로 75, (둔산동, 파랑새아파트)",
+    "dong": "둔산동",
+    "lat": 36.35639283,
+    "lon": 127.3746117,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 정림동 441번지",
+    "dong": "정림동",
+    "lat": 36.30210444,
+    "lon": 127.3632086,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 둔산북로 85, (둔산동)",
+    "dong": "둔산",
+    "lat": 36.35603556,
+    "lon": 127.3839294,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 갈마동 1318번지",
+    "dong": "갈마동",
+    "lat": 36.34161662,
+    "lon": 127.3754314,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도안동 2375",
+    "dong": "도안동",
+    "lat": 36.31977,
+    "lon": 127.3484,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 변동 254-364번지",
+    "dong": "변동",
+    "lat": 36.33025813,
+    "lon": 127.3680369,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 복수동 287-4번지",
+    "dong": "복수동",
+    "lat": 36.30959598,
+    "lon": 127.3738712,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 가장동 38-49번지",
+    "dong": "가장동",
+    "lat": 36.32903496,
+    "lon": 127.3823482,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도마동 산2-10",
+    "dong": "도마동",
+    "lat": 36.32532634,
+    "lon": 127.3745365,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도안동 1361번지",
+    "dong": "도안동",
+    "lat": 36.31845123,
+    "lon": 127.3428183,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 둔산동 1382번지",
+    "dong": "둔산동",
+    "lat": 36.35710812,
+    "lon": 127.3927679,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 계백로1300번길 43, (정림동)",
+    "dong": "정림동",
+    "lat": 36.30654557,
+    "lon": 127.3679272,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 둔산남로 30, 112동  (둔산동, 녹원아파트)",
+    "dong": "둔산동",
+    "lat": 36.34646495,
+    "lon": 127.3805621,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 관저동 769-1번지",
+    "dong": "관저동",
+    "lat": 36.28719473,
+    "lon": 127.329621,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 둔산동 930번지",
+    "dong": "둔산동",
+    "lat": 36.35877121,
+    "lon": 127.3848772,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 갈마동 392-6번지",
+    "dong": "갈마동",
+    "lat": 36.34412825,
+    "lon": 127.3680142,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도마동 179-2번지",
+    "dong": "도마동",
+    "lat": 36.31301685,
+    "lon": 127.3853029,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 괴정로198번길 46, (가장동)",
+    "dong": "가장동",
+    "lat": 36.33115405,
+    "lon": 127.389605,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 탄방로 32, (탄방동)",
+    "dong": "탄방동",
+    "lat": 36.34400216,
+    "lon": 127.3906413,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 둔산동 1385번지",
+    "dong": "둔산동",
+    "lat": 36.355161,
+    "lon": 127.3944654,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 가수원동 839번지 용소1교 앞",
+    "dong": "가수원동",
+    "lat": 36.30759475,
+    "lon": 127.3451251,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 월평동 1046번지",
+    "dong": "월평동",
+    "lat": 36.35508452,
+    "lon": 127.3606725,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 복수동 산 2-3번지",
+    "dong": "복수동",
+    "lat": 36.30725145,
+    "lon": 127.3788228,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 가수원동 630-5번지",
+    "dong": "가수원동",
+    "lat": 36.29522651,
+    "lon": 127.3511957,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 관저동 1642",
+    "dong": "관저동",
+    "lat": 36.29182,
+    "lon": 127.3427,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 용소로39번길 77, (가수원동)",
+    "dong": "가수원동",
+    "lat": 36.31181957,
+    "lon": 127.3530407,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 남선로 66, 주차장입구  (탄방동)",
+    "dong": "탄방동",
+    "lat": 36.34622935,
+    "lon": 127.397988,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 내동 161-7번지",
+    "dong": "내동",
+    "lat": 36.33526135,
+    "lon": 127.3717059,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 갑천도시고속도로 2208, 내원사뒤  (도안동)",
+    "dong": "도안동",
+    "lat": 36.32242306,
+    "lon": 127.3539223,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 가수원동 839번지",
+    "dong": "가수원동",
+    "lat": 36.30759475,
+    "lon": 127.3451251,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도산로335번길 62, R 괴정경로당 (괴정동)",
+    "dong": "괴정동",
+    "lat": 36.3382,
+    "lon": 127.3865,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 탄방동 589번지",
+    "dong": "탄방동",
+    "lat": 36.34823535,
+    "lon": 127.3848262,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 관저동 549-2번지",
+    "dong": "관저동",
+    "lat": 36.30617939,
+    "lon": 127.3336122,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 관저동 1419번지",
+    "dong": "관저동",
+    "lat": 36.2997124,
+    "lon": 127.3424964,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 정림로 11, 102동  (정림동, 늘푸른아파트)",
+    "dong": "정림동",
+    "lat": 36.30174098,
+    "lon": 127.3660508,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 정림동 563번지",
+    "dong": "정림동",
+    "lat": 36.30637204,
+    "lon": 127.364087,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 가수원중로65번길 22, (가수원동)",
+    "dong": "가수원동",
+    "lat": 36.29818966,
+    "lon": 127.3524962,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 관저동 1129번지",
+    "dong": "관저동",
+    "lat": 36.3010146,
+    "lon": 127.3302712,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 만년남로3번길 101, (만년동)",
+    "dong": "만년동",
+    "lat": 36.36541293,
+    "lon": 127.370907,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 괴정로16번길 5, (괴정동)",
+    "dong": "괴정동",
+    "lat": 36.33971353,
+    "lon": 127.3768836,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 월평중로 55, 물놀이장옆  (월평동)",
+    "dong": "월평동",
+    "lat": 36.35947069,
+    "lon": 127.3635115,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 갈마동 363-1번지",
+    "dong": "갈마동",
+    "lat": 36.34842142,
+    "lon": 127.3686258,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도마동 165-1번지",
+    "dong": "도마동",
+    "lat": 36.31284705,
+    "lon": 127.3751259,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 관저동 2026",
+    "dong": "관저동",
+    "lat": 36.28921,
+    "lon": 127.3327,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 한밭대로 664, (갈마동)",
+    "dong": "갈마동",
+    "lat": 36.35708301,
+    "lon": 127.3721661,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 가수원동 815-6번지",
+    "dong": "가수원동",
+    "lat": 36.29724344,
+    "lon": 127.3541852,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 월평동 801번지",
+    "dong": "월평동",
+    "lat": 36.35540987,
+    "lon": 127.3659288,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 용문로 41-17, (괴정동)",
+    "dong": "괴정동",
+    "lat": 36.33981053,
+    "lon": 127.3887133,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도안동 1368번지",
+    "dong": "도안동",
+    "lat": 36.3170571,
+    "lon": 127.3466275,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 벌곡로1379번길 33, (가수원동)",
+    "dong": "가수원동",
+    "lat": 36.30380007,
+    "lon": 127.3516816,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 만년로 19, 만년동주민센터  뒤(만년동)",
+    "dong": "만년동",
+    "lat": 36.3675344,
+    "lon": 127.3750242,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 신갈마로 102, 306동  (갈마동, 갈마아파트)",
+    "dong": "갈마동",
+    "lat": 36.34275938,
+    "lon": 127.3699191,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 탄방동 589번지",
+    "dong": "탄방동",
+    "lat": 36.34823535,
+    "lon": 127.3848262,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 탄방동 1051번지",
+    "dong": "탄방동",
+    "lat": 36.34653384,
+    "lon": 127.3958132,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 남선로 66, 등산로기념탑뒤  (탄방동)",
+    "dong": "탄방동",
+    "lat": 36.34622935,
+    "lon": 127.397988,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도마동 179-2번지",
+    "dong": "도마동",
+    "lat": 36.31301685,
+    "lon": 127.3853029,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 복수북로 30, (복수동)",
+    "dong": "복수동",
+    "lat": 36.30762034,
+    "lon": 127.3735084,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 정림동로 8-6, (정림동)",
+    "dong": "정림동",
+    "lat": 36.30405911,
+    "lon": 127.3664106,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 월평중로 55, (월평동)",
+    "dong": "월평동",
+    "lat": 36.35947069,
+    "lon": 127.3635115,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 관저중로 65, (관저동)",
+    "dong": "관저동",
+    "lat": 36.29816966,
+    "lon": 127.3340476,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 가수원중로 43-11, (가수원동)",
+    "dong": "가수원동",
+    "lat": 36.30077038,
+    "lon": 127.3530761,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  }
+]

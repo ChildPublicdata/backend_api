@@ -1,0 +1,27 @@
+# [이 파일이 왜 필요한가]
+# "로컬(내 컴퓨터)에서 테스트할 때만" 쓰는 설정 파일.
+# 평소 application.yml은 PostgreSQL을 요구하는데, 로컬엔 Postgres가 없을 수 있어서
+# 이 프로파일을 켜면 설치가 필요 없는 인메모리 DB(H2)로 대신 실행됨.
+#
+# [쓰는 법] 아래 명령으로 'local' 프로파일을 켜서 실행:
+#   ./gradlew bootRun --args='--spring.profiles.active=local'
+#
+# application.yml(기본)에서 겹치는 값만 여기 값으로 덮어씀. 나머지(CORS 등)는 그대로 사용됨.
+spring:
+  datasource:
+    # H2를 메모리에서 실행 (서버 끄면 데이터 사라짐 -> 테스트용으로 딱 좋음).
+    # MODE=PostgreSQL: H2가 Postgres 문법을 흉내내게 해서 실제 배포 환경과 최대한 비슷하게 동작시킴
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      # 로컬은 매번 새 빈 DB로 시작하므로 테이블을 새로 만들게(create) 설정
+      ddl-auto: create
+    # H2에 맞는 SQL을 생성하도록 방언(dialect) 지정
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      # 브라우저로 DB 안을 직접 들여다볼 수 있는 H2 콘솔 켜기 (http://localhost:8080/h2-console)
+      enabled: true
