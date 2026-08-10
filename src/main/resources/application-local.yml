@@ -17,8 +17,11 @@ spring:
     driver-class-name: org.h2.Driver
   jpa:
     hibernate:
-      # 로컬은 매번 새 빈 DB로 시작하므로 테이블을 새로 만들게(create) 설정
-      ddl-auto: create
+      # 로컬에서도 배포 환경과 똑같이 Flyway가 테이블을 만들고 Hibernate는 검사만 하게 둠.
+      # 이렇게 해야 db/migration/V1__init.sql이 로컬 실행/테스트에서 매번 실제로 실행돼서,
+      # SQL에 오타가 있으면 Railway에 올리기 전에 여기서 먼저 걸림
+      # (로컬만 create로 두면 그 SQL은 배포 전까지 한 번도 실행되지 않음).
+      ddl-auto: validate
     # H2에 맞는 SQL을 생성하도록 방언(dialect) 지정
     database-platform: org.hibernate.dialect.H2Dialect
   h2:

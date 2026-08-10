@@ -20,7 +20,7 @@ import org.springframework.web.server.ResponseStatusException;
  * CctvController와 완전히 같은 구조. "요청 -> 어떤 Repository 메서드 호출 -> 결과를 Response DTO로 변환" 흐름만 담당.
  */
 @RestController // 각 메서드 반환값을 자동으로 JSON으로 변환해 HTTP 응답 본문에 담아줌
-@Tag(name = "SafetyBell", description = "대전서구 안심벨(안전비상벨) 위치 데이터")
+@Tag(name = "SafetyBell", description = "대전광역시 안심벨(안전비상벨) 위치 데이터 (5개 자치구 전체)")
 public class SafetyBellController {
 
     private final SafetyBellRepository safetyBellRepository;

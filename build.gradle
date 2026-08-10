@@ -30,8 +30,17 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	// DB에 데이터를 저장/조회하기 위한 JPA(자바 ORM) 기능. Repository, @Entity 등을 쓸 수 있게 해줌
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// 요청 DTO에 붙인 @NotNull, @Min 같은 검증 어노테이션을 실제로 동작시켜주는 라이브러리.
+	// 이게 없으면 어노테이션을 달아도 조용히 무시돼서, 잘못된 값(빈 위도, 음수 반경)이 그대로 DB까지 들어감
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	// Swagger UI(API 명세 자동 문서화) 기능. 추가만 하면 /swagger-ui.html 이 자동으로 생김
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
+	// DB 스키마(테이블 구조) 변경 이력을 SQL 파일로 관리하는 도구.
+	// 이게 없으면 Hibernate가 엔티티를 보고 테이블을 알아서 고치는데(ddl-auto: update),
+	// 그 방식은 컬럼을 추가만 할 뿐 삭제/이름변경을 못 해서 코드와 DB 구조가 조용히 어긋남.
+	implementation 'org.flywaydb:flyway-core'
+	// Flyway 10부터 DB 종류별 지원이 별도 모듈로 분리됨 -> Postgres용 모듈을 따로 추가해야 함
+	runtimeOnly 'org.flywaydb:flyway-database-postgresql'
 	// PostgreSQL DB에 접속하기 위한 드라이버. 코드에서 직접 쓰진 않고 실행 시점에만 필요해서 runtimeOnly
 	runtimeOnly 'org.postgresql:postgresql'
 	// 로컬 테스트용 인메모리 DB(H2). developmentOnly라서 ./gradlew bootRun 으로 로컬 실행할 때만 쓰이고
@@ -40,9 +49,21 @@ dependencies {
 	// 테스트 코드 작성 시 필요한 라이브러리 (JUnit 등)
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// [중요] developmentOnly는 테스트 실행에는 적용되지 않아서, 위의 H2가 있어도 테스트에서는 못 씀.
+	// 이게 없으면 테스트가 Postgres 접속정보(PGHOST 등)를 찾다가 실패함 -> 별도로 한 번 더 선언
+	testRuntimeOnly 'com.h2database:h2'
 }
 
 tasks.named('test') {
 	// 테스트를 JUnit 5 플랫폼으로 실행하겠다는 설정
 	useJUnitPlatform()
+}
+
+// [왜 필요한가] 스프링부트 그래들 플러그인은 기본적으로 jar를 2개 만듦:
+//   demo-0.0.1-SNAPSHOT.jar        <- 실행 가능한 진짜 배포용 (내장 톰캣+라이브러리 전부 포함)
+//   demo-0.0.1-SNAPSHOT-plain.jar  <- 내 코드만 든 껍데기 (라이브러리가 없어서 단독 실행 불가)
+// Railway는 기본 실행 명령이 `java -jar build/libs/*.jar` 라서 jar가 2개면 어느 걸 띄울지 모호해지고,
+// 잘못하면 실행 불가능한 plain.jar를 잡아서 배포가 실패함. 그래서 plain jar 생성을 꺼둠.
+tasks.named('jar') {
+	enabled = false
 }

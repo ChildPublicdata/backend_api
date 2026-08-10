@@ -14,9 +14,10 @@ spring:
     password: ${PGPASSWORD}
   jpa:
     hibernate:
-      # DB 테이블을 자바 @Entity 클래스 구조에 맞춰 자동으로 만들고/수정해주는 옵션
-      # (운영 서비스가 커지면 위험할 수 있어서 나중엔 Flyway 같은 마이그레이션 도구로 바꾸는 걸 추천)
-      ddl-auto: update
+      # validate = "테이블을 직접 만들지는 말고, 엔티티 구조와 실제 DB 구조가 맞는지 검사만 해라".
+      # 테이블 생성/변경은 Flyway(db/migration/*.sql)가 전담하고, Hibernate는 검사만 맡는 역할 분담.
+      # 둘이 어긋나면 앱이 아예 안 뜨기 때문에, 잘못된 상태로 서비스가 돌아가는 걸 막아줌.
+      ddl-auto: validate
     # true로 하면 트랜잭션이 뷰 렌더링까지 열려있어서 성능 문제가 될 수 있어 false로 끔 (스프링 권장 설정)
     open-in-view: false
     properties:
@@ -31,6 +32,16 @@ server:
   # 서버가 열리는 포트. Railway 등 클라우드는 자체적으로 PORT 환경변수를 주입해주기 때문에
   # 그 값이 있으면 그걸 쓰고, 없으면(로컬 실행) 기본값 8080을 사용
   port: ${PORT:8080}
+  error:
+    # [왜 켜나] 스프링은 기본적으로 에러 응답 JSON의 message 필드를 빈 문자열로 비워둠.
+    # 그러면 프론트 입장에서 400을 받아도 "반경은 10m 이상이어야 합니다" 같은 이유를 알 수 없어서
+    # 원인을 서버 로그 없이는 못 찾음. 이 옵션을 켜면 그 사유 문구가 응답에 담김.
+    include-message: always
+    # [왜 켜나] 위의 include-message만 켜면 검증 실패 시 message가
+    # "Validation failed for object='safeZoneRequest'. Error count: 1" 처럼 두루뭉술하게만 나와서
+    # 프론트가 "어느 필드가 왜 틀렸는지"를 알 수 없음. 이 옵션을 켜면 응답에 errors 배열이 추가되고
+    # 그 안에 필드명과 우리가 적어둔 사유("반경은 10m 이상이어야 합니다")가 함께 들어감.
+    include-binding-errors: always
 
 app:
   cors:

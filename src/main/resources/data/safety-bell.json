@@ -1,55 +1,3214 @@
 [
   {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 관저동 2026",
-    "dong": "관저동",
-    "lat": 36.28921,
-    "lon": 127.3327,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 동서대로1047번길 16 (내동)",
-    "dong": "내동",
-    "lat": 36.33169,
-    "lon": 127.3785,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 청사로 189, (둔산동)",
-    "dong": "둔산동",
-    "lat": 36.36268276,
-    "lon": 127.3849022,
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동대전로144번길 34",
+    "dong": "자양동",
+    "lat": 36.334,
+    "lon": 127.4481,
     "policeLinked": false,
-    "manageOrg": "대전광역시 서구청"
+    "manageOrg": "대전광역시 동구청"
   },
   {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 만년동 157번지",
-    "dong": "만년동",
-    "lat": 36.36668272,
-    "lon": 127.3741618,
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 백룡로6번길 29-10",
+    "dong": "자양동",
+    "lat": 36.3348,
+    "lon": 127.4474,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 성동로 1",
+    "dong": "자양동",
+    "lat": 36.3369,
+    "lon": 127.4518,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 흥룡로71번길 37",
+    "dong": "가양동",
+    "lat": 36.3522,
+    "lon": 127.4516,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 천개동로251번길 107-56",
+    "dong": "효평동",
+    "lat": 36.381597,
+    "lon": 127.453602,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 세천공원로32-533",
+    "dong": "세천동",
+    "lat": 36.311751,
+    "lon": 127.491668,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 세천로8번길 33",
+    "dong": "세천동",
+    "lat": 36.338606,
+    "lon": 127.491885,
     "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대동로 15",
+    "dong": "자양동",
+    "lat": 36.3333,
+    "lon": 127.4471,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 계족로446번길 19",
+    "dong": "용전동",
+    "lat": 36.3513,
+    "lon": 127.4338,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 자양동 73-12",
+    "dong": "자양동",
+    "lat": 36.335,
+    "lon": 127.4481,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 백룡로6번길 101",
+    "dong": "대동",
+    "lat": 36.3319,
+    "lon": 127.4453,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 송촌남로11번길 147",
+    "dong": "용전동",
+    "lat": 36.3575,
+    "lon": 127.4358,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 가양로68번길 9 (가양로80번길 23)",
+    "dong": "가양동",
+    "lat": 36.3426,
+    "lon": 127.4429,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 광명길 14",
+    "dong": "대동",
+    "lat": 36.3256,
+    "lon": 127.4481,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대동 1-1237",
+    "dong": "대동",
+    "lat": 36.3304,
+    "lon": 127.4503,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대성동 428",
+    "dong": "대성동",
+    "lat": 36.299,
+    "lon": 127.4588,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 천동 226-18",
+    "dong": "천동",
+    "lat": 36.3171,
+    "lon": 127.4458,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 산내로1299번길 61-24",
+    "dong": "낭월동",
+    "lat": 36.278853,
+    "lon": 127.464922,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동대전로110번길 184",
+    "dong": "대동",
+    "lat": 36.332053,
+    "lon": 127.451648,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전로97",
+    "dong": "대별동",
+    "lat": 36.277012,
+    "lon": 127.462686,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 추동446-7",
+    "dong": "추동",
+    "lat": 36.373079,
+    "lon": 127.474229,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 판암2동 496-25",
+    "dong": "판암2동",
+    "lat": 36.3187,
+    "lon": 127.4556,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 우암로 368-11",
+    "dong": "가양동",
+    "lat": 36.3514,
+    "lon": 127.4536,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 용운로205번길 59",
+    "dong": "용운동",
+    "lat": 36.329,
+    "lon": 127.4658,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 중앙로193번길 45",
+    "dong": "중동",
+    "lat": 36.3322,
+    "lon": 127.429,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 중동 61-8",
+    "dong": "중동",
+    "lat": 36.3314,
+    "lon": 127.4302,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전로807번길 47",
+    "dong": "중동",
+    "lat": 36.3307,
+    "lon": 127.4299,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 정동 1-113",
+    "dong": "정동",
+    "lat": 36.3282,
+    "lon": 127.4359,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 창조2길 9",
+    "dong": "원동",
+    "lat": 36.3276,
+    "lon": 127.4354,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전로 813번길 1",
+    "dong": "정동",
+    "lat": 36.3321,
+    "lon": 127.4322,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 태전로 26",
+    "dong": "중동",
+    "lat": 36.3321,
+    "lon": 127.4309,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 태전로 825번길 4",
+    "dong": "정동",
+    "lat": 36.3332,
+    "lon": 127.4313,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 역전1길 91",
+    "dong": "정동",
+    "lat": 36.3343,
+    "lon": 127.4319,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 역전1길 41",
+    "dong": "정동",
+    "lat": 36.3336,
+    "lon": 127.4322,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전천동로 666",
+    "dong": "삼성동",
+    "lat": 36.3371,
+    "lon": 127.4246,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 우암로 61-9",
+    "dong": "삼성동",
+    "lat": 36.3367,
+    "lon": 127.4251,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 충정로90번길 34",
+    "dong": "가양동",
+    "lat": 36.3466,
+    "lon": 127.4525,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전로779번길 8",
+    "dong": "원동",
+    "lat": 36.1943,
+    "lon": 127.2615,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 중앙로 204번길 97",
+    "dong": "원동",
+    "lat": 36.1938,
+    "lon": 127.2605,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 세천동 74-30",
+    "dong": "세천동",
+    "lat": 36.2028,
+    "lon": 127.3002,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 마산동 산45-6",
+    "dong": "마산동",
+    "lat": 36.2252,
+    "lon": 127.2844,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 신하동 274-1",
+    "dong": "신하동",
+    "lat": 36.2125,
+    "lon": 127.3002,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 충무로 203번길 28-25",
+    "dong": "인동",
+    "lat": 36.1927,
+    "lon": 127.2617,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 계족로 3731",
+    "dong": "성남동",
+    "lat": 36.2044,
+    "lon": 127.2607,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전천동로 681",
+    "dong": "삼성동",
+    "lat": 36.2014,
+    "lon": 127.2531,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 우암로147번길 37",
+    "dong": "삼성동",
+    "lat": 36.1945,
+    "lon": 127.2548,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전로 986-30",
+    "dong": "삼성동",
+    "lat": 36.3436,
+    "lon": 127.4231,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 우암로109번길 16",
+    "dong": "삼성동",
+    "lat": 36.3392,
+    "lon": 127.4298,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대흥로202번길 33-3 (인동)",
+    "dong": "인동",
+    "lat": 36.1929,
+    "lon": 127.2605,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 가양동 108-7",
+    "dong": "가양동",
+    "lat": 36.350514,
+    "lon": 127.452373,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동구청로 56",
+    "dong": "대성동",
+    "lat": 36.302293,
+    "lon": 127.460399,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 우암로296번길56",
+    "dong": "가양동",
+    "lat": 36.344446,
+    "lon": 127.449735,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 안골로28번길",
+    "dong": "구도동",
+    "lat": 36.269948,
+    "lon": 127.469273,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 산내로1327번길6-13낭월동 362",
+    "dong": "낭월동",
+    "lat": 36.282177,
+    "lon": 127.466248,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 우암로 340-15",
+    "dong": "가양동",
+    "lat": 36.3493,
+    "lon": 127.4524,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 미화1길20",
+    "dong": "소제동",
+    "lat": 36.3369,
+    "lon": 127.4414,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 계족로424번길 46",
+    "dong": "용전동",
+    "lat": 36.3495,
+    "lon": 127.435,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 정동 4-6",
+    "dong": "정동",
+    "lat": 36.3362,
+    "lon": 127.4314,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 역전시장길 84-1",
+    "dong": "정동",
+    "lat": 36.1948,
+    "lon": 127.2607,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 삼정동 252-1",
+    "dong": "삼정동",
+    "lat": 36.316,
+    "lon": 127.472,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 판암동 469-20",
+    "dong": "판암동",
+    "lat": 36.316,
+    "lon": 127.4553,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 판암동 738",
+    "dong": "판암동",
+    "lat": 36.3237,
+    "lon": 127.4491,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 판암동 563-6",
+    "dong": "판암동",
+    "lat": 36.3202,
+    "lon": 127.4498,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 직동 675-1",
+    "dong": "직동",
+    "lat": 36.4175,
+    "lon": 127.4791,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 산내로1396-12",
+    "dong": "대성동",
+    "lat": 36.2876,
+    "lon": 127.4652,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 백룡로5번길 18",
+    "dong": "자양동",
+    "lat": 36.3369,
+    "lon": 127.4484,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 가양동 568-9",
+    "dong": "가양동",
+    "lat": 36.3389,
+    "lon": 127.4419,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 가양로62번길 51",
+    "dong": "가양동",
+    "lat": 36.343,
+    "lon": 127.4446,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 이화로 40",
+    "dong": "대동",
+    "lat": 36.3314,
+    "lon": 127.448,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 한밭대로1254번길 106",
+    "dong": "용전동",
+    "lat": 36.3513,
+    "lon": 127.4347,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 백룡로6번길 51-9",
+    "dong": "자양동",
+    "lat": 36.3339,
+    "lon": 127.447,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대성길 4",
+    "dong": "가양동",
+    "lat": 36.3381,
+    "lon": 127.4387,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 갱이길 55",
+    "dong": "가양동",
+    "lat": 36.3366,
+    "lon": 127.4423,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동서대로 1653번길 132",
+    "dong": "용전동",
+    "lat": 36.3541,
+    "lon": 127.4338,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동서대로 1653번길 13",
+    "dong": "용전동",
+    "lat": 36.3488,
+    "lon": 127.4332,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 한밭대로 1254번길 83-2",
+    "dong": "용전동",
+    "lat": 36.3524,
+    "lon": 127.4349,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 용운로147번길 83",
+    "dong": "용운동",
+    "lat": 36.331,
+    "lon": 127.4609,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대동천좌안5길 45",
+    "dong": "소제동",
+    "lat": 36.3356,
+    "lon": 127.4376,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 가오동 558",
+    "dong": "가오동",
+    "lat": 36.3059,
+    "lon": 127.4587,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 판암동 508-1",
+    "dong": "판암동",
+    "lat": 36.3194,
+    "lon": 127.454,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 용전동 산 2-6",
+    "dong": "용전동",
+    "lat": 36.3575,
+    "lon": 127.436,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 곤룡로 210",
+    "dong": "낭월동",
+    "lat": 36.278081,
+    "lon": 127.487145,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 신상동233",
+    "dong": "신상동",
+    "lat": 36.352955,
+    "lon": 127.504349,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 성남동232",
+    "dong": "성남동",
+    "lat": 36.343408,
+    "lon": 127.425921,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 신촌동 산 15-8",
+    "dong": "신촌동",
+    "lat": 36.223,
+    "lon": 127.3051,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대별동 216",
+    "dong": "대별동",
+    "lat": 36.1712,
+    "lon": 127.2728,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동산초교로45번길 20-12",
+    "dong": "홍도동",
+    "lat": 36.205,
+    "lon": 127.2531,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 옥천로653번길 33",
+    "dong": "세천동",
+    "lat": 36.2045,
+    "lon": 127.2934,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대성동 4-2",
+    "dong": "대성동",
+    "lat": 36.1801,
+    "lon": 127.2822,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구구도동 164-18",
+    "dong": "구도동",
+    "lat": 36.1624,
+    "lon": 127.2822,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 소제동 302-2",
+    "dong": "소제동",
+    "lat": 36.1959,
+    "lon": 127.2624,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전천동로 463",
+    "dong": "인동",
+    "lat": 36.1925,
+    "lon": 127.2608,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 중동 318-3",
+    "dong": "중동",
+    "lat": 36.1945,
+    "lon": 127.2554,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전로 95",
+    "dong": "낭월동",
+    "lat": 36.1636,
+    "lon": 127.2755,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전천동로33",
+    "dong": "대성동",
+    "lat": 36.1733,
+    "lon": 127.2748,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전로 167",
+    "dong": "대별동",
+    "lat": 36.1659,
+    "lon": 127.2758,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대흥로 200",
+    "dong": "인동",
+    "lat": 36.1933,
+    "lon": 127.2602,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전로797번길 27",
+    "dong": "중동",
+    "lat": 36.1948,
+    "lon": 127.2602,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 새울로91번길 14-17",
+    "dong": "용운동",
+    "lat": 36.194,
+    "lon": 127.2747,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전로785번지44",
+    "dong": "중동",
+    "lat": 36.1945,
+    "lon": 127.2555,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대동 354-17",
+    "dong": "대동",
+    "lat": 36.3246,
+    "lon": 127.448,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 용운로 204",
+    "dong": "용운동",
+    "lat": 36.3267,
+    "lon": 127.4649,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 구도동 388",
+    "dong": "구도동",
+    "lat": 36.2675,
+    "lon": 127.4718,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 구도동 367",
+    "dong": "구도동",
+    "lat": 36.2703,
+    "lon": 127.4719,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 용운로132번길 13",
+    "dong": "용운동",
+    "lat": 36.3277,
+    "lon": 127.4578,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 구도동 379",
+    "dong": "구도동",
+    "lat": 36.272,
+    "lon": 127.4688,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 우암로 208",
+    "dong": "가양동",
+    "lat": 36.3424,
+    "lon": 127.4396,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동대전로 107",
+    "dong": "대동",
+    "lat": 36.3318,
+    "lon": 127.4444,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 백룡로11번길 20",
+    "dong": "자양동",
+    "lat": 36.3373,
+    "lon": 127.4506,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 옛신탄진로81번길20",
+    "dong": "홍도동",
+    "lat": 36.347655,
+    "lon": 127.420672,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동구청로56",
+    "dong": "대성동",
+    "lat": 36.302397,
+    "lon": 127.460345,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 용운로164번길42",
+    "dong": "용운동",
+    "lat": 36.326226,
+    "lon": 127.460053,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동서대로1678번길17",
+    "dong": "성남동",
+    "lat": 36.348119,
+    "lon": 127.43678,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 세천공원로32-836",
+    "dong": "세천동",
+    "lat": 36.304,
+    "lon": 127.483574,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 신흥동241",
+    "dong": "신흥동",
+    "lat": 36.324656,
+    "lon": 127.445616,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 석천로99-16",
+    "dong": "낭월동",
+    "lat": 36.275402,
+    "lon": 127.467242,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대학로40",
+    "dong": "용운동",
+    "lat": 36.333608,
+    "lon": 127.456164,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 새울로,대전광역시 동구",
+    "dong": "용운동",
+    "lat": 36.327699,
+    "lon": 127.462939,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 판암동496-25",
+    "dong": "판암동",
+    "lat": 36.31886,
+    "lon": 127.454193,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 판암동838",
+    "dong": "판암동",
+    "lat": 36.319832,
+    "lon": 127.460637,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전로994번길27",
+    "dong": "홍도동",
+    "lat": 36.34463,
+    "lon": 127.122172,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 산내로724-36",
+    "dong": "상소동",
+    "lat": 36.231486,
+    "lon": 127.471039,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동대전로284번길 47",
+    "dong": "가양동",
+    "lat": 36.3473,
+    "lon": 127.4479,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동대전로131번길 40-6",
+    "dong": "자양동",
+    "lat": 36.3352,
+    "lon": 127.4444,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 성동로 65",
+    "dong": "자양동",
+    "lat": 36.3413,
+    "lon": 127.4513,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동대전로131번길 40-26",
+    "dong": "자양동",
+    "lat": 36.3347,
+    "lon": 127.4449,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동대전로131번길 8-20",
+    "dong": "자양동",
+    "lat": 36.335,
+    "lon": 127.4458,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 자양동 67-12",
+    "dong": "자양동",
+    "lat": 36.3358,
+    "lon": 127.4463,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동대전로154번길 36",
+    "dong": "자양동",
+    "lat": 36.3347,
+    "lon": 127.4488,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 삼성동 369-10",
+    "dong": "삼성동",
+    "lat": 36.3428,
+    "lon": 127.4239,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 삼성동 369-10",
+    "dong": "삼성동",
+    "lat": 36.343,
+    "lon": 127.4247,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 삼성동 369-10",
+    "dong": "삼성동",
+    "lat": 36.3431,
+    "lon": 127.4252,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 삼성동 369-10",
+    "dong": "삼성동",
+    "lat": 36.3431,
+    "lon": 127.4254,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 삼성동 369-10",
+    "dong": "삼성동",
+    "lat": 36.3429,
+    "lon": 127.4247,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 삼성동 369-10",
+    "dong": "삼성동",
+    "lat": 36.3427,
+    "lon": 127.4242,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 태전로 172",
+    "dong": "삼성동",
+    "lat": 36.3425,
+    "lon": 127.419,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대전로 867번길 40-31",
+    "dong": "삼성동",
+    "lat": 36.3369,
+    "lon": 127.427,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 가오동 64-12",
+    "dong": "가오동",
+    "lat": 36.3106,
+    "lon": 127.4621,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 가오동 16-1",
+    "dong": "가오동",
+    "lat": 36.3089,
+    "lon": 127.4613,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 성남로 15",
+    "dong": "성남동",
+    "lat": 36.3437,
+    "lon": 127.4341,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대성동 194-2",
+    "dong": "대성동",
+    "lat": 36.2965,
+    "lon": 127.4594,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대성동 395-13",
+    "dong": "대성동",
+    "lat": 36.3012,
+    "lon": 127.4561,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 태전로 32-1",
+    "dong": "정동",
+    "lat": 36.3335,
+    "lon": 127.4296,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 백룡로11번길 125",
+    "dong": "자양동",
+    "lat": 36.3412,
+    "lon": 127.4506,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동서대로 1679",
+    "dong": "용전동",
+    "lat": 36.3491,
+    "lon": 127.4362,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동서대로 1690",
+    "dong": "성남동",
+    "lat": 36.3493,
+    "lon": 127.4376,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 낭월동 69-1",
+    "dong": "낭월동",
+    "lat": 36.2813,
+    "lon": 127.4699,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 낭월동 288-151",
+    "dong": "낭월동",
+    "lat": 36.283,
+    "lon": 127.4676,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 낭월동 58-3",
+    "dong": "낭월동",
+    "lat": 36.2818,
+    "lon": 127.4704,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 합내로 70",
+    "dong": "가양동",
+    "lat": 36.3493,
+    "lon": 127.4401,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 신상동 282",
+    "dong": "신상동",
+    "lat": 36.3541,
+    "lon": 127.4985,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 백룡로11번길 62",
+    "dong": "자양동",
+    "lat": 36.3384,
+    "lon": 127.4499,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 가양동 4-18",
+    "dong": "가양동",
+    "lat": 36.3472,
+    "lon": 127.4589,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 자양동 99-9",
+    "dong": "자양동",
+    "lat": 36.3328,
+    "lon": 127.4516,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대성동 194-2",
+    "dong": "대성동",
+    "lat": 36.2967,
+    "lon": 127.4599,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대동 138-8",
+    "dong": "대동",
+    "lat": 36.3283,
+    "lon": 127.4443,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동산초교로22번길 57",
+    "dong": "홍도동",
+    "lat": 36.3476,
+    "lon": 127.4298,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 인창로 59",
+    "dong": "인동",
+    "lat": 36.3239,
+    "lon": 127.4357,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 새울로109번길 40-11",
+    "dong": "용운동",
+    "lat": 36.3289,
+    "lon": 127.4599,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 판암동 산 10-9",
+    "dong": "판암동",
+    "lat": 36.3182,
+    "lon": 127.4539,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 판암동 산 10-9",
+    "dong": "판암동",
+    "lat": 36.318,
+    "lon": 127.4534,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 판암동 494-22",
+    "dong": "판암동",
+    "lat": 36.3184,
+    "lon": 127.4553,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 가양로132번길 26 (가양1동 430-6)",
+    "dong": "가양1동",
+    "lat": 36.3481,
+    "lon": 127.4424,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 자양동 87-3",
+    "dong": "자양동",
+    "lat": 36.3394,
+    "lon": 127.4523,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 추동 445",
+    "dong": "추동",
+    "lat": 36.3731,
+    "lon": 127.4744,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 자양동 111-5",
+    "dong": "자양동",
+    "lat": 36.333,
+    "lon": 127.4513,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 고니4길 42",
+    "dong": "자양동",
+    "lat": 36.3322,
+    "lon": 127.4431,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동대전로 262",
+    "dong": "가양2동",
+    "lat": 36.345,
+    "lon": 127.447,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 충정로 53",
+    "dong": "가양동",
+    "lat": 36.3488,
+    "lon": 127.4595,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 충정로 53",
+    "dong": "가양동",
+    "lat": 36.3488,
+    "lon": 127.4599,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 용전동 산 2-6",
+    "dong": "용전동",
+    "lat": 36.358,
+    "lon": 127.4368,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 천동 187-8",
+    "dong": "천동",
+    "lat": 36.3173,
+    "lon": 127.4451,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 용전동 산 2-6",
+    "dong": "용전동",
+    "lat": 36.3581,
+    "lon": 127.437,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 용전동 산 2-6",
+    "dong": "용전동",
+    "lat": 36.3577,
+    "lon": 127.4385,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대동초등2길 6",
+    "dong": "대동",
+    "lat": 36.3257,
+    "lon": 127.4458,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 은어송로 111",
+    "dong": "가오동",
+    "lat": 36.3096,
+    "lon": 127.4605,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 안샘로 8",
+    "dong": "천동",
+    "lat": 36.3164,
+    "lon": 127.4444,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 판암1동 346-2",
+    "dong": "판암1동",
+    "lat": 36.3162,
+    "lon": 127.461,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대동 1-39",
+    "dong": "대동",
+    "lat": 36.3313,
+    "lon": 127.4517,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 대동 1-1256",
+    "dong": "대동",
+    "lat": 36.3323,
+    "lon": 127.4519,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 용운동 산 40-1",
+    "dong": "용운동",
+    "lat": 36.3332,
+    "lon": 127.4523,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 가양2동 108-8",
+    "dong": "가양2동",
+    "lat": 36.3505,
+    "lon": 127.4524,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 태전로 146",
+    "dong": "삼성동",
+    "lat": 36.341,
+    "lon": 127.4208,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 신흥동 251-1",
+    "dong": "신흥동",
+    "lat": 36.3244,
+    "lon": 127.441,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 계족로489번길 34-4",
+    "dong": "용전동",
+    "lat": 36.3555,
+    "lon": 127.4308,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 흥룡로 43(가양2동 38-23)",
+    "dong": "가양2동",
+    "lat": 36.3495,
+    "lon": 127.4486,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 진수2길13",
+    "dong": "소제동",
+    "lat": 36.3358,
+    "lon": 127.4398,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 진수2길13",
+    "dong": "소제동",
+    "lat": 36.3358,
+    "lon": 127.4405,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 진수2길13",
+    "dong": "소제동",
+    "lat": 36.3355,
+    "lon": 127.4412,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 진수2길13",
+    "dong": "소제동",
+    "lat": 36.3347,
+    "lon": 127.4409,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 진수2길13",
+    "dong": "소제동",
+    "lat": 36.3349,
+    "lon": 127.4399,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 동대전로144번길 96",
+    "dong": "자양동",
+    "lat": 36.3325,
+    "lon": 127.451,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 백룡로48번길 51",
+    "dong": "대동",
+    "lat": 36.3318,
+    "lon": 127.4503,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 성남로28번길 22-7",
+    "dong": "성남동",
+    "lat": 36.3443,
+    "lon": 127.4319,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 계족로328번길 42",
+    "dong": "성남동",
+    "lat": 36.3423,
+    "lon": 127.4379,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 충정로 53",
+    "dong": "가양동",
+    "lat": 36.3489,
+    "lon": 127.4594,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 백룡로57번길 61",
+    "dong": "자양동",
+    "lat": 36.3351,
+    "lon": 127.4522,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 우암로326번길 14",
+    "dong": "가양동",
+    "lat": 36.348,
+    "lon": 127.4515,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 동구 흥룡로71번길 11",
+    "dong": "가양동",
+    "lat": 36.3514,
+    "lon": 127.4517,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 동구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 목척5길 126",
+    "dong": "은행동",
+    "lat": 36.3311119,
+    "lon": 127.4241281,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1571번길 46-12(유천동)",
+    "dong": "유천동",
+    "lat": 36.3204444,
+    "lon": 127.3943406,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대전천서로 616",
+    "dong": "중촌동",
+    "lat": 36.3385338,
+    "lon": 127.4159917,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대둔산로 407-19(산성동)",
+    "dong": "산성동",
+    "lat": 36.3060427,
+    "lon": 127.3855697,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계룡로 755번길 23",
+    "dong": "용두동",
+    "lat": 36.3318289,
+    "lon": 127.4029316,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유등천동로 420",
+    "dong": "태평동",
+    "lat": 36.31901392,
+    "lon": 127.3865172,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문로 199번길 37-36",
+    "dong": "대흥동",
+    "lat": 36.3190378,
+    "lon": 127.422279,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문로 199번길 37-36",
+    "dong": "대흥동",
+    "lat": 36.3190378,
+    "lon": 127.422279,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계룡로 755번길 23",
+    "dong": "용두동",
+    "lat": 36.3318289,
+    "lon": 127.4029316,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중교로 83",
+    "dong": "은행동",
+    "lat": 36.3271099,
+    "lon": 127.4285381,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 뿌리공원로 47",
+    "dong": "안영동",
+    "lat": 36.28533721,
+    "lon": 127.3844931,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 동서대로 1207번길 53",
+    "dong": "태평동",
+    "lat": 36.3285645,
+    "lon": 127.3949107,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화로46번길 50(산성동)",
+    "dong": "산성동",
+    "lat": 36.30850149,
+    "lon": 127.3912687,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화로99번길 5",
+    "dong": "유천동",
+    "lat": 36.3126778,
+    "lon": 127.3961958,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 선화서로29번길 20",
+    "dong": "선화동",
+    "lat": 36.32580495,
+    "lon": 127.415787,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 뿌리공원로 79",
+    "dong": "침산동",
+    "lat": 36.28537962,
+    "lon": 127.3883,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1716번길 23",
+    "dong": "문화동",
+    "lat": 36.32076027,
+    "lon": 127.4108672,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 260",
+    "dong": "중촌동",
+    "lat": 36.34259016,
+    "lon": 127.4055801,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 429-27",
+    "dong": "중촌동",
+    "lat": 36.342804,
+    "lon": 127.408181,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 단재로229번길 29",
+    "dong": "어남동",
+    "lat": 36.2324301,
+    "lon": 127.4102801,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1716번길 23",
+    "dong": "문화동",
+    "lat": 36.32076027,
+    "lon": 127.4108672,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로 1653",
+    "dong": "유천동",
+    "lat": 36.320156,
+    "lon": 127.403465,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 뿌리공원로 47",
+    "dong": "안영동",
+    "lat": 36.28533721,
+    "lon": 127.3844931,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산로122번안길 44(산성동)",
+    "dong": "산성동",
+    "lat": 36.304774,
+    "lon": 127.3914287,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대사동 644-113",
+    "dong": "대사동",
+    "lat": 36.311909,
+    "lon": 127.420561,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 선화서로29번길 20",
+    "dong": "선화동",
+    "lat": 36.32580495,
+    "lon": 127.415787,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 목척5길 126",
+    "dong": "은행동",
+    "lat": 36.3311119,
+    "lon": 127.4241281,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 산서로 180",
+    "dong": "침산동",
+    "lat": 36.28716267,
+    "lon": 127.3909084,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유등천동로 180",
+    "dong": "사정동",
+    "lat": 36.30003466,
+    "lon": 127.3845026,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 산서로 180",
+    "dong": "침산동",
+    "lat": 36.28716267,
+    "lon": 127.3909084,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 뿌리공원로 79",
+    "dong": "침산동",
+    "lat": 36.28537962,
+    "lon": 127.3883,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 뿌리공원로 47",
+    "dong": "안영동",
+    "lat": 36.28533721,
+    "lon": 127.3844931,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유천로132번길 64",
+    "dong": "태평동",
+    "lat": 36.3249041,
+    "lon": 127.3988703,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1571번길 46-12",
+    "dong": "유천동",
+    "lat": 36.3204444,
+    "lon": 127.3943406,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화로99번길 5",
+    "dong": "유천동",
+    "lat": 36.3126778,
+    "lon": 127.3961958,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 동서대로 1207번길 53",
+    "dong": "태평동",
+    "lat": 36.3285645,
+    "lon": 127.3949107,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계룡로 755번길 23",
+    "dong": "용두동",
+    "lat": 36.3318289,
+    "lon": 127.4029316,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산공원로497번길 14",
+    "dong": "대사동",
+    "lat": 36.3128382,
+    "lon": 127.4211678,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 목척5길 126",
+    "dong": "은행동",
+    "lat": 36.3311119,
+    "lon": 127.4241281,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중교로 83",
+    "dong": "은행동",
+    "lat": 36.3271099,
+    "lon": 127.4285381,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 단재로229번길 29",
+    "dong": "어남동",
+    "lat": 36.2324301,
+    "lon": 127.4102801,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 용두로28번길 22-6",
+    "dong": "용두동",
+    "lat": 36.32739567,
+    "lon": 127.4100734,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 운남로85번길 32-8",
+    "dong": "무수동",
+    "lat": 36.2782335,
+    "lon": 127.4078626,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1716번길 23",
+    "dong": "문화동",
+    "lat": 36.32076027,
+    "lon": 127.4108672,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1716번길 23",
+    "dong": "문화동",
+    "lat": 36.32076027,
+    "lon": 127.4108672,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대흥로157번길 31",
+    "dong": "대흥동",
+    "lat": 36.32595427,
+    "lon": 127.4284328,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대사동 644-113",
+    "dong": "대사동",
+    "lat": 36.311909,
+    "lon": 127.420561,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 천근로 5-27",
+    "dong": "문화동",
+    "lat": 36.3112191,
+    "lon": 127.4022766,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화로46번길 50(산성동)",
+    "dong": "산성동",
+    "lat": 36.30850149,
+    "lon": 127.3912687,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 단재로229번길 29",
+    "dong": "어남동",
+    "lat": 36.2324301,
+    "lon": 127.4102801,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화동 484-8",
+    "dong": "문화동",
+    "lat": 36.30787795,
+    "lon": 127.4027809,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 운남로85번길 32-8",
+    "dong": "무수동",
+    "lat": 36.2782335,
+    "lon": 127.4078626,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1716번길 23",
+    "dong": "문화동",
+    "lat": 36.32076027,
+    "lon": 127.4108672,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 용두로28번길 22-6",
+    "dong": "용두동",
+    "lat": 36.32739567,
+    "lon": 127.4100734,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 목척5길 126",
+    "dong": "은행동",
+    "lat": 36.3311119,
+    "lon": 127.4241281,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화동 484-8",
+    "dong": "문화동",
+    "lat": 36.30787795,
+    "lon": 127.4027809,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1571번길 46-12",
+    "dong": "유천동",
+    "lat": 36.3204444,
+    "lon": 127.3943406,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 산서로 180",
+    "dong": "침산동",
+    "lat": 36.28716267,
+    "lon": 127.3909084,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대흥로157번길 31",
+    "dong": "대흥동",
+    "lat": 36.32595427,
+    "lon": 127.4284328,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 429-27",
+    "dong": "중촌동",
+    "lat": 36.342804,
+    "lon": 127.408181,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대전천서로 616",
+    "dong": "중촌동",
+    "lat": 36.3385338,
+    "lon": 127.4159917,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산로122번안길 44(산성동)",
+    "dong": "산성동",
+    "lat": 36.304774,
+    "lon": 127.3914287,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 143-1",
+    "dong": "중촌동",
+    "lat": 36.343249,
+    "lon": 127.407611,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유등천동로 180",
+    "dong": "사정동",
+    "lat": 36.30003466,
+    "lon": 127.3845026,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 258-1",
+    "dong": "중촌동",
+    "lat": 36.343767,
+    "lon": 127.405169,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대둔산로 407-19(산성동)",
+    "dong": "산성동",
+    "lat": 36.3060427,
+    "lon": 127.3855697,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화로99번길 5",
+    "dong": "유천동",
+    "lat": 36.3126778,
+    "lon": 127.3961958,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산공원로497번길 14",
+    "dong": "대사동",
+    "lat": 36.3128382,
+    "lon": 127.4211678,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 동서대로 1207번길 53",
+    "dong": "태평동",
+    "lat": 36.3285645,
+    "lon": 127.3949107,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유천로132번길 64",
+    "dong": "태평동",
+    "lat": 36.3249041,
+    "lon": 127.3988703,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대전천서로439-2",
+    "dong": "은행동",
+    "lat": 36.32821652,
+    "lon": 127.429822,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산공원로497번길 14",
+    "dong": "대사동",
+    "lat": 36.3128382,
+    "lon": 127.4211678,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1571번길 46-12(유천동)",
+    "dong": "유천동",
+    "lat": 36.3204444,
+    "lon": 127.3943406,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 260",
+    "dong": "중촌동",
+    "lat": 36.34259016,
+    "lon": 127.4055801,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대전천서로439-2",
+    "dong": "은행동",
+    "lat": 36.32821652,
+    "lon": 127.429822,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1716번길 23",
+    "dong": "문화동",
+    "lat": 36.32076027,
+    "lon": 127.4108672,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중교로 83",
+    "dong": "은행동",
+    "lat": 36.3271099,
+    "lon": 127.4285381,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 천근로 5-27",
+    "dong": "문화동",
+    "lat": 36.3112191,
+    "lon": 127.4022766,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 143-1",
+    "dong": "중촌동",
+    "lat": 36.343249,
+    "lon": 127.407611,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대흥로157번길 31",
+    "dong": "대흥동",
+    "lat": 36.32595427,
+    "lon": 127.4284328,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중교로 83",
+    "dong": "은행동",
+    "lat": 36.3271099,
+    "lon": 127.4285381,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 용두로28번길 22-6",
+    "dong": "용두동",
+    "lat": 36.32739567,
+    "lon": 127.4100734,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 뿌리공원로 79",
+    "dong": "침산동",
+    "lat": 36.28537962,
+    "lon": 127.3883,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유등천동로 180",
+    "dong": "사정동",
+    "lat": 36.30003466,
+    "lon": 127.3845026,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1716번길 23",
+    "dong": "문화동",
+    "lat": 36.32076027,
+    "lon": 127.4108672,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산로171번안길 8(문화동)",
+    "dong": "문화동",
+    "lat": 36.30643997,
+    "lon": 127.3987895,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계룡로 755번길 23",
+    "dong": "용두동",
+    "lat": 36.3318289,
+    "lon": 127.4029316,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 성산로9번길 16",
+    "dong": "안영동",
+    "lat": 36.29031077,
+    "lon": 127.379391,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유천로132번길 64",
+    "dong": "태평동",
+    "lat": 36.3249041,
+    "lon": 127.3988703,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 260",
+    "dong": "중촌동",
+    "lat": 36.34259016,
+    "lon": 127.4055801,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 뿌리공원로 79",
+    "dong": "침산동",
+    "lat": 36.28537962,
+    "lon": 127.3883,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 운남로85번길 32-8",
+    "dong": "무수동",
+    "lat": 36.2782335,
+    "lon": 127.4078626,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대사동 644-113",
+    "dong": "대사동",
+    "lat": 36.311909,
+    "lon": 127.420561,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산로171번안길 8(문화동)",
+    "dong": "문화동",
+    "lat": 36.30643997,
+    "lon": 127.3987895,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화동 484-8",
+    "dong": "문화동",
+    "lat": 36.30787795,
+    "lon": 127.4027809,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대전천서로 616",
+    "dong": "중촌동",
+    "lat": 36.3385338,
+    "lon": 127.4159917,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 천근로 5-27",
+    "dong": "문화동",
+    "lat": 36.3112191,
+    "lon": 127.4022766,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 동서대로1440번길 34",
+    "dong": "선화동",
+    "lat": 36.3349335,
+    "lon": 127.4167671,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 천근로 5-27",
+    "dong": "문화동",
+    "lat": 36.3112191,
+    "lon": 127.4022766,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유등천동로 180",
+    "dong": "사정동",
+    "lat": 36.30003466,
+    "lon": 127.3845026,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대둔산로 407-19(산성동)",
+    "dong": "산성동",
+    "lat": 36.3060427,
+    "lon": 127.3855697,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유천로132번길 64",
+    "dong": "태평동",
+    "lat": 36.3249041,
+    "lon": 127.3988703,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산로171번안길 8(문화동)",
+    "dong": "문화동",
+    "lat": 36.30643997,
+    "lon": 127.3987895,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 동서대로1440번길 34",
+    "dong": "선화동",
+    "lat": 36.3349335,
+    "lon": 127.4167671,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산공원로497번길 14",
+    "dong": "대사동",
+    "lat": 36.3128382,
+    "lon": 127.4211678,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 선화서로29번길 20",
+    "dong": "선화동",
+    "lat": 36.32580495,
+    "lon": 127.415787,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대사동 644-113",
+    "dong": "대사동",
+    "lat": 36.311909,
+    "lon": 127.420561,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 258-1",
+    "dong": "중촌동",
+    "lat": 36.343767,
+    "lon": 127.405169,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 429-27",
+    "dong": "중촌동",
+    "lat": 36.342804,
+    "lon": 127.408181,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 용두로28번길 21-14",
+    "dong": "용두동",
+    "lat": 36.32777695,
+    "lon": 127.4092602,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 성산로9번길 16",
+    "dong": "안영동",
+    "lat": 36.29031077,
+    "lon": 127.379391,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1716번길 23",
+    "dong": "문화동",
+    "lat": 36.32076027,
+    "lon": 127.4108672,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 성산로9번길 16",
+    "dong": "안영동",
+    "lat": 36.29031077,
+    "lon": 127.379391,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대전천서로439-2",
+    "dong": "은행동",
+    "lat": 36.32821652,
+    "lon": 127.429822,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 용두로28번길 21-14",
+    "dong": "용두동",
+    "lat": 36.32777695,
+    "lon": 127.4092602,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 258-1",
+    "dong": "중촌동",
+    "lat": 36.343767,
+    "lon": 127.405169,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 선화서로29번길 20",
+    "dong": "선화동",
+    "lat": 36.32580495,
+    "lon": 127.415787,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로 1653",
+    "dong": "유천동",
+    "lat": 36.320156,
+    "lon": 127.403465,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 143-1",
+    "dong": "중촌동",
+    "lat": 36.343249,
+    "lon": 127.407611,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대전천서로439-2",
+    "dong": "은행동",
+    "lat": 36.32821652,
+    "lon": 127.429822,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 258-1",
+    "dong": "중촌동",
+    "lat": 36.343767,
+    "lon": 127.405169,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 뿌리공원로 47",
+    "dong": "안영동",
+    "lat": 36.28533721,
+    "lon": 127.3844931,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1571번길 46-12",
+    "dong": "유천동",
+    "lat": 36.3204444,
+    "lon": 127.3943406,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1571번길 46-12",
+    "dong": "유천동",
+    "lat": 36.3204444,
+    "lon": 127.3943406,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문로 199번길 37-36",
+    "dong": "대흥동",
+    "lat": 36.3190378,
+    "lon": 127.422279,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 단재로229번길 29",
+    "dong": "어남동",
+    "lat": 36.2324301,
+    "lon": 127.4102801,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 산서로 180",
+    "dong": "침산동",
+    "lat": 36.28716267,
+    "lon": 127.3909084,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화로46번길 50(산성동)",
+    "dong": "산성동",
+    "lat": 36.30850149,
+    "lon": 127.3912687,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산로122번안길 44(산성동)",
+    "dong": "산성동",
+    "lat": 36.304774,
+    "lon": 127.3914287,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1571번길 46-12(유천동)",
+    "dong": "유천동",
+    "lat": 36.3204444,
+    "lon": 127.3943406,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 용두로28번길 21-14",
+    "dong": "용두동",
+    "lat": 36.32777695,
+    "lon": 127.4092602,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화로99번길 5",
+    "dong": "유천동",
+    "lat": 36.3126778,
+    "lon": 127.3961958,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 운남로85번길 32-8",
+    "dong": "무수동",
+    "lat": 36.2782335,
+    "lon": 127.4078626,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화로46번길 50(산성동)",
+    "dong": "산성동",
+    "lat": 36.30850149,
+    "lon": 127.3912687,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대흥로157번길 31",
+    "dong": "대흥동",
+    "lat": 36.32595427,
+    "lon": 127.4284328,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 260",
+    "dong": "중촌동",
+    "lat": 36.34259016,
+    "lon": 127.4055801,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 동서대로1440번길 34",
+    "dong": "선화동",
+    "lat": 36.3349335,
+    "lon": 127.4167671,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 429-27",
+    "dong": "중촌동",
+    "lat": 36.342804,
+    "lon": 127.408181,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대전천서로 616",
+    "dong": "중촌동",
+    "lat": 36.3385338,
+    "lon": 127.4159917,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 중촌동 143-1",
+    "dong": "중촌동",
+    "lat": 36.343249,
+    "lon": 127.407611,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산로122번안길 44(산성동)",
+    "dong": "산성동",
+    "lat": 36.304774,
+    "lon": 127.3914287,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 대둔산로 407-19(산성동)",
+    "dong": "산성동",
+    "lat": 36.3060427,
+    "lon": 127.3855697,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 용두로28번길 22-6",
+    "dong": "용두동",
+    "lat": 36.32739567,
+    "lon": 127.4100734,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 용두로28번길 21-14",
+    "dong": "용두동",
+    "lat": 36.32777695,
+    "lon": 127.4092602,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 동서대로 1207번길 53",
+    "dong": "태평동",
+    "lat": 36.3285645,
+    "lon": 127.3949107,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유등천동로 420",
+    "dong": "태평동",
+    "lat": 36.31901392,
+    "lon": 127.3865172,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 문화동 484-8",
+    "dong": "문화동",
+    "lat": 36.30787795,
+    "lon": 127.4027809,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로1571번길 46-12(유천동)",
+    "dong": "유천동",
+    "lat": 36.3204444,
+    "lon": 127.3943406,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로 1653",
+    "dong": "유천동",
+    "lat": 36.320156,
+    "lon": 127.403465,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 계백로 1653",
+    "dong": "유천동",
+    "lat": 36.320156,
+    "lon": 127.403465,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유등천동로 420",
+    "dong": "태평동",
+    "lat": 36.31901392,
+    "lon": 127.3865172,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 동서대로1440번길 34",
+    "dong": "선화동",
+    "lat": 36.3349335,
+    "lon": 127.4167671,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문산로171번안길 8(문화동)",
+    "dong": "문화동",
+    "lat": 36.30643997,
+    "lon": 127.3987895,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 유등천동로 420",
+    "dong": "태평동",
+    "lat": 36.31901392,
+    "lon": 127.3865172,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 보문로 199번길 37-36",
+    "dong": "대흥동",
+    "lat": 36.3190378,
+    "lon": 127.422279,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 중구 성산로9번길 16",
+    "dong": "안영동",
+    "lat": 36.29031077,
+    "lon": 127.379391,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 중구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 가수원동 618-10번지",
+    "address": "대전광역시 서구 가수원중로 43-11, (가수원동)",
     "dong": "가수원동",
-    "lat": 36.29294953,
-    "lon": 127.3501235,
+    "lat": 36.30077038,
+    "lon": 127.3530761,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 둔산남로 15, 106동  (둔산동, 은하수아파트)",
-    "dong": "둔산동",
-    "lat": 36.3503705,
-    "lon": 127.3794282,
+    "address": "대전광역시 서구 관저중로 65, (관저동)",
+    "dong": "관저동",
+    "lat": 36.29816966,
+    "lon": 127.3340476,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -64,28 +3223,64 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 가수원중로65번길 22, (가수원동)",
-    "dong": "가수원동",
-    "lat": 36.29818966,
-    "lon": 127.3524962,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 둔산동 1381번지",
+    "address": "대전광역시 서구 둔산남로 15, 106동  (둔산동, 은하수아파트)",
     "dong": "둔산동",
-    "lat": 36.3571224,
-    "lon": 127.3884891,
+    "lat": 36.3503705,
+    "lon": 127.3794282,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 괴정동 138-5번지",
-    "dong": "괴정동",
-    "lat": 36.33605747,
-    "lon": 127.3757319,
+    "address": "대전광역시 서구 가수원동 618-10번지",
+    "dong": "가수원동",
+    "lat": 36.29294953,
+    "lon": 127.3501235,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 만년동 157번지",
+    "dong": "만년동",
+    "lat": 36.36668272,
+    "lon": 127.3741618,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 청사로 189, (둔산동)",
+    "dong": "둔산동",
+    "lat": 36.36268276,
+    "lon": 127.3849022,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도안동 2375",
+    "dong": "도안동",
+    "lat": 36.31977,
+    "lon": 127.3484,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 갈마동 1318번지",
+    "dong": "갈마동",
+    "lat": 36.34161662,
+    "lon": 127.3754314,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 둔산북로 85, (둔산동)",
+    "dong": "둔산동",
+    "lat": 36.35603556,
+    "lon": 127.3839294,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -109,46 +3304,28 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 둔산북로 85, (둔산동)",
-    "dong": "둔산",
-    "lat": 36.35603556,
-    "lon": 127.3839294,
+    "address": "대전광역시 서구 괴정동 138-5번지",
+    "dong": "괴정동",
+    "lat": 36.33605747,
+    "lon": 127.3757319,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 갈마동 1318번지",
-    "dong": "갈마동",
-    "lat": 36.34161662,
-    "lon": 127.3754314,
+    "address": "대전광역시 서구 둔산동 1381번지",
+    "dong": "둔산동",
+    "lat": 36.3571224,
+    "lon": 127.3884891,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 도안동 2375",
-    "dong": "도안동",
-    "lat": 36.31977,
-    "lon": 127.3484,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 변동 254-364번지",
-    "dong": "변동",
-    "lat": 36.33025813,
-    "lon": 127.3680369,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 복수동 287-4번지",
-    "dong": "복수동",
-    "lat": 36.30959598,
-    "lon": 127.3738712,
+    "address": "대전광역시 서구 가수원중로65번길 22, (가수원동)",
+    "dong": "가수원동",
+    "lat": 36.29818966,
+    "lon": 127.3524962,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -163,28 +3340,19 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 도마동 산2-10",
-    "dong": "도마동",
-    "lat": 36.32532634,
-    "lon": 127.3745365,
+    "address": "대전광역시 서구 복수동 287-4번지",
+    "dong": "복수동",
+    "lat": 36.30959598,
+    "lon": 127.3738712,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 도안동 1361번지",
-    "dong": "도안동",
-    "lat": 36.31845123,
-    "lon": 127.3428183,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 둔산동 1382번지",
-    "dong": "둔산동",
-    "lat": 36.35710812,
-    "lon": 127.3927679,
+    "address": "대전광역시 서구 변동 254-364번지",
+    "dong": "변동",
+    "lat": 36.33025813,
+    "lon": 127.3680369,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -208,10 +3376,28 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 관저동 769-1번지",
-    "dong": "관저동",
-    "lat": 36.28719473,
-    "lon": 127.329621,
+    "address": "대전광역시 서구 둔산동 1382번지",
+    "dong": "둔산동",
+    "lat": 36.35710812,
+    "lon": 127.3927679,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도안동 1361번지",
+    "dong": "도안동",
+    "lat": 36.31845123,
+    "lon": 127.3428183,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도마동 산2-10",
+    "dong": "도마동",
+    "lat": 36.32532634,
+    "lon": 127.3745365,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -226,28 +3412,10 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 갈마동 392-6번지",
-    "dong": "갈마동",
-    "lat": 36.34412825,
-    "lon": 127.3680142,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 도마동 179-2번지",
-    "dong": "도마동",
-    "lat": 36.31301685,
-    "lon": 127.3853029,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 괴정로198번길 46, (가장동)",
-    "dong": "가장동",
-    "lat": 36.33115405,
-    "lon": 127.389605,
+    "address": "대전광역시 서구 관저동 769-1번지",
+    "dong": "관저동",
+    "lat": 36.28719473,
+    "lon": 127.329621,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -262,28 +3430,28 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 둔산동 1385번지",
-    "dong": "둔산동",
-    "lat": 36.355161,
-    "lon": 127.3944654,
+    "address": "대전광역시 서구 괴정로198번길 46, (가장동)",
+    "dong": "가장동",
+    "lat": 36.33115405,
+    "lon": 127.389605,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 가수원동 839번지 용소1교 앞",
-    "dong": "가수원동",
-    "lat": 36.30759475,
-    "lon": 127.3451251,
+    "address": "대전광역시 서구 도마동 179-2번지",
+    "dong": "도마동",
+    "lat": 36.31301685,
+    "lon": 127.3853029,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 월평동 1046번지",
-    "dong": "월평동",
-    "lat": 36.35508452,
-    "lon": 127.3606725,
+    "address": "대전광역시 서구 갈마동 392-6번지",
+    "dong": "갈마동",
+    "lat": 36.34412825,
+    "lon": 127.3680142,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -298,28 +3466,37 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 가수원동 630-5번지",
-    "dong": "가수원동",
-    "lat": 36.29522651,
-    "lon": 127.3511957,
+    "address": "대전광역시 서구 월평동 1046번지",
+    "dong": "월평동",
+    "lat": 36.35508452,
+    "lon": 127.3606725,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 관저동 1642",
-    "dong": "관저동",
-    "lat": 36.29182,
-    "lon": 127.3427,
+    "address": "대전광역시 서구 가수원동 839번지 용소1교 앞",
+    "dong": "가수원동",
+    "lat": 36.30759475,
+    "lon": 127.3451251,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 용소로39번길 77, (가수원동)",
-    "dong": "가수원동",
-    "lat": 36.31181957,
-    "lon": 127.3530407,
+    "address": "대전광역시 서구 둔산동 1385번지",
+    "dong": "둔산동",
+    "lat": 36.355161,
+    "lon": 127.3944654,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 내동 161-7번지",
+    "dong": "내동",
+    "lat": 36.33526135,
+    "lon": 127.3717059,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -334,10 +3511,46 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 내동 161-7번지",
-    "dong": "내동",
-    "lat": 36.33526135,
-    "lon": 127.3717059,
+    "address": "대전광역시 서구 용소로39번길 77, (가수원동)",
+    "dong": "가수원동",
+    "lat": 36.31181957,
+    "lon": 127.3530407,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 관저동 1642",
+    "dong": "관저동",
+    "lat": 36.29182,
+    "lon": 127.3427,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 가수원동 630-5번지",
+    "dong": "가수원동",
+    "lat": 36.29522651,
+    "lon": 127.3511957,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 탄방동 589번지",
+    "dong": "탄방동",
+    "lat": 36.34823535,
+    "lon": 127.3848262,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도산로335번길 62, R 괴정경로당 (괴정동)",
+    "dong": "괴정동",
+    "lat": 36.3382,
+    "lon": 127.3865,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -361,28 +3574,19 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 도산로335번길 62, R 괴정경로당 (괴정동)",
-    "dong": "괴정동",
-    "lat": 36.3382,
-    "lon": 127.3865,
+    "address": "대전광역시 서구 가수원중로65번길 22, (가수원동)",
+    "dong": "가수원동",
+    "lat": 36.29818966,
+    "lon": 127.3524962,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 탄방동 589번지",
-    "dong": "탄방동",
-    "lat": 36.34823535,
-    "lon": 127.3848262,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 관저동 549-2번지",
-    "dong": "관저동",
-    "lat": 36.30617939,
-    "lon": 127.3336122,
+    "address": "대전광역시 서구 정림동 563번지",
+    "dong": "정림동",
+    "lat": 36.30637204,
+    "lon": 127.364087,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -406,46 +3610,10 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 정림동 563번지",
-    "dong": "정림동",
-    "lat": 36.30637204,
-    "lon": 127.364087,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 가수원중로65번길 22, (가수원동)",
-    "dong": "가수원동",
-    "lat": 36.29818966,
-    "lon": 127.3524962,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 관저동 1129번지",
+    "address": "대전광역시 서구 관저동 549-2번지",
     "dong": "관저동",
-    "lat": 36.3010146,
-    "lon": 127.3302712,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 만년남로3번길 101, (만년동)",
-    "dong": "만년동",
-    "lat": 36.36541293,
-    "lon": 127.370907,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 괴정로16번길 5, (괴정동)",
-    "dong": "괴정동",
-    "lat": 36.33971353,
-    "lon": 127.3768836,
+    "lat": 36.30617939,
+    "lon": 127.3336122,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -460,19 +3628,37 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 갈마동 363-1번지",
-    "dong": "갈마동",
-    "lat": 36.34842142,
-    "lon": 127.3686258,
+    "address": "대전광역시 서구 괴정로16번길 5, (괴정동)",
+    "dong": "괴정동",
+    "lat": 36.33971353,
+    "lon": 127.3768836,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 도마동 165-1번지",
-    "dong": "도마동",
-    "lat": 36.31284705,
-    "lon": 127.3751259,
+    "address": "대전광역시 서구 만년남로3번길 101, (만년동)",
+    "dong": "만년동",
+    "lat": 36.36541293,
+    "lon": 127.370907,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 관저동 1129번지",
+    "dong": "관저동",
+    "lat": 36.3010146,
+    "lon": 127.3302712,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 한밭대로 664, (갈마동)",
+    "dong": "갈마동",
+    "lat": 36.35708301,
+    "lon": 127.3721661,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -487,46 +3673,19 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 한밭대로 664, (갈마동)",
+    "address": "대전광역시 서구 도마동 165-1번지",
+    "dong": "도마동",
+    "lat": 36.31284705,
+    "lon": 127.3751259,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 갈마동 363-1번지",
     "dong": "갈마동",
-    "lat": 36.35708301,
-    "lon": 127.3721661,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 가수원동 815-6번지",
-    "dong": "가수원동",
-    "lat": 36.29724344,
-    "lon": 127.3541852,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 월평동 801번지",
-    "dong": "월평동",
-    "lat": 36.35540987,
-    "lon": 127.3659288,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 용문로 41-17, (괴정동)",
-    "dong": "괴정동",
-    "lat": 36.33981053,
-    "lon": 127.3887133,
-    "policeLinked": true,
-    "manageOrg": "대전광역시 서구청"
-  },
-  {
-    "installPurpose": "약자보호",
-    "address": "대전광역시 서구 도안동 1368번지",
-    "dong": "도안동",
-    "lat": 36.3170571,
-    "lon": 127.3466275,
+    "lat": 36.34842142,
+    "lon": 127.3686258,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -541,37 +3700,37 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 만년로 19, 만년동주민센터  뒤(만년동)",
-    "dong": "만년동",
-    "lat": 36.3675344,
-    "lon": 127.3750242,
+    "address": "대전광역시 서구 도안동 1368번지",
+    "dong": "도안동",
+    "lat": 36.3170571,
+    "lon": 127.3466275,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 신갈마로 102, 306동  (갈마동, 갈마아파트)",
-    "dong": "갈마동",
-    "lat": 36.34275938,
-    "lon": 127.3699191,
+    "address": "대전광역시 서구 용문로 41-17, (괴정동)",
+    "dong": "괴정동",
+    "lat": 36.33981053,
+    "lon": 127.3887133,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 탄방동 589번지",
-    "dong": "탄방동",
-    "lat": 36.34823535,
-    "lon": 127.3848262,
+    "address": "대전광역시 서구 월평동 801번지",
+    "dong": "월평동",
+    "lat": 36.35540987,
+    "lon": 127.3659288,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 탄방동 1051번지",
-    "dong": "탄방동",
-    "lat": 36.34653384,
-    "lon": 127.3958132,
+    "address": "대전광역시 서구 가수원동 815-6번지",
+    "dong": "가수원동",
+    "lat": 36.29724344,
+    "lon": 127.3541852,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -586,28 +3745,37 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 도마동 179-2번지",
-    "dong": "도마동",
-    "lat": 36.31301685,
-    "lon": 127.3853029,
+    "address": "대전광역시 서구 탄방동 1051번지",
+    "dong": "탄방동",
+    "lat": 36.34653384,
+    "lon": 127.3958132,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 복수북로 30, (복수동)",
-    "dong": "복수동",
-    "lat": 36.30762034,
-    "lon": 127.3735084,
+    "address": "대전광역시 서구 탄방동 589번지",
+    "dong": "탄방동",
+    "lat": 36.34823535,
+    "lon": 127.3848262,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 정림동로 8-6, (정림동)",
-    "dong": "정림동",
-    "lat": 36.30405911,
-    "lon": 127.3664106,
+    "address": "대전광역시 서구 신갈마로 102, 306동  (갈마동, 갈마아파트)",
+    "dong": "갈마동",
+    "lat": 36.34275938,
+    "lon": 127.3699191,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 만년로 19, 만년동주민센터  뒤(만년동)",
+    "dong": "만년동",
+    "lat": 36.3675344,
+    "lon": 127.3750242,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
@@ -622,20 +3790,1388 @@
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 관저중로 65, (관저동)",
-    "dong": "관저동",
-    "lat": 36.29816966,
-    "lon": 127.3340476,
+    "address": "대전광역시 서구 정림동로 8-6, (정림동)",
+    "dong": "정림동",
+    "lat": 36.30405911,
+    "lon": 127.3664106,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
   },
   {
     "installPurpose": "약자보호",
-    "address": "대전광역시 서구 가수원중로 43-11, (가수원동)",
-    "dong": "가수원동",
-    "lat": 36.30077038,
-    "lon": 127.3530761,
+    "address": "대전광역시 서구 복수북로 30, (복수동)",
+    "dong": "복수동",
+    "lat": 36.30762034,
+    "lon": 127.3735084,
     "policeLinked": true,
     "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 도마동 179-2번지",
+    "dong": "도마동",
+    "lat": 36.31301685,
+    "lon": 127.3853029,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 동서대로1047번길 16 (내동)",
+    "dong": "내동",
+    "lat": 36.33169,
+    "lon": 127.3785,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "약자보호",
+    "address": "대전광역시 서구 관저동 2026",
+    "dong": "관저동",
+    "lat": 36.28921,
+    "lon": 127.3327,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 서구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 615-1",
+    "dong": "봉명동",
+    "lat": 36.3583831,
+    "lon": 127.3437915,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 학하동 778-1",
+    "dong": "학하동",
+    "lat": 36.337444,
+    "lon": 127.3114,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 상대동 101-1",
+    "dong": "상대동",
+    "lat": 36.3448416,
+    "lon": 127.3417695,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 1052-6",
+    "dong": "봉명동",
+    "lat": 36.34392987,
+    "lon": 127.3414744,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 학하동 745-5",
+    "dong": "학하동",
+    "lat": 36.338651,
+    "lon": 127.309573,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 학하동 715-1",
+    "dong": "학하동",
+    "lat": 36.342149,
+    "lon": 127.308361,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 궁동 431-7",
+    "dong": "궁동",
+    "lat": 36.360891,
+    "lon": 127.3530315,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 학하동 719-1",
+    "dong": "학하동",
+    "lat": 36.34076401,
+    "lon": 127.3058826,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 555",
+    "dong": "원신흥동",
+    "lat": 36.33446459,
+    "lon": 127.3386975,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 도안동 795",
+    "dong": "도안동",
+    "lat": 36.3324641,
+    "lon": 127.3461609,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 394-3",
+    "dong": "봉명동",
+    "lat": 36.3457717,
+    "lon": 127.3440564,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 302-1",
+    "dong": "봉명동",
+    "lat": 36.349984,
+    "lon": 127.3441598,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 어은동 96",
+    "dong": "어은동",
+    "lat": 36.3656214,
+    "lon": 127.3528081,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 520-10",
+    "dong": "원신흥동",
+    "lat": 36.33732106,
+    "lon": 127.3481786,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 학하동 719-1",
+    "dong": "학하동",
+    "lat": 36.34076401,
+    "lon": 127.3058826,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 상대동 480-5",
+    "dong": "상대동",
+    "lat": 36.3432766,
+    "lon": 127.3391098,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 328-14",
+    "dong": "봉명동",
+    "lat": 36.3513269,
+    "lon": 127.3475892,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 238",
+    "dong": "원신흥동",
+    "lat": 36.34444238,
+    "lon": 127.3465917,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 326-39",
+    "dong": "봉명동",
+    "lat": 36.3525641,
+    "lon": 127.3434789,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 계산동 761-3",
+    "dong": "계산동",
+    "lat": 36.336376,
+    "lon": 127.300282,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 어은동 113-8",
+    "dong": "어은동",
+    "lat": 36.3636381,
+    "lon": 127.3583562,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 장대동 233-60",
+    "dong": "장대동",
+    "lat": 36.3596794,
+    "lon": 127.3241208,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 570-7",
+    "dong": "원신흥동",
+    "lat": 36.33447196,
+    "lon": 127.3360868,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 447-7",
+    "dong": "원신흥동",
+    "lat": 36.3369935,
+    "lon": 127.3492153,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 상대동 484-4",
+    "dong": "상대동",
+    "lat": 36.3428823,
+    "lon": 127.3357719,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 학하동 783-3",
+    "dong": "학하동",
+    "lat": 36.335752,
+    "lon": 127.310602,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 용계동 산 2-3",
+    "dong": "용계동",
+    "lat": 36.3312469,
+    "lon": 127.3339424,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 518-1",
+    "dong": "원신흥동",
+    "lat": 36.3376832,
+    "lon": 127.3475779,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 307-5",
+    "dong": "원신흥동",
+    "lat": 36.3385917,
+    "lon": 127.3421785,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 298-3",
+    "dong": "원신흥동",
+    "lat": 36.3392132,
+    "lon": 127.3483058,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 장대동 281-23",
+    "dong": "장대동",
+    "lat": 36.3595302,
+    "lon": 127.3364189,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 학하동 745-5",
+    "dong": "학하동",
+    "lat": 36.338651,
+    "lon": 127.309573,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 286-2",
+    "dong": "원신흥동",
+    "lat": 36.3419619,
+    "lon": 127.342582,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 용계동 666-9",
+    "dong": "용계동",
+    "lat": 36.3300498,
+    "lon": 127.3359823,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 496-39",
+    "dong": "봉명동",
+    "lat": 36.36068395,
+    "lon": 127.3576898,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 계산동 728",
+    "dong": "계산동",
+    "lat": 36.341894,
+    "lon": 127.30116,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 상대동472-2",
+    "dong": "상대동",
+    "lat": 36.34691229,
+    "lon": 127.3397451,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 장대동 369-1",
+    "dong": "장대동",
+    "lat": 36.3584624,
+    "lon": 127.3379155,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 198-5",
+    "dong": "원신흥동",
+    "lat": 36.3401963,
+    "lon": 127.3430299,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 궁동 401-1",
+    "dong": "궁동",
+    "lat": 36.3638793,
+    "lon": 127.3508012,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 상대동 388-1",
+    "dong": "상대동",
+    "lat": 36.3382986,
+    "lon": 127.3327026,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 상대동456-3",
+    "dong": "상대동",
+    "lat": 36.3465504,
+    "lon": 127.3354173,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 336-3",
+    "dong": "원신흥동",
+    "lat": 36.3335639,
+    "lon": 127.3447501,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 상대동 488",
+    "dong": "상대동",
+    "lat": 36.3364509,
+    "lon": 127.3351479,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 지족동 890",
+    "dong": "지족동",
+    "lat": 36.3740403,
+    "lon": 127.3160532,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 315-1",
+    "dong": "봉명동",
+    "lat": 36.3488224,
+    "lon": 127.3453248,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 용계동15",
+    "dong": "용계동",
+    "lat": 36.3313247,
+    "lon": 127.3372154,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 337-11",
+    "dong": "원신흥동",
+    "lat": 36.333552,
+    "lon": 127.3461428,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 562-9",
+    "dong": "원신흥동",
+    "lat": 36.3362691,
+    "lon": 127.337939,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 죽동 608-2",
+    "dong": "죽동",
+    "lat": 36.381623,
+    "lon": 127.32745,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 장대동 330-6",
+    "dong": "장대동",
+    "lat": 36.3621105,
+    "lon": 127.3359524,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동410-6",
+    "dong": "원신흥동",
+    "lat": 36.337971,
+    "lon": 127.3385576,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 용계동 산 2-7",
+    "dong": "용계동",
+    "lat": 36.3308796,
+    "lon": 127.3318879,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 궁동 460-1",
+    "dong": "궁동",
+    "lat": 36.3613102,
+    "lon": 127.340988,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 구암동 480-19",
+    "dong": "구암동",
+    "lat": 36.3554395,
+    "lon": 127.3152512,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 310-19",
+    "dong": "원신흥동",
+    "lat": 36.3385199,
+    "lon": 127.3449787,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 신성동 149-6",
+    "dong": "신성동",
+    "lat": 36.3888097,
+    "lon": 127.3521735,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 용계동 117-21",
+    "dong": "용계동",
+    "lat": 36.3275,
+    "lon": 127.3317665,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 1025-1",
+    "dong": "봉명동",
+    "lat": 36.3520953,
+    "lon": 127.3412713,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 상대동 485",
+    "dong": "상대동",
+    "lat": 36.34239221,
+    "lon": 127.3332647,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 전민동 336-1",
+    "dong": "전민동",
+    "lat": 36.3987996,
+    "lon": 127.4027103,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 계산동 719",
+    "dong": "계산동",
+    "lat": 36.343287,
+    "lon": 127.299427,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 559-1",
+    "dong": "원신흥동",
+    "lat": 36.3334375,
+    "lon": 127.3382846,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 상대동 479-2",
+    "dong": "상대동",
+    "lat": 36.34416277,
+    "lon": 127.3394391,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 궁동 430-1",
+    "dong": "궁동",
+    "lat": 36.3612529,
+    "lon": 127.3520955,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 학하동 778-1",
+    "dong": "학하동",
+    "lat": 36.337444,
+    "lon": 127.3114,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 학하동 730",
+    "dong": "학하동",
+    "lat": 36.338877,
+    "lon": 127.306334,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 389-1",
+    "dong": "봉명동",
+    "lat": 36.3470477,
+    "lon": 127.3416255,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 496-39",
+    "dong": "봉명동",
+    "lat": 36.36068395,
+    "lon": 127.3576898,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 상대동 398-1",
+    "dong": "상대동",
+    "lat": 36.3380156,
+    "lon": 127.3360782,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 봉명동 364-2",
+    "dong": "봉명동",
+    "lat": 36.348838,
+    "lon": 127.342419,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 원신흥동 199-8",
+    "dong": "원신흥동",
+    "lat": 36.3416508,
+    "lon": 127.3440733,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 상대동 138-67",
+    "dong": "상대동",
+    "lat": 36.3482752,
+    "lon": 127.3359619,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 유성구 학하동 763-4",
+    "dong": "학하동",
+    "lat": 36.339102,
+    "lon": 127.312214,
+    "policeLinked": false,
+    "manageOrg": "유성구청"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 법동 197-1",
+    "dong": "법동",
+    "lat": 36.36703881,
+    "lon": 127.432513,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 송촌동 290-1",
+    "dong": "송촌동",
+    "lat": 36.35670165,
+    "lon": 127.4431071,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 목상동 185-3",
+    "dong": "목상동",
+    "lat": 36.44625813,
+    "lon": 127.4126571,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 신일동 1682-8",
+    "dong": "신일동",
+    "lat": 36.44272654,
+    "lon": 127.4113264,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 석봉동 779",
+    "dong": "석봉동",
+    "lat": 36.453847,
+    "lon": 127.4209645,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 비래동 467외 2필지",
+    "dong": "비래동",
+    "lat": 36.3726883,
+    "lon": 127.451146,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 비래동 411-1",
+    "dong": "비래동",
+    "lat": 36.36634534,
+    "lon": 127.4477333,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 장동 685-1",
+    "dong": "장동",
+    "lat": 36.39697031,
+    "lon": 127.4385337,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 송촌동 61-2",
+    "dong": "송촌동",
+    "lat": 36.36932044,
+    "lon": 127.4428652,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 송촌동 463",
+    "dong": "송촌동",
+    "lat": 36.36642279,
+    "lon": 127.441687,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 평촌동 537-1",
+    "dong": "평촌동",
+    "lat": 36.43555301,
+    "lon": 127.4228632,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 삼정동 376",
+    "dong": "삼정동",
+    "lat": 36.4495317,
+    "lon": 127.4563416,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 송촌동 463",
+    "dong": "송촌동",
+    "lat": 36.36642279,
+    "lon": 127.441687,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 신탄진동 21",
+    "dong": "신탄진동",
+    "lat": 36.4500919,
+    "lon": 127.4357814,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 상서동 326-18",
+    "dong": "상서동",
+    "lat": 36.42533912,
+    "lon": 127.4224653,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 오정동 375-5",
+    "dong": "오정동",
+    "lat": 36.35329013,
+    "lon": 127.414801,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 신일동 1682-8",
+    "dong": "신일동",
+    "lat": 36.44272654,
+    "lon": 127.4113264,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 송촌동 166-4",
+    "dong": "송촌동",
+    "lat": 36.35959493,
+    "lon": 127.4400164,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 미호동 433",
+    "dong": "미호동",
+    "lat": 36.458727,
+    "lon": 127.465569,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 목상동 875",
+    "dong": "목상동",
+    "lat": 36.44440188,
+    "lon": 127.4123418,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 중리동 355-7",
+    "dong": "중리동",
+    "lat": 36.36048409,
+    "lon": 127.4191879,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 오정동 400-2",
+    "dong": "오정동",
+    "lat": 36.3510731,
+    "lon": 127.412732,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 비래동 108",
+    "dong": "비래동",
+    "lat": 36.35847011,
+    "lon": 127.4470834,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 읍내동 5-17",
+    "dong": "읍내동",
+    "lat": 36.372519,
+    "lon": 127.450621,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 오정동 111-14",
+    "dong": "오정동",
+    "lat": 36.35530634,
+    "lon": 127.4165883,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 미호동 57-1",
+    "dong": "미호동",
+    "lat": 36.47310646,
+    "lon": 127.4738767,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 석봉동 415-5",
+    "dong": "석봉동",
+    "lat": 36.4498498,
+    "lon": 127.4267671,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 중리동 105-6",
+    "dong": "중리동",
+    "lat": 36.3632611,
+    "lon": 127.4323211,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 미호동 289-1",
+    "dong": "미호동",
+    "lat": 36.46343665,
+    "lon": 127.4658544,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 목상동 174",
+    "dong": "목상동",
+    "lat": 36.44640185,
+    "lon": 127.4106944,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 중리동 174-1",
+    "dong": "중리동",
+    "lat": 36.36146569,
+    "lon": 127.4299834,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 신일동 1682-8",
+    "dong": "신일동",
+    "lat": 36.44272654,
+    "lon": 127.4113264,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 상서동 189-2",
+    "dong": "상서동",
+    "lat": 36.4323526,
+    "lon": 127.4238619,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 대화동 35-1084",
+    "dong": "대화동",
+    "lat": 36.36408377,
+    "lon": 127.4130725,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 장동 353",
+    "dong": "장동",
+    "lat": 36.41316848,
+    "lon": 127.4386057,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 중리동 388-17",
+    "dong": "중리동",
+    "lat": 36.36307283,
+    "lon": 127.4281548,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 오정동 360-4",
+    "dong": "오정동",
+    "lat": 36.35404498,
+    "lon": 127.4155135,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 법2동 205-5",
+    "dong": "법2동",
+    "lat": 36.36541848,
+    "lon": 127.431719,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 석봉동 779",
+    "dong": "석봉동",
+    "lat": 36.453847,
+    "lon": 127.4209645,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 석봉동 779",
+    "dong": "석봉동",
+    "lat": 36.453847,
+    "lon": 127.4209645,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 송촌동 463",
+    "dong": "송촌동",
+    "lat": 36.36642279,
+    "lon": 127.441687,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 중리동 223-1",
+    "dong": "중리동",
+    "lat": 36.35715496,
+    "lon": 127.4217853,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 이현동 190-4",
+    "dong": "이현동",
+    "lat": 36.41401848,
+    "lon": 127.4662648,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 법동 280-1",
+    "dong": "법동",
+    "lat": 36.37258961,
+    "lon": 127.424678,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 송촌동 558",
+    "dong": "송촌동",
+    "lat": 36.35887324,
+    "lon": 127.446429,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 문평동 42-4",
+    "dong": "문평동",
+    "lat": 36.44302574,
+    "lon": 127.3979297,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 석봉동 779",
+    "dong": "석봉동",
+    "lat": 36.453847,
+    "lon": 127.4209645,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 법2동 146-1",
+    "dong": "법2동",
+    "lat": 36.3729387,
+    "lon": 127.439536,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 문평동 78-5",
+    "dong": "문평동",
+    "lat": 36.44804287,
+    "lon": 127.4030751,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 송촌동 463",
+    "dong": "송촌동",
+    "lat": 36.36642279,
+    "lon": 127.441687,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 법동 286",
+    "dong": "법동",
+    "lat": 36.367446,
+    "lon": 127.428329,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 비래동 138-4",
+    "dong": "비래동",
+    "lat": 36.35591526,
+    "lon": 127.4517066,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 법2동 140-1",
+    "dong": "법2동",
+    "lat": 36.3718641,
+    "lon": 127.43768,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 신일동 1682-8",
+    "dong": "신일동",
+    "lat": 36.44272654,
+    "lon": 127.4113264,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 덕암동 22-5",
+    "dong": "덕암동",
+    "lat": 36.44293998,
+    "lon": 127.4214416,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 삼정동 449-2",
+    "dong": "삼정동",
+    "lat": 36.4378028,
+    "lon": 127.4632297,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 신탄진동 132-1",
+    "dong": "신탄진동",
+    "lat": 36.45008699,
+    "lon": 127.4330006,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 오정동 401-3",
+    "dong": "오정동",
+    "lat": 36.35016644,
+    "lon": 127.4119022,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 중리동 101-1",
+    "dong": "중리동",
+    "lat": 36.36481073,
+    "lon": 127.4341517,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 미호동 57-4",
+    "dong": "미호동",
+    "lat": 36.47409933,
+    "lon": 127.4749263,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 법동 195-1",
+    "dong": "법동",
+    "lat": 36.36592535,
+    "lon": 127.4357964,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 중리동 144-2",
+    "dong": "중리동",
+    "lat": 36.36451905,
+    "lon": 127.4295615,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 용호동 44-2",
+    "dong": "용호동",
+    "lat": 36.44796185,
+    "lon": 127.4511335,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 비래동 산28-6",
+    "dong": "비래동",
+    "lat": 36.35817373,
+    "lon": 127.4579904,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 읍내동 11-1",
+    "dong": "읍내동",
+    "lat": 36.37849334,
+    "lon": 127.4334911,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 기후환경과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 송촌동 290-1",
+    "dong": "송촌동",
+    "lat": 36.35670165,
+    "lon": 127.4431071,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 법2동 66-9",
+    "dong": "법2동",
+    "lat": 36.37173014,
+    "lon": 127.432846,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 석봉동 415-31",
+    "dong": "석봉동",
+    "lat": 36.449682,
+    "lon": 127.427046,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 법동 140-1",
+    "dong": "법동",
+    "lat": 36.37198,
+    "lon": 127.4379,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 법동 353-27",
+    "dong": "법동",
+    "lat": 36.3739,
+    "lon": 127.4409,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 덕암동 16-1",
+    "dong": "덕암동",
+    "lat": 36.44244744,
+    "lon": 127.4261546,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 송촌동 443-1",
+    "dong": "송촌동",
+    "lat": 36.36775161,
+    "lon": 127.4371438,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 장동 산 108-1",
+    "dong": "장동",
+    "lat": 36.3852494,
+    "lon": 127.4426903,
+    "policeLinked": false,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 중리동 490-1",
+    "dong": "중리동",
+    "lat": 36.36475131,
+    "lon": 127.4350909,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
+  },
+  {
+    "installPurpose": "방범용",
+    "address": "대전광역시 대덕구 법2동 332-3",
+    "dong": "법2동",
+    "lat": 36.37467329,
+    "lon": 127.429684,
+    "policeLinked": true,
+    "manageOrg": "대전광역시 대덕구청 공원녹지과"
   }
 ]

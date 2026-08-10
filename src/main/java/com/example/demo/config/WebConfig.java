@@ -26,6 +26,11 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**") // "/api/"로 시작하는 모든 요청에 대해
                 .allowedOrigins(allowedOrigins.split(",")) // 위에서 설정한 origin(프론트 주소)만 허용
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS"); // 허용할 HTTP 메서드
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // 허용할 HTTP 메서드
+                // [왜 명시했나] 안전구역 API는 X-Device-Id라는 표준에 없는 헤더를 받음.
+                // 브라우저는 이런 커스텀 헤더가 붙은 요청을 보내기 전에 OPTIONS(preflight)로 "이 헤더 써도 되냐"를 먼저 묻는데,
+                // 서버가 허용 목록에 넣어주지 않으면 본 요청이 아예 발사되지 않고 CORS 에러가 남.
+                // (스프링 기본값도 "*"라 지금은 없어도 동작하지만, 나중에 누가 이 설정을 좁힐 때 실수하지 않도록 적어둠)
+                .allowedHeaders("*");
     }
 }

@@ -13,7 +13,6 @@ import com.example.demo.safetybell.SafetyBellImportDto;
 import com.example.demo.safetybell.SafetyBellRepository;
 import com.example.demo.traffic.TrafficAccidentHotspot;
 import com.example.demo.traffic.TrafficAccidentHotspotRepository;
-import com.example.demo.traffic.TrafficAccidentImportWrapper;
 import com.example.demo.traffic.TrafficAccidentRecordDto;
 
 import com.fasterxml.jackson.databind.ObjectMapper; // JSON 문자열 <-> 자바 객체를 변환해주는 Jackson의 핵심 클래스
@@ -115,17 +114,19 @@ public class DataSeeder implements ApplicationRunner {
         }
     }
 
-    // 교통사고다발지역 데이터를 DB에 적재 (구조가 { records: [...] } 라서 CCTV와 파싱 방식이 조금 다름)
+    // 교통사고다발지역 데이터를 DB에 적재
+    // (예전 원본은 { fields, records } 구조라 Wrapper 클래스가 따로 필요했지만,
+    //  정제본은 CCTV/안심벨과 똑같이 최상위가 배열이라 Wrapper 없이 바로 리스트로 읽으면 됨)
     private void seedTrafficAccidents() throws IOException {
         if (trafficAccidentHotspotRepository.count() > 0) {
             log.info("교통사고다발지역 데이터가 이미 존재합니다. 적재를 건너뜁니다.");
             return;
         }
         try (InputStream is = new ClassPathResource("data/traffic-accidents.json").getInputStream()) {
-            // 최상위 객체({ fields, records })를 Wrapper로 파싱
-            TrafficAccidentImportWrapper wrapper = objectMapper.readValue(is, TrafficAccidentImportWrapper.class);
-            // records 안의 각 항목을 Entity로 변환
-            List<TrafficAccidentHotspot> entities = wrapper.records().stream()
+            // JSON 배열([...])을 TrafficAccidentRecordDto 리스트로 한 번에 변환
+            List<TrafficAccidentRecordDto> dtos = objectMapper.readValue(is, objectMapper.getTypeFactory()
+                    .constructCollectionType(List.class, TrafficAccidentRecordDto.class));
+            List<TrafficAccidentHotspot> entities = dtos.stream()
                     .map(TrafficAccidentRecordDto::toEntity)
                     .collect(Collectors.toList());
             trafficAccidentHotspotRepository.saveAll(entities);
