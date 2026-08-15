@@ -14,8 +14,8 @@ version = '0.0.1-SNAPSHOT'
 
 java {
 	toolchain {
-		// 이 프로젝트를 빌드할 때 사용할 자바 버전 (17)
-		languageVersion = JavaLanguageVersion.of(17)
+		// 이 프로젝트를 빌드할 때 사용할 자바 버전 (Railway 빌드 환경이 21을 기본 제공해서 맞춤)
+		languageVersion = JavaLanguageVersion.of(21)
 	}
 }
 
