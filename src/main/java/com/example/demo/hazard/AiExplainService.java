@@ -1,7 +1,14 @@
 // [이 파일이 왜 필요한가]
-// RiskZone/GridRisk 정보를 LLM(Claude)에게 넘겨 보호자용 안내문(summary/message/action)을
+// RiskZone/GridRisk 정보를 LLM(xAI Grok)에게 넘겨 보호자용 안내문(summary/message/action)을
 // 생성받는 핵심 로직. 호출 실패/타임아웃 시 규칙 기반 폴백 문장으로 대체하고,
 // 같은 구역+주간/야간 조합은 캐시해서 매번 LLM을 호출하지 않게 함.
+//
+// [할루시네이션(엉뚱한 형식/거짓 수치) 방지 전략]
+// 1) response_format을 json_schema(strict:true)로 강제 - summary/message/action 3개 필드만
+//    있는 JSON을 벗어난 응답 자체가 API 단에서 거부/재시도되므로 "형식이 깨지는" 문제를 원천 차단.
+// 2) temperature를 낮게(0.2) 설정 - 창의성보다 일관성이 중요한 정형 안내문이라 낮은 값이 적합.
+// 3) 프롬프트에 실제 DB 수치(riskScore/accidents 등)를 그대로 박아 넣고 "숫자는 구체적으로"를 명시 -
+//    모델이 숫자를 지어내지 않고 주어진 값만 문장으로 옮기도록 유도.
 package com.example.demo.hazard;
 
 import com.fasterxml.jackson.databind.JsonNode;
@@ -36,10 +43,10 @@ public class AiExplainService {
     private final ObjectMapper objectMapper;
     private final WebClient webClient;
 
-    @Value("${anthropic.api-key:}")
+    @Value("${xai.api-key:}")
     private String apiKey;
 
-    @Value("${anthropic.model:claude-opus-5}")
+    @Value("${xai.model:grok-4.6}")
     private String model;
 
     // (zoneId 또는 gridId) + 주간/야간 조합으로 캐시. 서버가 떠 있는 동안만 유지되는 단순 메모리 캐시라
@@ -52,9 +59,10 @@ public class AiExplainService {
         this.riskZoneRepository = riskZoneRepository;
         this.gridRiskRepository = gridRiskRepository;
         this.objectMapper = objectMapper;
+        // xAI(Grok)는 OpenAI 호환 API라 base URL + Bearer 토큰만으로 호출 가능 (Anthropic처럼
+        // 별도 버전 헤더가 필요 없음)
         this.webClient = WebClient.builder()
-                .baseUrl("https://api.anthropic.com")
-                .defaultHeader("anthropic-version", "2023-06-01")
+                .baseUrl("https://api.x.ai")
                 .build();
     }
 
@@ -100,31 +108,54 @@ public class AiExplainService {
                 g.getSchoolZoneDistM(), g.getInSchoolZone(), hour);
     }
 
+    // 응답 JSON이 summary/message/action 세 필드만 갖도록 강제하는 스키마.
+    // xAI가 이 스키마를 어기는 응답을 내면 API 단에서 걸러지므로, 모델이 형식을 지어내다 깨뜨릴
+    // 여지 자체가 없어짐 (JSON_SCHEMA는 static final로 한 번만 만들어 매 요청마다 재생성하지 않음)
+    private static final Map<String, Object> RESPONSE_JSON_SCHEMA = Map.of(
+            "type", "json_schema",
+            "json_schema", Map.of(
+                    "name", "guardian_explanation",
+                    "strict", true,
+                    "schema", Map.of(
+                            "type", "object",
+                            "properties", Map.of(
+                                    "summary", Map.of("type", "string"),
+                                    "message", Map.of("type", "string"),
+                                    "action", Map.of("type", "string")
+                            ),
+                            "required", List.of("summary", "message", "action"),
+                            "additionalProperties", false
+                    )
+            )
+    );
+
     private Optional<AiExplainResponse> callLlm(ExplainContext context) {
         if (apiKey == null || apiKey.isBlank()) {
-            log.warn("ANTHROPIC_API_KEY가 설정되지 않아 AI 설명 호출을 건너뛰고 폴백을 사용합니다");
+            log.warn("XAI_API_KEY가 설정되지 않아 AI 설명 호출을 건너뛰고 폴백을 사용합니다");
             return Optional.empty();
         }
 
         try {
             Map<String, Object> requestBody = Map.of(
                     "model", model,
-                    "max_tokens", 500,
+                    // 정형 안내문이라 창의성보다 일관성이 중요해서 낮은 온도를 씀 (할루시네이션 억제)
+                    "temperature", 0.2,
+                    "response_format", RESPONSE_JSON_SCHEMA,
                     "messages", List.of(Map.of("role", "user", "content", buildPrompt(context)))
             );
 
             String rawResponse = webClient.post()
-                    .uri("/v1/messages")
-                    .header("x-api-key", apiKey)
+                    .uri("/v1/chat/completions")
+                    .header("Authorization", "Bearer " + apiKey)
                     .bodyValue(requestBody)
                     .retrieve()
                     .bodyToMono(String.class)
                     .block(LLM_TIMEOUT);
 
-            String text = objectMapper.readTree(rawResponse).path("content").get(0).path("text").asText();
-            // 규칙에서 마크다운 코드블록 금지를 명시했지만, 혹시 모델이 ```json ... ``` 형태로 감싸 보내는
-            // 경우를 대비한 방어적 처리
-            String json = text.strip().replaceAll("^```json\\s*|^```\\s*|```$", "").strip();
+            String content = objectMapper.readTree(rawResponse)
+                    .path("choices").get(0).path("message").path("content").asText();
+            // json_schema로 강제했지만, 혹시라도 감싸서 보내는 경우를 대비한 방어적 처리
+            String json = content.strip().replaceAll("^```json\\s*|^```\\s*|```$", "").strip();
 
             JsonNode parsed = objectMapper.readTree(json);
             return Optional.of(new AiExplainResponse(

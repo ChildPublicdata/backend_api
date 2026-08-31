@@ -49,9 +49,11 @@ app:
     # 환경변수 CORS_ALLOWED_ORIGINS가 없으면 기본값으로 로컬 개발 서버 주소(localhost:5173)를 허용
     allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173}
 
-# AI 설명 생성 API(/api/ai-explain)가 Claude를 호출할 때 쓰는 설정.
+# AI 설명 생성 API(/api/ai-explain)가 xAI(Grok)를 호출할 때 쓰는 설정.
 # api-key가 비어있으면 AiExplainService가 호출 자체를 건너뛰고 곧바로 규칙 기반 폴백 문장을 돌려줌
 # (키가 없다고 앱이 기동을 못 하거나 API가 500을 내지는 않음).
-anthropic:
-  api-key: ${ANTHROPIC_API_KEY:}
-  model: ${ANTHROPIC_MODEL:claude-opus-5}
+# [왜 값을 여기 직접 안 적고 환경변수로만 받나] api-key는 비밀값이라 코드/설정 파일에 그대로 적으면
+# git 이력에 영구히 남음. 실제 키는 Railway 대시보드의 환경변수(XAI_API_KEY)에만 넣어야 함.
+xai:
+  api-key: ${XAI_API_KEY:}
+  model: ${XAI_MODEL:grok-4.6}
