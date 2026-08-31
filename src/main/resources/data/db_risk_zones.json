@@ -1,0 +1,2766 @@
+[
+  {
+    "zoneId": "Z020",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.401912,
+      "lng": 126.976585
+    },
+    "radiusM": 188,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 31.1,
+    "accidents": {
+      "total": 60,
+      "fatal": 1,
+      "serious": 13,
+      "minor": 70
+    },
+    "context": {
+      "district": "동안구",
+      "road": "흥안대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 13명 발생",
+      "사고 60건 집중 (EPDO 31.1)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z024",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.380836,
+      "lng": 126.961247
+    },
+    "radiusM": 110,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 23.6,
+    "accidents": {
+      "total": 36,
+      "fatal": 1,
+      "serious": 10,
+      "minor": 52
+    },
+    "context": {
+      "district": "동안구",
+      "road": "신기로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 10명 발생",
+      "사고 36건 집중 (EPDO 23.6)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z006",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.394181,
+      "lng": 126.925313
+    },
+    "radiusM": 111,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 22.9,
+    "accidents": {
+      "total": 32,
+      "fatal": 1,
+      "serious": 12,
+      "minor": 45
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 12명 발생",
+      "사고 32건 집중 (EPDO 22.9)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z015",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.381361,
+      "lng": 126.968643
+    },
+    "radiusM": 73,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 19.0,
+    "accidents": {
+      "total": 32,
+      "fatal": 1,
+      "serious": 6,
+      "minor": 46
+    },
+    "context": {
+      "district": "동안구",
+      "road": "농정로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 6명 발생",
+      "사고 32건 집중 (EPDO 19.0)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z005",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.404843,
+      "lng": 126.971051
+    },
+    "radiusM": 98,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 17.1,
+    "accidents": {
+      "total": 25,
+      "fatal": 1,
+      "serious": 14,
+      "minor": 21
+    },
+    "context": {
+      "district": "동안구",
+      "road": "국가지원지방도57호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 14명 발생",
+      "사고 25건 집중 (EPDO 17.1)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z014",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.384776,
+      "lng": 126.959262
+    },
+    "radiusM": 96,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 15.0,
+    "accidents": {
+      "total": 23,
+      "fatal": 1,
+      "serious": 5,
+      "minor": 35
+    },
+    "context": {
+      "district": "동안구",
+      "road": "평촌대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 5명 발생",
+      "사고 23건 집중 (EPDO 15.0)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z003",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.404658,
+      "lng": 126.965409
+    },
+    "radiusM": 143,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 13.8,
+    "accidents": {
+      "total": 26,
+      "fatal": 1,
+      "serious": 8,
+      "minor": 24
+    },
+    "context": {
+      "district": "동안구",
+      "road": "국가지원지방도57호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 8명 발생",
+      "사고 26건 집중 (EPDO 13.8)"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z075",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.399262,
+      "lng": 126.976719
+    },
+    "radiusM": 64,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 8.8,
+    "accidents": {
+      "total": 8,
+      "fatal": 1,
+      "serious": 6,
+      "minor": 12
+    },
+    "context": {
+      "district": "동안구",
+      "road": "흥안대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 6명 발생",
+      "사고 8건 집중 (EPDO 8.8)"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z043",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.397196,
+      "lng": 126.931037
+    },
+    "radiusM": 90,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 8.5,
+    "accidents": {
+      "total": 15,
+      "fatal": 1,
+      "serious": 6,
+      "minor": 11
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양천서로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 6명 발생",
+      "사고 15건 집중 (EPDO 8.5)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z019",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.390514,
+      "lng": 126.956181
+    },
+    "radiusM": 65,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 6.2,
+    "accidents": {
+      "total": 11,
+      "fatal": 1,
+      "serious": 1,
+      "minor": 15
+    },
+    "context": {
+      "district": "동안구",
+      "road": "평촌대로211번길",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 1명 발생",
+      "사고 11건 집중 (EPDO 6.2)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z054",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.39959,
+      "lng": 126.951189
+    },
+    "radiusM": 60,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 5.7,
+    "accidents": {
+      "total": 9,
+      "fatal": 1,
+      "serious": 5,
+      "minor": 4
+    },
+    "context": {
+      "district": "동안구",
+      "road": "학의로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 5명 발생",
+      "사고 9건 집중 (EPDO 5.7)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z052",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.398853,
+      "lng": 126.943022
+    },
+    "radiusM": 64,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 5.6,
+    "accidents": {
+      "total": 9,
+      "fatal": 1,
+      "serious": 1,
+      "minor": 13
+    },
+    "context": {
+      "district": "동안구",
+      "road": "국가지원지방도57호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 1명 발생",
+      "사고 9건 집중 (EPDO 5.6)"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z068",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.399868,
+      "lng": 126.930568
+    },
+    "radiusM": 60,
+    "level": 1,
+    "levelName": "1급 위험",
+    "levelCode": "DANGER",
+    "color": "#b91c1c",
+    "epdo": 3.8,
+    "accidents": {
+      "total": 8,
+      "fatal": 1,
+      "serious": 1,
+      "minor": 7
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도1호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "최근 3년간 사망사고 1건 발생",
+      "중상자 1명 발생",
+      "사고 8건 집중 (EPDO 3.8)"
+    ],
+    "guide": {
+      "parent": "가능하면 이 구간을 지나지 않는 경로를 선택해 주세요.",
+      "child": "\"이 길은 사고가 크게 났던 곳이야. 다른 길로 가자.\""
+    }
+  },
+  {
+    "zoneId": "Z010",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.389555,
+      "lng": 126.948694
+    },
+    "radiusM": 177,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 38.0,
+    "accidents": {
+      "total": 67,
+      "fatal": 0,
+      "serious": 17,
+      "minor": 87
+    },
+    "context": {
+      "district": "동안구",
+      "road": "시민대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 17명 발생",
+      "사고 67건 집중 (EPDO 38.0)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z008",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.383452,
+      "lng": 126.934774
+    },
+    "radiusM": 127,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 29.7,
+    "accidents": {
+      "total": 43,
+      "fatal": 0,
+      "serious": 18,
+      "minor": 57
+    },
+    "context": {
+      "district": "만안구",
+      "road": "시민대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 18명 발생",
+      "사고 43건 집중 (EPDO 29.7)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z032",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.378547,
+      "lng": 126.954957
+    },
+    "radiusM": 183,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 29.1,
+    "accidents": {
+      "total": 51,
+      "fatal": 0,
+      "serious": 15,
+      "minor": 62
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도1호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 15명 발생",
+      "사고 51건 집중 (EPDO 29.1)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z017",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.401735,
+      "lng": 126.950099
+    },
+    "radiusM": 129,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 29.0,
+    "accidents": {
+      "total": 49,
+      "fatal": 0,
+      "serious": 11,
+      "minor": 71
+    },
+    "context": {
+      "district": "동안구",
+      "road": "국가지원지방도57호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 11명 발생",
+      "사고 49건 집중 (EPDO 29.0)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z000",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.398661,
+      "lng": 126.933832
+    },
+    "radiusM": 149,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 28.6,
+    "accidents": {
+      "total": 50,
+      "fatal": 0,
+      "serious": 16,
+      "minor": 58
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도1호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 16명 발생",
+      "사고 50건 집중 (EPDO 28.6)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z041",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.399701,
+      "lng": 126.920535
+    },
+    "radiusM": 172,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 25.4,
+    "accidents": {
+      "total": 48,
+      "fatal": 0,
+      "serious": 14,
+      "minor": 52
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 14명 발생",
+      "사고 48건 집중 (EPDO 25.4)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z001",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.397447,
+      "lng": 126.922527
+    },
+    "radiusM": 147,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 23.2,
+    "accidents": {
+      "total": 46,
+      "fatal": 0,
+      "serious": 10,
+      "minor": 54
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 10명 발생",
+      "사고 46건 집중 (EPDO 23.2)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z031",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.396853,
+      "lng": 126.976489
+    },
+    "radiusM": 114,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 20.5,
+    "accidents": {
+      "total": 32,
+      "fatal": 0,
+      "serious": 16,
+      "minor": 31
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도47호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 16명 발생",
+      "사고 32건 집중 (EPDO 20.5)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z007",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.370353,
+      "lng": 126.957961
+    },
+    "radiusM": 102,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 16.6,
+    "accidents": {
+      "total": 32,
+      "fatal": 0,
+      "serious": 7,
+      "minor": 39
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도47호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 7명 발생",
+      "사고 32건 집중 (EPDO 16.6)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z030",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.394012,
+      "lng": 126.959625
+    },
+    "radiusM": 107,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 15.8,
+    "accidents": {
+      "total": 29,
+      "fatal": 0,
+      "serious": 8,
+      "minor": 34
+    },
+    "context": {
+      "district": "동안구",
+      "road": "관평로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 8명 발생",
+      "사고 29건 집중 (EPDO 15.8)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z021",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.40294,
+      "lng": 126.95696
+    },
+    "radiusM": 92,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 14.8,
+    "accidents": {
+      "total": 22,
+      "fatal": 0,
+      "serious": 7,
+      "minor": 33
+    },
+    "context": {
+      "district": "동안구",
+      "road": "국가지원지방도57호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 7명 발생",
+      "사고 22건 집중 (EPDO 14.8)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z056",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.391037,
+      "lng": 126.950976
+    },
+    "radiusM": 73,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 14.7,
+    "accidents": {
+      "total": 23,
+      "fatal": 0,
+      "serious": 12,
+      "minor": 21
+    },
+    "context": {
+      "district": "동안구",
+      "road": "동안로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 12명 발생",
+      "사고 23건 집중 (EPDO 14.7)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z027",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.372711,
+      "lng": 126.964957
+    },
+    "radiusM": 93,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 14.2,
+    "accidents": {
+      "total": 22,
+      "fatal": 0,
+      "serious": 10,
+      "minor": 24
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도47호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 10명 발생",
+      "사고 22건 집중 (EPDO 14.2)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z036",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.392213,
+      "lng": 126.944117
+    },
+    "radiusM": 124,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 13.8,
+    "accidents": {
+      "total": 29,
+      "fatal": 0,
+      "serious": 6,
+      "minor": 32
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도1호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 6명 발생",
+      "사고 29건 집중 (EPDO 13.8)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z009",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.382814,
+      "lng": 126.95268
+    },
+    "radiusM": 106,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 13.0,
+    "accidents": {
+      "total": 26,
+      "fatal": 0,
+      "serious": 7,
+      "minor": 27
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도1호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 7명 발생",
+      "사고 26건 집중 (EPDO 13.0)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z060",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.380498,
+      "lng": 126.971513
+    },
+    "radiusM": 71,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 12.1,
+    "accidents": {
+      "total": 15,
+      "fatal": 0,
+      "serious": 10,
+      "minor": 17
+    },
+    "context": {
+      "district": "동안구",
+      "road": "흥안대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 10명 발생",
+      "사고 15건 집중 (EPDO 12.1)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z039",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.40849,
+      "lng": 126.9134
+    },
+    "radiusM": 91,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 11.8,
+    "accidents": {
+      "total": 20,
+      "fatal": 0,
+      "serious": 7,
+      "minor": 23
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 7명 발생",
+      "사고 20건 집중 (EPDO 11.8)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z049",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.400976,
+      "lng": 126.922138
+    },
+    "radiusM": 92,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 11.0,
+    "accidents": {
+      "total": 20,
+      "fatal": 0,
+      "serious": 5,
+      "minor": 25
+    },
+    "context": {
+      "district": "만안구",
+      "road": "병목안로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 5명 발생",
+      "사고 20건 집중 (EPDO 11.0)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z045",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.383816,
+      "lng": 126.954914
+    },
+    "radiusM": 80,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 10.6,
+    "accidents": {
+      "total": 16,
+      "fatal": 0,
+      "serious": 4,
+      "minor": 26
+    },
+    "context": {
+      "district": "동안구",
+      "road": "동안로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 4명 발생",
+      "사고 16건 집중 (EPDO 10.6)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z013",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.382054,
+      "lng": 126.960774
+    },
+    "radiusM": 84,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 10.3,
+    "accidents": {
+      "total": 20,
+      "fatal": 0,
+      "serious": 4,
+      "minor": 25
+    },
+    "context": {
+      "district": "동안구",
+      "road": "평촌대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 4명 발생",
+      "사고 20건 집중 (EPDO 10.3)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z011",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.402774,
+      "lng": 126.917961
+    },
+    "radiusM": 73,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 10.0,
+    "accidents": {
+      "total": 18,
+      "fatal": 0,
+      "serious": 4,
+      "minor": 24
+    },
+    "context": {
+      "district": "만안구",
+      "road": "박달로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 4명 발생",
+      "사고 18건 집중 (EPDO 10.0)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z026",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.38401,
+      "lng": 126.972362
+    },
+    "radiusM": 77,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 9.0,
+    "accidents": {
+      "total": 17,
+      "fatal": 0,
+      "serious": 6,
+      "minor": 16
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도47호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 6명 발생",
+      "사고 17건 집중 (EPDO 9.0)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z025",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.392558,
+      "lng": 126.954942
+    },
+    "radiusM": 88,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 8.6,
+    "accidents": {
+      "total": 18,
+      "fatal": 0,
+      "serious": 2,
+      "minor": 24
+    },
+    "context": {
+      "district": "동안구",
+      "road": "시민대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 2명 발생",
+      "사고 18건 집중 (EPDO 8.6)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z064",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.403285,
+      "lng": 126.974711
+    },
+    "radiusM": 97,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 8.2,
+    "accidents": {
+      "total": 22,
+      "fatal": 0,
+      "serious": 4,
+      "minor": 18
+    },
+    "context": {
+      "district": "동안구",
+      "road": "국가지원지방도57호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "중상자 4명 발생",
+      "사고 22건 집중 (EPDO 8.2)"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z061",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.382564,
+      "lng": 126.965963
+    },
+    "radiusM": 87,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 7.9,
+    "accidents": {
+      "total": 13,
+      "fatal": 0,
+      "serious": 4,
+      "minor": 17
+    },
+    "context": {
+      "district": "동안구",
+      "road": "관평로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 4명 발생",
+      "사고 13건 집중 (EPDO 7.9)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z033",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.396236,
+      "lng": 126.920234
+    },
+    "radiusM": 79,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 7.7,
+    "accidents": {
+      "total": 15,
+      "fatal": 0,
+      "serious": 8,
+      "minor": 7
+    },
+    "context": {
+      "district": "만안구",
+      "road": "장내로",
+      "topAccidentType": "차대사람",
+      "topRoadType": "교차로 - 교차로횡단보도내"
+    },
+    "reasons": [
+      "중상자 8명 발생",
+      "사고 15건 집중 (EPDO 7.7)",
+      "교차로 - 교차로횡단보도내 사고 집중",
+      "보행자 사고 다수"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z042",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.415485,
+      "lng": 126.917265
+    },
+    "radiusM": 80,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 7.7,
+    "accidents": {
+      "total": 16,
+      "fatal": 0,
+      "serious": 8,
+      "minor": 7
+    },
+    "context": {
+      "district": "만안구",
+      "road": "일반국도1호선",
+      "topAccidentType": "차대사람",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 8명 발생",
+      "사고 16건 집중 (EPDO 7.7)",
+      "교차로 - 교차로부근 사고 집중",
+      "보행자 사고 다수"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z051",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.430944,
+      "lng": 126.9039
+    },
+    "radiusM": 91,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 7.7,
+    "accidents": {
+      "total": 15,
+      "fatal": 0,
+      "serious": 2,
+      "minor": 21
+    },
+    "context": {
+      "district": "만안구",
+      "road": "경수대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "중상자 2명 발생",
+      "사고 15건 집중 (EPDO 7.7)"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z037",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.393356,
+      "lng": 126.93052
+    },
+    "radiusM": 79,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 7.5,
+    "accidents": {
+      "total": 12,
+      "fatal": 0,
+      "serious": 6,
+      "minor": 11
+    },
+    "context": {
+      "district": "만안구",
+      "road": "만안로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 6명 발생",
+      "사고 12건 집중 (EPDO 7.5)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z065",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.369018,
+      "lng": 126.953446
+    },
+    "radiusM": 78,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 7.4,
+    "accidents": {
+      "total": 16,
+      "fatal": 0,
+      "serious": 5,
+      "minor": 13
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도47호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 5명 발생",
+      "사고 16건 집중 (EPDO 7.4)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z029",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.398978,
+      "lng": 126.945018
+    },
+    "radiusM": 72,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 7.3,
+    "accidents": {
+      "total": 15,
+      "fatal": 0,
+      "serious": 4,
+      "minor": 15
+    },
+    "context": {
+      "district": "동안구",
+      "road": "국가지원지방도57호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 4명 발생",
+      "사고 15건 집중 (EPDO 7.3)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z038",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.401152,
+      "lng": 126.919381
+    },
+    "radiusM": 91,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 7.3,
+    "accidents": {
+      "total": 18,
+      "fatal": 0,
+      "serious": 4,
+      "minor": 15
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "중상자 4명 발생",
+      "사고 18건 집중 (EPDO 7.3)"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z004",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.391496,
+      "lng": 126.974172
+    },
+    "radiusM": 60,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 7.0,
+    "accidents": {
+      "total": 9,
+      "fatal": 0,
+      "serious": 7,
+      "minor": 7
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도47호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "중상자 7명 발생",
+      "사고 9건 집중 (EPDO 7.0)"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z067",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.383171,
+      "lng": 126.936578
+    },
+    "radiusM": 70,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 6.9,
+    "accidents": {
+      "total": 11,
+      "fatal": 0,
+      "serious": 3,
+      "minor": 16
+    },
+    "context": {
+      "district": "만안구",
+      "road": "시민대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 3명 발생",
+      "사고 11건 집중 (EPDO 6.9)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z063",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.395505,
+      "lng": 126.963969
+    },
+    "radiusM": 79,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 6.8,
+    "accidents": {
+      "total": 14,
+      "fatal": 0,
+      "serious": 5,
+      "minor": 11
+    },
+    "context": {
+      "district": "동안구",
+      "road": "시민대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로횡단보도내"
+    },
+    "reasons": [
+      "중상자 5명 발생",
+      "사고 14건 집중 (EPDO 6.8)",
+      "교차로 - 교차로횡단보도내 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z058",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.403868,
+      "lng": 126.960713
+    },
+    "radiusM": 92,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 6.6,
+    "accidents": {
+      "total": 14,
+      "fatal": 0,
+      "serious": 3,
+      "minor": 15
+    },
+    "context": {
+      "district": "동안구",
+      "road": "국가지원지방도57호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 3명 발생",
+      "사고 14건 집중 (EPDO 6.6)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z070",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.379304,
+      "lng": 126.957229
+    },
+    "radiusM": 84,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 6.6,
+    "accidents": {
+      "total": 11,
+      "fatal": 0,
+      "serious": 3,
+      "minor": 15
+    },
+    "context": {
+      "district": "동안구",
+      "road": "신기로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 3명 발생",
+      "사고 11건 집중 (EPDO 6.6)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z076",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.365077,
+      "lng": 126.958528
+    },
+    "radiusM": 68,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 6.6,
+    "accidents": {
+      "total": 10,
+      "fatal": 0,
+      "serious": 6,
+      "minor": 8
+    },
+    "context": {
+      "district": "동안구",
+      "road": "경수대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 6명 발생",
+      "사고 10건 집중 (EPDO 6.6)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z012",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.398921,
+      "lng": 126.939102
+    },
+    "radiusM": 74,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 6.5,
+    "accidents": {
+      "total": 11,
+      "fatal": 0,
+      "serious": 5,
+      "minor": 10
+    },
+    "context": {
+      "district": "동안구",
+      "road": "국가지원지방도57호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 5명 발생",
+      "사고 11건 집중 (EPDO 6.5)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z035",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.395858,
+      "lng": 126.923807
+    },
+    "radiusM": 83,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 6.4,
+    "accidents": {
+      "total": 14,
+      "fatal": 0,
+      "serious": 4,
+      "minor": 12
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대사람",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "중상자 4명 발생",
+      "사고 14건 집중 (EPDO 6.4)",
+      "보행자 사고 다수"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z028",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.39706,
+      "lng": 126.916474
+    },
+    "radiusM": 71,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 6.0,
+    "accidents": {
+      "total": 12,
+      "fatal": 0,
+      "serious": 3,
+      "minor": 13
+    },
+    "context": {
+      "district": "만안구",
+      "road": "병목안로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 3명 발생",
+      "사고 12건 집중 (EPDO 6.0)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z069",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.409669,
+      "lng": 126.912424
+    },
+    "radiusM": 67,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.9,
+    "accidents": {
+      "total": 10,
+      "fatal": 0,
+      "serious": 5,
+      "minor": 8
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 5명 발생",
+      "사고 10건 집중 (EPDO 5.9)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z050",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.389177,
+      "lng": 126.952073
+    },
+    "radiusM": 73,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.8,
+    "accidents": {
+      "total": 10,
+      "fatal": 0,
+      "serious": 4,
+      "minor": 10
+    },
+    "context": {
+      "district": "동안구",
+      "road": "동안로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 4명 발생",
+      "사고 10건 집중 (EPDO 5.8)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z072",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.385877,
+      "lng": 126.932283
+    },
+    "radiusM": 76,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.8,
+    "accidents": {
+      "total": 9,
+      "fatal": 0,
+      "serious": 1,
+      "minor": 17
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 1명 발생",
+      "사고 9건 집중 (EPDO 5.8)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z059",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.388394,
+      "lng": 126.973029
+    },
+    "radiusM": 86,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.7,
+    "accidents": {
+      "total": 12,
+      "fatal": 0,
+      "serious": 3,
+      "minor": 12
+    },
+    "context": {
+      "district": "동안구",
+      "road": "귀인로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 3명 발생",
+      "사고 12건 집중 (EPDO 5.7)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z062",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.41068,
+      "lng": 126.911505
+    },
+    "radiusM": 75,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.6,
+    "accidents": {
+      "total": 11,
+      "fatal": 0,
+      "serious": 5,
+      "minor": 7
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "중상자 5명 발생",
+      "사고 11건 집중 (EPDO 5.6)"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z023",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.385259,
+      "lng": 126.943344
+    },
+    "radiusM": 86,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.3,
+    "accidents": {
+      "total": 12,
+      "fatal": 0,
+      "serious": 2,
+      "minor": 13
+    },
+    "context": {
+      "district": "동안구",
+      "road": "시민대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 2명 발생",
+      "사고 12건 집중 (EPDO 5.3)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z002",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.389859,
+      "lng": 126.951645
+    },
+    "radiusM": 80,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.2,
+    "accidents": {
+      "total": 11,
+      "fatal": 0,
+      "serious": 1,
+      "minor": 15
+    },
+    "context": {
+      "district": "동안구",
+      "road": "동안로",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "중상자 1명 발생",
+      "사고 11건 집중 (EPDO 5.2)"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z044",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.402653,
+      "lng": 126.910467
+    },
+    "radiusM": 77,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.2,
+    "accidents": {
+      "total": 14,
+      "fatal": 0,
+      "serious": 1,
+      "minor": 15
+    },
+    "context": {
+      "district": "만안구",
+      "road": "박달로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 1명 발생",
+      "사고 14건 집중 (EPDO 5.2)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z016",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.403699,
+      "lng": 126.920014
+    },
+    "radiusM": 60,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.0,
+    "accidents": {
+      "total": 9,
+      "fatal": 0,
+      "serious": 5,
+      "minor": 5
+    },
+    "context": {
+      "district": "만안구",
+      "road": "북부4로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 5명 발생",
+      "사고 9건 집중 (EPDO 5.0)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z034",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.391568,
+      "lng": 126.92748
+    },
+    "radiusM": 68,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.0,
+    "accidents": {
+      "total": 12,
+      "fatal": 0,
+      "serious": 2,
+      "minor": 12
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 2명 발생",
+      "사고 12건 집중 (EPDO 5.0)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z055",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.376864,
+      "lng": 126.955716
+    },
+    "radiusM": 77,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.0,
+    "accidents": {
+      "total": 12,
+      "fatal": 0,
+      "serious": 2,
+      "minor": 12
+    },
+    "context": {
+      "district": "동안구",
+      "road": "경수대로609번길",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 2명 발생",
+      "사고 12건 집중 (EPDO 5.0)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z066",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.392202,
+      "lng": 126.960613
+    },
+    "radiusM": 77,
+    "level": 2,
+    "levelName": "2급 주의",
+    "levelCode": "CAUTION",
+    "color": "#ea580c",
+    "epdo": 5.0,
+    "accidents": {
+      "total": 12,
+      "fatal": 0,
+      "serious": 2,
+      "minor": 12
+    },
+    "context": {
+      "district": "동안구",
+      "road": "관평로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 2명 발생",
+      "사고 12건 집중 (EPDO 5.0)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "주말에 아이와 함께 걸으며 위험 지점을 직접 짚어주세요.",
+      "child": "\"여기서 건널 때는 초록불이어도 좌우를 한 번 더 보고 건너야 해.\""
+    }
+  },
+  {
+    "zoneId": "Z047",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.401624,
+      "lng": 126.928327
+    },
+    "radiusM": 86,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 4.9,
+    "accidents": {
+      "total": 14,
+      "fatal": 0,
+      "serious": 1,
+      "minor": 14
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도1호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "중상자 1명 발생",
+      "사고 14건 집중 (EPDO 4.9)"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z046",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.40008,
+      "lng": 126.927828
+    },
+    "radiusM": 62,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 4.5,
+    "accidents": {
+      "total": 8,
+      "fatal": 0,
+      "serious": 3,
+      "minor": 8
+    },
+    "context": {
+      "district": "만안구",
+      "road": "장내로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 3명 발생",
+      "사고 8건 집중 (EPDO 4.5)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z048",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.400217,
+      "lng": 126.978428
+    },
+    "radiusM": 68,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 4.5,
+    "accidents": {
+      "total": 9,
+      "fatal": 0,
+      "serious": 3,
+      "minor": 8
+    },
+    "context": {
+      "district": "동안구",
+      "road": "국가지원지방도57호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "중상자 3명 발생",
+      "사고 9건 집중 (EPDO 4.5)"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z071",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.388338,
+      "lng": 126.930077
+    },
+    "radiusM": 70,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 4.5,
+    "accidents": {
+      "total": 9,
+      "fatal": 0,
+      "serious": 3,
+      "minor": 8
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 3명 발생",
+      "사고 9건 집중 (EPDO 4.5)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z040",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.387964,
+      "lng": 126.96829
+    },
+    "radiusM": 60,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 4.3,
+    "accidents": {
+      "total": 9,
+      "fatal": 0,
+      "serious": 1,
+      "minor": 12
+    },
+    "context": {
+      "district": "동안구",
+      "road": "귀인로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 1명 발생",
+      "사고 9건 집중 (EPDO 4.3)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z074",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.386496,
+      "lng": 126.963711
+    },
+    "radiusM": 61,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 4.3,
+    "accidents": {
+      "total": 8,
+      "fatal": 0,
+      "serious": 1,
+      "minor": 12
+    },
+    "context": {
+      "district": "동안구",
+      "road": "귀인로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 1명 발생",
+      "사고 8건 집중 (EPDO 4.3)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z073",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.371129,
+      "lng": 126.9608
+    },
+    "radiusM": 60,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 4.2,
+    "accidents": {
+      "total": 8,
+      "fatal": 0,
+      "serious": 3,
+      "minor": 7
+    },
+    "context": {
+      "district": "동안구",
+      "road": "일반국도47호선",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로안"
+    },
+    "reasons": [
+      "중상자 3명 발생",
+      "사고 8건 집중 (EPDO 4.2)",
+      "교차로 - 교차로안 사고 집중"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z057",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.406991,
+      "lng": 126.914655
+    },
+    "radiusM": 66,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 3.9,
+    "accidents": {
+      "total": 9,
+      "fatal": 0,
+      "serious": 3,
+      "minor": 6
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 3명 발생",
+      "사고 9건 집중 (EPDO 3.9)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z018",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.390435,
+      "lng": 126.937452
+    },
+    "radiusM": 60,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 3.7,
+    "accidents": {
+      "total": 9,
+      "fatal": 0,
+      "serious": 1,
+      "minor": 10
+    },
+    "context": {
+      "district": "만안구",
+      "road": "전파로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 1명 발생",
+      "사고 9건 집중 (EPDO 3.7)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z022",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.388923,
+      "lng": 126.950707
+    },
+    "radiusM": 74,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 3.3,
+    "accidents": {
+      "total": 9,
+      "fatal": 0,
+      "serious": 0,
+      "minor": 11
+    },
+    "context": {
+      "district": "동안구",
+      "road": "부흥로",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "사고 9건 집중 (EPDO 3.3)"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z053",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.42082,
+      "lng": 126.908667
+    },
+    "radiusM": 82,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 3.0,
+    "accidents": {
+      "total": 9,
+      "fatal": 0,
+      "serious": 0,
+      "minor": 10
+    },
+    "context": {
+      "district": "만안구",
+      "road": "경수대로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "사고 9건 집중 (EPDO 3.0)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z077",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.404367,
+      "lng": 126.916888
+    },
+    "radiusM": 76,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 2.8,
+    "accidents": {
+      "total": 8,
+      "fatal": 0,
+      "serious": 1,
+      "minor": 7
+    },
+    "context": {
+      "district": "만안구",
+      "road": "안양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "교차로 - 교차로부근"
+    },
+    "reasons": [
+      "중상자 1명 발생",
+      "사고 8건 집중 (EPDO 2.8)",
+      "교차로 - 교차로부근 사고 집중"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  },
+  {
+    "zoneId": "Z078",
+    "type": "confirmed",
+    "center": {
+      "lat": 37.401006,
+      "lng": 126.95082
+    },
+    "radiusM": 60,
+    "level": 3,
+    "levelName": "3급 관찰",
+    "levelCode": "WATCH",
+    "color": "#eab308",
+    "epdo": 1.9,
+    "accidents": {
+      "total": 4,
+      "fatal": 0,
+      "serious": 1,
+      "minor": 4
+    },
+    "context": {
+      "district": "동안구",
+      "road": "관양로",
+      "topAccidentType": "차대차",
+      "topRoadType": "단일로 - 기타"
+    },
+    "reasons": [
+      "중상자 1명 발생",
+      "사고 4건 집중 (EPDO 1.9)"
+    ],
+    "guide": {
+      "parent": "등하교 전 횡단보도 이용과 신호 준수를 당부해 주세요.",
+      "child": "\"차가 멈춘 걸 확인하고 건너. 뛰지 말고 천천히.\""
+    }
+  }
+]

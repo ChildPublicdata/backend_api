@@ -35,6 +35,16 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	// Swagger UI(API 명세 자동 문서화) 기능. 추가만 하면 /swagger-ui.html 이 자동으로 생김
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
+	// 위험구역/격자/시설의 좌표를 JTS Point로 다루고 PostGIS(geometry, GIST 인덱스)와 매핑하기 위한 확장.
+	// 버전을 명시하지 않은 이유: 스프링부트가 관리하는 hibernate-core와 같은 배포판(release train)에 속해 있어서
+	// 버전을 맞춰 자동으로 골라줌(다르면 클래스 호환성 문제가 생길 수 있음)
+	implementation 'org.hibernate.orm:hibernate-spatial'
+	// Point/Polygon 같은 지리 좌표 타입(JTS)의 자바 구현체. hibernate-spatial이 내부적으로 이 타입을 사용함
+	implementation 'org.locationtech.jts:jts-core:1.20.0'
+	// AI 설명 API에서 LLM을 호출할 때 쓰는 비동기 HTTP 클라이언트(WebClient)를 쓰기 위함.
+	// 이 프로젝트는 MVC(톰캣) 기반이지만, spring-boot-starter-web이 이미 있으면 스프링부트가
+	// 서버는 그대로 서블릿(톰캣)으로 띄우고 WebClient만 추가로 쓸 수 있게 해줌
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	// DB 스키마(테이블 구조) 변경 이력을 SQL 파일로 관리하는 도구.
 	// 이게 없으면 Hibernate가 엔티티를 보고 테이블을 알아서 고치는데(ddl-auto: update),
 	// 그 방식은 컬럼을 추가만 할 뿐 삭제/이름변경을 못 해서 코드와 DB 구조가 조용히 어긋남.
