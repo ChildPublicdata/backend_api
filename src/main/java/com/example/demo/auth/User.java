@@ -9,10 +9,13 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import java.time.LocalDateTime;
 
+// V6 마이그레이션이 테이블명을 user가 아닌 app_user로 만들었으므로(user는 Postgres 예약어) 명시적으로 매핑
 @Entity
+@Table(name = "app_user")
 public class User {
 
     @Id
