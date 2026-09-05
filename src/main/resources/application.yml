@@ -48,6 +48,13 @@ app:
     # 프론트엔드(브라우저)에서 이 서버로 API 요청을 허용할 주소.
     # 환경변수 CORS_ALLOWED_ORIGINS가 없으면 기본값으로 로컬 개발 서버 주소(localhost:5173)를 허용
     allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173}
+  jwt:
+    # 로그인 토큰(JWT)에 서명할 때 쓰는 비밀키. api-key와 같은 이유로 코드에 실제 값을 적지 않고
+    # Railway 환경변수(JWT_SECRET)로만 넣음. 기본값은 로컬 개발용이며 HS256 최소 요구치인 32바이트를 넘도록 맞춰둠.
+    # [주의] 운영 환경에서 이 기본값을 그대로 쓰면 누구나 토큰을 위조할 수 있으므로 반드시 JWT_SECRET을 따로 설정할 것
+    secret: ${JWT_SECRET:local-dev-only-change-me-32bytes-minimum}
+    # 토큰 유효기간(일). 만료되면 프론트가 다시 로그인해야 함 (리프레시 토큰은 아직 없음)
+    expiration-days: ${JWT_EXPIRATION_DAYS:7}
 
 # AI 설명 생성 API(/api/ai-explain)가 xAI(Grok)를 호출할 때 쓰는 설정.
 # api-key가 비어있으면 AiExplainService가 호출 자체를 건너뛰고 곧바로 규칙 기반 폴백 문장을 돌려줌

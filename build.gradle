@@ -45,6 +45,14 @@ dependencies {
 	// 이 프로젝트는 MVC(톰캣) 기반이지만, spring-boot-starter-web이 이미 있으면 스프링부트가
 	// 서버는 그대로 서블릿(톰캣)으로 띄우고 WebClient만 추가로 쓸 수 있게 해줌
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	// 부모/자녀 회원가입-로그인 기능에 필요. BCryptPasswordEncoder(비밀번호 해시)와
+	// SecurityFilterChain(요청마다 인증 여부를 걸러주는 필터 체인)을 제공함
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	// 로그인 성공 시 발급하는 JWT(자기 안에 userId/role을 담고 서명된 토큰)를 만들고 검증하기 위한 라이브러리.
+	// api는 코드에서 직접 쓰는 인터페이스, impl/jackson은 실행 시점에만 필요해서 runtimeOnly로 둠
+	implementation 'io.jsonwebtoken:jjwt-api:0.12.6'
+	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.6'
+	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.6'
 	// DB 스키마(테이블 구조) 변경 이력을 SQL 파일로 관리하는 도구.
 	// 이게 없으면 Hibernate가 엔티티를 보고 테이블을 알아서 고치는데(ddl-auto: update),
 	// 그 방식은 컬럼을 추가만 할 뿐 삭제/이름변경을 못 해서 코드와 DB 구조가 조용히 어긋남.
