@@ -26,6 +26,7 @@ public class Cctv {
     private String address;   // 주소
     private String detail;    // 상세 위치 설명 (예: "그린빌라 인근")
     private String dong;      // 행정동 이름 (예: 갈마1동)
+    private String city;      // 도시(관할 지자체) 이름 (예: 대전광역시 서구, 경기도 안양시)
     private Double lat;       // 위도
     private Double lon;       // 경도
     private Integer cameras;  // 카메라 대수
@@ -37,12 +38,13 @@ public class Cctv {
     }
 
     // 실제 코드(DTO의 toEntity() 등)에서 CCTV 객체를 만들 때 사용하는 생성자
-    public Cctv(Long id, String type, String address, String detail, String dong, Double lat, Double lon, Integer cameras) {
+    public Cctv(Long id, String type, String address, String detail, String dong, String city, Double lat, Double lon, Integer cameras) {
         this.id = id;
         this.type = type;
         this.address = address;
         this.detail = detail;
         this.dong = dong;
+        this.city = city;
         this.lat = lat;
         this.lon = lon;
         this.cameras = cameras;
@@ -67,6 +69,10 @@ public class Cctv {
 
     public String getDong() {
         return dong;
+    }
+
+    public String getCity() {
+        return city;
     }
 
     public Double getLat() {

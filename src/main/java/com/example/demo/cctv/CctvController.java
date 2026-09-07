@@ -26,7 +26,7 @@ import org.springframework.web.server.ResponseStatusException; // 특정 HTTP �
  * Controller 자체는 "요청 -> 응답" 흐름만 담당하게 해서 코드를 읽기 쉽게 유지함.
  */
 @RestController // 이 클래스의 각 메서드 반환값을 자동으로 JSON으로 변환해서 HTTP 응답 본문에 담아줌
-@Tag(name = "CCTV", description = "대전서구 CCTV 위치 데이터") // Swagger 문서에서 "CCTV" 그룹으로 보이게 함
+@Tag(name = "CCTV", description = "CCTV 위치 데이터 (대전광역시 서구 / 경기도 안양시)") // Swagger 문서에서 "CCTV" 그룹으로 보이게 함
 public class CctvController {
 
     private final CctvRepository cctvRepository;
@@ -36,14 +36,25 @@ public class CctvController {
         this.cctvRepository = cctvRepository;
     }
 
-    @Operation(summary = "CCTV 목록 조회 (동 이름으로 검색 가능)") // Swagger 문서에 표시될 이 API 설명
+    @Operation(summary = "CCTV 목록 조회 (도시/동 이름으로 검색 가능)") // Swagger 문서에 표시될 이 API 설명
     @GetMapping("/api/cctv") // "GET /api/cctv" 요청이 오면 이 메서드가 실행됨
-    public Page<CctvResponse> list(@RequestParam(required = false) String dong, Pageable pageable) {
-        // dong 파라미터(예: /api/cctv?dong=갈마)가 있으면 동 이름으로 검색, 없으면 전체 목록 조회
-        // Pageable: URL의 ?page=0&size=20&sort=... 파라미터를 스프링이 자동으로 객체로 바꿔줌
-        Page<Cctv> page = (dong == null || dong.isBlank())
-                ? cctvRepository.findAll(pageable)
-                : cctvRepository.findByDongContaining(dong, pageable);
+    public Page<CctvResponse> list(@RequestParam(required = false) String city,
+                                    @RequestParam(required = false) String dong,
+                                    Pageable pageable) {
+        // city(예: ?city=안양), dong(예: ?dong=갈마) 파라미터 조합에 따라 검색 범위를 좁혀줌
+        boolean hasCity = city != null && !city.isBlank();
+        boolean hasDong = dong != null && !dong.isBlank();
+
+        Page<Cctv> page;
+        if (hasCity && hasDong) {
+            page = cctvRepository.findByCityContainingAndDongContaining(city, dong, pageable);
+        } else if (hasCity) {
+            page = cctvRepository.findByCityContaining(city, pageable);
+        } else if (hasDong) {
+            page = cctvRepository.findByDongContaining(dong, pageable);
+        } else {
+            page = cctvRepository.findAll(pageable);
+        }
         // Entity 목록을 그대로 반환하지 않고 Response DTO로 하나씩 변환해서 반환
         return page.map(CctvResponse::from);
     }

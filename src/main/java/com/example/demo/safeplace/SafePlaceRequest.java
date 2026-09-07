@@ -6,6 +6,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -29,6 +31,12 @@ public record SafePlaceRequest(
         @Schema(description = "상세주소 (동/호수 등). 선택값", example = "101동 202호")
         @Size(max = 100, message = "상세주소는 100자 이하여야 합니다")
         String detailAddress,
+
+        @Schema(description = "아이콘 종류 (1=학교, 2=병원, 3=집, 4=책)", example = "3")
+        @NotNull(message = "iconType은 필수입니다")
+        @Min(value = 1, message = "iconType은 1 이상이어야 합니다")
+        @Max(value = 4, message = "iconType은 4 이하여야 합니다")
+        Integer iconType,
 
         @Schema(description = "클릭 지점 위도", example = "36.3504")
         @NotNull(message = "lat은 필수입니다")

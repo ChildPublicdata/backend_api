@@ -32,6 +32,9 @@ public class SafePlace {
     @Column(name = "detail_address")
     private String detailAddress;  // 사용자가 직접 입력한 상세주소 (동/호수 등). 없을 수 있음
 
+    @Column(name = "icon_type")
+    private Integer iconType;      // 등록 화면에서 고른 아이콘 (1=학교, 2=병원, 3=집, 4=책)
+
     private Double lat;            // 위도
     private Double lon;            // 경도
     private LocalDateTime createdAt;
@@ -40,11 +43,12 @@ public class SafePlace {
     protected SafePlace() {
     }
 
-    public SafePlace(String deviceId, String name, String address, String detailAddress, Double lat, Double lon) {
+    public SafePlace(String deviceId, String name, String address, String detailAddress, Integer iconType, Double lat, Double lon) {
         this.deviceId = deviceId;
         this.name = name;
         this.address = address;
         this.detailAddress = detailAddress;
+        this.iconType = iconType;
         this.lat = lat;
         this.lon = lon;
         this.createdAt = LocalDateTime.now();
@@ -52,10 +56,11 @@ public class SafePlace {
     }
 
     // 장소 수정. SafeZone.update()와 동일한 이유로 변경 통로를 하나로 좁혀둠 (updatedAt 갱신 누락 방지).
-    public void update(String name, String address, String detailAddress, Double lat, Double lon) {
+    public void update(String name, String address, String detailAddress, Integer iconType, Double lat, Double lon) {
         this.name = name;
         this.address = address;
         this.detailAddress = detailAddress;
+        this.iconType = iconType;
         this.lat = lat;
         this.lon = lon;
         this.updatedAt = LocalDateTime.now();
@@ -79,6 +84,10 @@ public class SafePlace {
 
     public String getDetailAddress() {
         return detailAddress;
+    }
+
+    public Integer getIconType() {
+        return iconType;
     }
 
     public Double getLat() {

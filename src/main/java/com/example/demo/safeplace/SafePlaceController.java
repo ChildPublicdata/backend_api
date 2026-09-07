@@ -64,6 +64,7 @@ public class SafePlaceController {
                 request.nameOrDefault(),
                 request.address(),
                 request.detailAddressOrNull(),
+                request.iconType(),
                 request.lat(),
                 request.lon()
         ));
@@ -111,7 +112,7 @@ public class SafePlaceController {
         SafePlace place = findOwnPlace(id, requireDeviceId(deviceId));
 
         place.update(request.nameOrDefault(), request.address(), request.detailAddressOrNull(),
-                request.lat(), request.lon());
+                request.iconType(), request.lat(), request.lon());
 
         // [왜 save를 명시적으로 부르나] SafeZoneController.update()와 동일한 이유:
         // open-in-view: false + 트랜잭션 없이 조회한 엔티티는 영속성 컨텍스트에 묶여 있지 않아 직접 저장해야 함.

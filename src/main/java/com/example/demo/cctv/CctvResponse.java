@@ -19,6 +19,7 @@ public record CctvResponse(
         String address,
         String detail,
         String dong,
+        String city,
         Double lat,
         Double lon,
         Integer cameras
@@ -32,6 +33,7 @@ public record CctvResponse(
                 cctv.getAddress(),
                 cctv.getDetail(),
                 cctv.getDong(),
+                cctv.getCity(),
                 cctv.getLat(),
                 cctv.getLon(),
                 cctv.getCameras()

@@ -24,12 +24,13 @@ public record CctvImportDto(
         String address,
         String detail,
         String dong,
+        String city,
         Double lat,
         Double lon,
         Integer cameras
 ) {
     // 이 DTO(JSON에서 막 읽어온 값)를 실제 DB 저장용 Entity(Cctv)로 변환하는 메서드
     public Cctv toEntity() {
-        return new Cctv(id, type, address, detail, dong, lat, lon, cameras);
+        return new Cctv(id, type, address, detail, dong, city, lat, lon, cameras);
     }
 }
