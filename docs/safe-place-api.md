@@ -210,3 +210,7 @@ curl -X DELETE "http://localhost:8080/api/safe-places/1" -H "X-Device-Id: $DEV"
 cd demo
 ./gradlew bootRun --args='--spring.profiles.active=local'
 ```
+어떤 심사기준 
+프론트 심사평 
+가이드라인? 일정 어느 날짜에 하면 좋을 지
+

@@ -34,9 +34,9 @@ import java.util.stream.Collectors;
 @Tag(name = "Family", description = "부모-자녀 연동(코드 발급/입력)과 자녀 위치 전송/조회 API")
 public class FamilyController {
 
-    // 부모 한 명이 동시에 들고 있을 수 있는 "미사용" 코드 개수 한도.
+    // 자녀 한 명이 동시에 들고 있을 수 있는 "미사용" 코드 개수 한도.
     // 없으면 저장 버튼 중복 클릭이나 장난 요청으로 코드가 무한정 쌓일 수 있음 (SafeZone의 개수 제한과 같은 이유)
-    private static final int MAX_ACTIVE_CODES_PER_PARENT = 5;
+    private static final int MAX_ACTIVE_CODES_PER_CHILD = 5;
     private static final long CODE_TTL_MINUTES = 10;
     private static final int CODE_GENERATION_MAX_RETRY = 10;
 
@@ -56,40 +56,40 @@ public class FamilyController {
         this.userRepository = userRepository;
     }
 
-    @Operation(summary = "연동 코드 발급 (부모 전용)", description = "10분간 유효한 6자리 숫자 코드를 발급한다. 이 코드를 자녀에게 알려주면 된다.")
+    @Operation(summary = "연동 코드 발급 (자녀 전용)", description = "10분간 유효한 6자리 숫자 코드를 발급한다. 이 코드를 부모에게 알려주면 된다.")
     @PostMapping("/api/family/codes")
     @ResponseStatus(HttpStatus.CREATED)
     public IssueCodeResponse issueCode(Authentication authentication) {
-        CurrentUser.requireRole(authentication, Role.PARENT);
-        Long parentId = CurrentUser.id(authentication);
+        CurrentUser.requireRole(authentication, Role.CHILD);
+        Long childId = CurrentUser.id(authentication);
 
         LocalDateTime now = LocalDateTime.now();
-        if (familyLinkCodeRepository.countByParentIdAndUsedAtIsNullAndExpiresAtAfter(parentId, now)
-                >= MAX_ACTIVE_CODES_PER_PARENT) {
+        if (familyLinkCodeRepository.countByChildIdAndUsedAtIsNullAndExpiresAtAfter(childId, now)
+                >= MAX_ACTIVE_CODES_PER_CHILD) {
             throw new ResponseStatusException(HttpStatus.CONFLICT,
-                    "유효한 코드는 최대 " + MAX_ACTIVE_CODES_PER_PARENT + "개까지 동시에 발급할 수 있습니다");
+                    "유효한 코드는 최대 " + MAX_ACTIVE_CODES_PER_CHILD + "개까지 동시에 발급할 수 있습니다");
         }
 
         String code = generateUniqueCode(now);
         FamilyLinkCode saved = familyLinkCodeRepository.save(
-                new FamilyLinkCode(parentId, code, now.plusMinutes(CODE_TTL_MINUTES)));
+                new FamilyLinkCode(childId, code, now.plusMinutes(CODE_TTL_MINUTES)));
 
         return IssueCodeResponse.from(saved);
     }
 
-    @Operation(summary = "연동 코드 입력 (자녀 전용)", description = "부모에게 받은 코드를 입력해 연동한다. 성공하면 그 순간부터 부모가 내 위치를 볼 수 있다.")
+    @Operation(summary = "연동 코드 입력 (부모 전용)", description = "자녀에게 받은 코드를 입력해 연동한다. 성공하면 그 순간부터 그 자녀의 위치를 볼 수 있다.")
     @PostMapping("/api/family/redeem")
     @ResponseStatus(HttpStatus.CREATED)
     public RedeemCodeResponse redeem(Authentication authentication, @Valid @RequestBody RedeemCodeRequest request) {
-        CurrentUser.requireRole(authentication, Role.CHILD);
-        Long childId = CurrentUser.id(authentication);
+        CurrentUser.requireRole(authentication, Role.PARENT);
+        Long parentId = CurrentUser.id(authentication);
 
         FamilyLinkCode linkCode = familyLinkCodeRepository
                 .findByCodeAndUsedAtIsNullAndExpiresAtAfter(request.code(), LocalDateTime.now())
                 .orElse(null);
 
-        // [왜 실패 사유를 나눠서 안내하나] "코드가 틀렸다"와 "코드가 만료/이미 사용됐다"는 자녀 입장에서
-        // 대응이 다름(전자는 다시 확인, 후자는 부모에게 재발급 요청) -> 전체 조회를 한 번 더 해서 사유를 구분해줌
+        // [왜 실패 사유를 나눠서 안내하나] "코드가 틀렸다"와 "코드가 만료/이미 사용됐다"는 부모 입장에서
+        // 대응이 다름(전자는 다시 확인, 후자는 자녀에게 재발급 요청) -> 전체 조회를 한 번 더 해서 사유를 구분해줌
         if (linkCode == null) {
             FamilyLinkCode existing = familyLinkCodeRepository.findByCode(request.code()).orElse(null);
             if (existing == null) {
@@ -99,18 +99,18 @@ public class FamilyController {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, reason);
         }
 
-        if (familyLinkRepository.existsByParentIdAndChildId(linkCode.getParentId(), childId)) {
-            throw new ResponseStatusException(HttpStatus.CONFLICT, "이미 연동된 부모입니다");
+        if (familyLinkRepository.existsByParentIdAndChildId(parentId, linkCode.getChildId())) {
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "이미 연동된 자녀입니다");
         }
 
         linkCode.markUsed();
         familyLinkCodeRepository.save(linkCode);
-        FamilyLink link = familyLinkRepository.save(new FamilyLink(linkCode.getParentId(), childId));
+        FamilyLink link = familyLinkRepository.save(new FamilyLink(parentId, linkCode.getChildId()));
 
-        User parent = userRepository.findById(linkCode.getParentId())
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "부모 계정을 찾을 수 없습니다"));
+        User child = userRepository.findById(linkCode.getChildId())
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "자녀 계정을 찾을 수 없습니다"));
 
-        return RedeemCodeResponse.of(parent, link);
+        return RedeemCodeResponse.of(child, link);
     }
 
     @Operation(summary = "연동된 자녀 목록 (부모 전용)", description = "연동된 자녀와 각자의 최신 위치(없으면 null)를 함께 내려준다.")

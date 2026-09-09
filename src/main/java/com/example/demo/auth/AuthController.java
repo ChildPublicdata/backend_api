@@ -49,6 +49,7 @@ public class AuthController {
                 email,
                 passwordEncoder.encode(request.password()),
                 request.name(),
+                request.phoneNumber(),
                 request.role()
         ));
 

@@ -30,6 +30,9 @@ public class User {
 
     private String name;
 
+    @Column(name = "phone_number")
+    private String phoneNumber;
+
     // DB에는 문자열("PARENT"/"CHILD")로 저장. ORDINAL(숫자)로 저장하면 enum 순서가 바뀔 때 기존 데이터가 조용히 틀어지므로 STRING을 씀
     @Enumerated(EnumType.STRING)
     private Role role;
@@ -40,10 +43,11 @@ public class User {
     protected User() {
     }
 
-    public User(String email, String passwordHash, String name, Role role) {
+    public User(String email, String passwordHash, String name, String phoneNumber, Role role) {
         this.email = email;
         this.passwordHash = passwordHash;
         this.name = name;
+        this.phoneNumber = phoneNumber;
         this.role = role;
         this.createdAt = LocalDateTime.now();
         this.updatedAt = this.createdAt;
@@ -63,6 +67,10 @@ public class User {
 
     public String getName() {
         return name;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
     public Role getRole() {

@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public interface FamilyLinkCodeRepository extends JpaRepository<FamilyLinkCode, Long> {
 
-    // 자녀가 코드를 입력했을 때, "그 문자열이면서 + 아직 안 쓰였고 + 아직 안 만료된" 코드만 찾음.
+    // 부모가 코드를 입력했을 때, "그 문자열이면서 + 아직 안 쓰였고 + 아직 안 만료된" 코드만 찾음.
     // 만료/사용된 코드는 검색 대상에서 제외되므로 "코드가 틀렸다"와 "코드가 만료/사용됐다"를 이 쿼리 결과 유무로 구분 못함
     // -> 그래서 Controller에서 별도로 findByCode(전체)를 한 번 더 조회해 사유를 구분해 안내함.
     Optional<FamilyLinkCode> findByCodeAndUsedAtIsNullAndExpiresAtAfter(String code, LocalDateTime now);
@@ -21,6 +21,6 @@ public interface FamilyLinkCodeRepository extends JpaRepository<FamilyLinkCode, 
     // 겹치면 재발급 로직에서 다른 숫자로 다시 시도함 (동시에 같은 값의 유효 코드가 2개 이상 존재하지 않게 보장)
     long countByCodeAndUsedAtIsNullAndExpiresAtAfter(String code, LocalDateTime now);
 
-    // 한 부모가 미사용 상태로 들고 있는 코드 개수 (스팸성 무한 발급 방지용 캡 확인)
-    long countByParentIdAndUsedAtIsNullAndExpiresAtAfter(Long parentId, LocalDateTime now);
+    // 한 자녀가 미사용 상태로 들고 있는 코드 개수 (스팸성 무한 발급 방지용 캡 확인)
+    long countByChildIdAndUsedAtIsNullAndExpiresAtAfter(Long childId, LocalDateTime now);
 }
