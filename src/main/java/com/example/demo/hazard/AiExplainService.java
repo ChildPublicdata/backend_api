@@ -34,6 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
@@ -48,6 +49,15 @@ public class AiExplainService {
     // 프롬프트에 넣을 SHAP 기여 요인 개수 상한. 작성 규칙이 "기여도 높은 요인 1~2개만 언급"이라
     // 후보를 많이 넣어봐야 모델이 고르기만 어려워지고 토큰만 늘어남
     private static final int MAX_SHAP_FACTORS = 3;
+
+    // 아이 손을 꼭 잡고 주변을 살피며 이동해 주세요 같은 구체적 행동 한 문장. 미리 다듬어진 안내문(guide)에는
+    // 이 문장이 따로 없어서(parent 문구 안에 이미 행동 권유가 녹아 있음), baked-guide 경로와 LLM 실패 폴백
+    // 경로 둘 다 같은 기본 행동 문장을 쓰게 통일함
+    private static final String DEFAULT_ACTION = "아이 손을 꼭 잡고 주변을 살피며 이동해 주세요.";
+
+    // guide_source가 이 값 중 하나면 "이미 다듬어진 안내문"으로 보고 LLM을 호출하지 않음.
+    // 그 외(예: "template_pending", null)는 아직 안 다듬어졌다는 뜻이라 그때만 실시간으로 LLM을 호출함
+    private static final Set<String> FINISHED_GUIDE_SOURCES = Set.of("llm", "rule");
 
     private final RiskZoneRepository riskZoneRepository;
     private final GridRiskRepository gridRiskRepository;
@@ -80,6 +90,12 @@ public class AiExplainService {
     public AiExplainResponse explain(String zoneId, String gridId) {
         ExplainContext context = loadContext(zoneId, gridId);
 
+        // 이미 다듬어진 안내문이 있으면 그대로 돌려주고 끝냄. 시간(주간/야간)에 따라 달라지는 문구가 아니라서
+        // 캐시에 넣을 필요도, LLM을 호출할 필요도 없음 - 79개 위험구역 전부와 격자 1·2·5급이 여기 해당함
+        if (context.hasFinishedGuide()) {
+            return buildFromGuide(context);
+        }
+
         boolean isNight = context.hour() >= 19 || context.hour() < 6;
         String cacheKey = context.id() + (isNight ? ":night" : ":day");
 
@@ -108,7 +124,8 @@ public class AiExplainService {
             // 위험구역에는 등급 코드만 있고 "3급 관찰" 같은 이름이 없어서 코드를 그대로 등급 이름 자리에 넣음
             return new ExplainContext("zone:" + z.getZoneId(), joinNonBlank(z.getDistrict(), z.getRoadName()),
                     z.getType(), z.getRiskScore(), z.getGrade(), z.getAccidents(), z.getFatalities(), z.getSerious(),
-                    z.getTopAccidentType(), z.getRoadType(), null, null, null, null, List.of(), null, hour);
+                    z.getTopAccidentType(), z.getRoadType(), null, null, null, null, List.of(), null, hour,
+                    z.getGuideParent(), z.getGuideChild(), z.getGuideSource());
         }
 
         GridRisk g = gridRiskRepository.findById(gridId)
@@ -119,7 +136,8 @@ public class AiExplainService {
         return new ExplainContext("grid:" + g.getGridId(), null, "predicted",
                 g.getRiskScore(), g.getLevelName(), g.getAccidentCount(), g.getFatalities(), null,
                 null, null, g.getCctvDistM(), g.getCctvCount200m(),
-                g.getSchoolZoneDistM(), g.getInSchoolZone(), buildEvidence(g), g.getModelNote(), hour);
+                g.getSchoolZoneDistM(), g.getInSchoolZone(), buildEvidence(g), g.getModelNote(), hour,
+                g.getGuideParent(), g.getGuideChild(), g.getGuideSource());
     }
 
     // v3 격자가 함께 내려주는 근거 문장과 SHAP 상위 기여 요인을 프롬프트에 넣을 한 덩어리로 모음.
@@ -142,7 +160,7 @@ public class AiExplainService {
         return evidence;
     }
 
-    // 응답 JSON이 summary/message/action 세 필드만 갖도록 강제하는 스키마.
+    // 응답 JSON이 summary/message/action/childMessage 네 필드만 갖도록 강제하는 스키마.
     // xAI가 이 스키마를 어기는 응답을 내면 API 단에서 걸러지므로, 모델이 형식을 지어내다 깨뜨릴
     // 여지 자체가 없어짐 (JSON_SCHEMA는 static final로 한 번만 만들어 매 요청마다 재생성하지 않음)
     private static final Map<String, Object> RESPONSE_JSON_SCHEMA = Map.of(
@@ -155,9 +173,10 @@ public class AiExplainService {
                             "properties", Map.of(
                                     "summary", Map.of("type", "string"),
                                     "message", Map.of("type", "string"),
-                                    "action", Map.of("type", "string")
+                                    "action", Map.of("type", "string"),
+                                    "childMessage", Map.of("type", "string")
                             ),
-                            "required", List.of("summary", "message", "action"),
+                            "required", List.of("summary", "message", "action", "childMessage"),
                             "additionalProperties", false
                     )
             )
@@ -195,7 +214,8 @@ public class AiExplainService {
             return Optional.of(new AiExplainResponse(
                     parsed.path("summary").asText(),
                     parsed.path("message").asText(),
-                    parsed.path("action").asText()
+                    parsed.path("action").asText(),
+                    parsed.path("childMessage").asText()
             ));
         } catch (Exception e) {
             log.warn("AI 설명 생성 호출 실패, 폴백 문장으로 대체합니다: {}", e.toString());
@@ -223,17 +243,19 @@ public class AiExplainService {
                 모델 유의사항: %s
 
                 [규칙]
-                1. 3문장 이내. ①상황 ②이유 ③행동 제안 순서.
+                1. message는 3문장 이내. ①상황 ②이유 ③행동 제안 순서.
                 2. type이 predicted면 "위험합니다" 대신
                    "유사한 조건의 지점에서 사고가 많았습니다"로 표현할 것.
                 3. type이 confirmed면 실제 사고 통계를 근거로 제시할 것.
                 4. 분석 근거 중 1~2개만 골라 언급. 전부 나열 금지.
-                5. 숫자는 구체적으로. 공포 조장 금지. 존댓말.
+                5. 숫자는 구체적으로. 공포 조장 금지. message는 존댓말.
                 6. "정보 없음"인 항목은 아예 언급하지 말 것. 없는 값을 지어내지 말 것.
                 7. type이 predicted면 참고 점수가 등급을 정하는 값이 아니므로 등급만 말하고 점수는 언급하지 말 것.
-                8. 반드시 아래 JSON 형식으로만 응답. 마크다운 코드블록 금지.
+                8. childMessage는 아이에게 직접 말하듯 한 문장, 반말, 쉬운 단어로. 숫자/통계 언급 금지, "이 길/여기는 ~해. ~하자" 같은
+                   행동 위주 문장으로 쓸 것 (예: "여기는 신호 보고, 차 보고 건너.").
+                9. 반드시 아래 JSON 형식으로만 응답. 마크다운 코드블록 금지.
 
-                {"summary":"20자 이내 요약","message":"3문장 이내","action":"권장 행동 한 문장"}
+                {"summary":"20자 이내 요약","message":"3문장 이내","action":"권장 행동 한 문장","childMessage":"아이에게 하는 한 문장"}
                 """.formatted(
                 orElse(c.location()),
                 c.type(),
@@ -258,11 +280,18 @@ public class AiExplainService {
         return evidence.stream().map(line -> "- " + line).collect(Collectors.joining("\n"));
     }
 
-    // LLM 호출이 실패했을 때 주어진 값을 그대로 나열한 기본 문장 (작성 규칙: LLM 실패 시 폴백)
+    // 이미 다듬어진 안내문(guide_source가 llm/rule)이 있을 때 쓰는 경로. LLM을 아예 호출하지 않음
+    // - 79개 위험구역 전부, 격자 1·2급(미리 사람이 다듬음)·5급(사고 이력 없어 규칙 문장 하나로 충분)이 여기 해당
+    private AiExplainResponse buildFromGuide(ExplainContext c) {
+        return new AiExplainResponse(summaryFor(c), c.guideParent(), DEFAULT_ACTION, c.guideChild());
+    }
+
+    // LLM 호출이 실패했을 때(또는 애초에 template_pending이라 시도했지만 실패한 경우) 쓰는 기본 문장
+    // (작성 규칙: LLM 실패 시 폴백). guideParent가 있으면(=아직 다듬어지진 않았지만 최소한의 템플릿 문장은 있는
+    // 경우, 예: 격자 3급) 수치를 다시 조립하는 대신 그 문장을 그대로 씀 - 완전히 새로 짓는 것보다 자연스러움
     private AiExplainResponse buildFallback(ExplainContext c) {
-        String summary = orElse(c.levelName()) + " 안전 정보";
-        if (summary.length() > 20) {
-            summary = summary.substring(0, 20);
+        if (c.guideParent() != null) {
+            return new AiExplainResponse(summaryFor(c), c.guideParent(), DEFAULT_ACTION, c.guideChild());
         }
 
         StringBuilder message = new StringBuilder();
@@ -284,7 +313,14 @@ public class AiExplainService {
         }
         message.append("이동 시 주변을 살피고 안전에 유의해 주세요.");
 
-        return new AiExplainResponse(summary, message.toString(), "아이 손을 꼭 잡고 주변을 살피며 이동해 주세요.");
+        return new AiExplainResponse(summaryFor(c), message.toString(), DEFAULT_ACTION, null);
+    }
+
+    // "3급 관찰 안전 정보"처럼 20자 이내로 잘라낸 요약. baked-guide/폴백 두 경로가 공통으로 씀
+    // (LLM 경로는 모델이 직접 summary를 지어서 내려주므로 이 메서드를 거치지 않음)
+    private static String summaryFor(ExplainContext c) {
+        String summary = orElse(c.levelName()) + " 안전 정보";
+        return summary.length() > 20 ? summary.substring(0, 20) : summary;
     }
 
     // 위험구역의 "만안구 선부로"처럼 두 조각을 합치되, 한쪽이 비어 있으면 어색한 공백이 남지 않게 함.
@@ -310,7 +346,13 @@ public class AiExplainService {
             String id, String location, String type, Integer riskScore, String levelName,
             Integer accidents, Integer fatalities, Integer serious, String topAccidentType, String roadType,
             Integer cctvDistM, Integer cctvCount200m, Integer schoolZoneDistM, Boolean inSchoolZone,
-            List<String> evidence, String modelNote, int hour
+            List<String> evidence, String modelNote, int hour,
+            String guideParent, String guideChild, String guideSource
     ) {
+        // guide_source가 "이미 다듬어졌다"는 값(llm/rule) 중 하나이고 실제 문구도 있어야 LLM 호출을 건너뜀.
+        // guideParent만 있고 source가 없는(과거 데이터) 경우는 안전하게 "아직 안 다듬어짐" 쪽으로 취급함
+        boolean hasFinishedGuide() {
+            return guideParent != null && FINISHED_GUIDE_SOURCES.contains(guideSource);
+        }
     }
 }

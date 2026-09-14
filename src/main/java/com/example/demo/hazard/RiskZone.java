@@ -66,12 +66,25 @@ public class RiskZone {
     @Column(name = "top_accident_type")
     private String topAccidentType;
 
+    // v4 데이터부터 79개 위험구역 전부에 미리 다듬어진 보호자/아이용 안내문이 채워져 있음(guideSource="llm").
+    // AiExplainService가 이 값이 있으면 그대로 쓰고, 없으면(향후 소스가 늘어나 아직 안 다듬어진 경우) 그때만 LLM을 실시간 호출함
+    @Column(name = "guide_parent")
+    private String guideParent;
+
+    @Column(name = "guide_child")
+    private String guideChild;
+
+    // "llm"(오프라인에서 미리 생성/검수) | "rule"(규칙 기반) | "template_pending"(아직 안 다듬어진 placeholder) 등
+    @Column(name = "guide_source")
+    private String guideSource;
+
     protected RiskZone() {
     }
 
     public RiskZone(String zoneId, String type, Point center, Integer radiusM, Integer riskScore, String grade,
                      Double epdo, Integer accidents, Integer fatalities, Integer serious, Integer minor,
-                     String district, String roadName, String roadType, String topAccidentType) {
+                     String district, String roadName, String roadType, String topAccidentType,
+                     String guideParent, String guideChild, String guideSource) {
         this.zoneId = zoneId;
         this.type = type;
         this.center = center;
@@ -87,6 +100,9 @@ public class RiskZone {
         this.roadName = roadName;
         this.roadType = roadType;
         this.topAccidentType = topAccidentType;
+        this.guideParent = guideParent;
+        this.guideChild = guideChild;
+        this.guideSource = guideSource;
     }
 
     public String getZoneId() {
@@ -147,5 +163,17 @@ public class RiskZone {
 
     public String getTopAccidentType() {
         return topAccidentType;
+    }
+
+    public String getGuideParent() {
+        return guideParent;
+    }
+
+    public String getGuideChild() {
+        return guideChild;
+    }
+
+    public String getGuideSource() {
+        return guideSource;
     }
 }

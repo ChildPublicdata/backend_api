@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.GeometryFactory;
 
-// ignoreUnknown: JSON에는 있지만 이 앱에서 안 쓰는 필드(color, reasons, guide 등)가 있어도
+// ignoreUnknown: JSON에는 있지만 이 앱에서 안 쓰는 필드(color, reasons 등)가 있어도
 // 파싱 에러 없이 무시하고 넘어가게 함
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record RiskZoneImportDto(
@@ -21,7 +21,8 @@ public record RiskZoneImportDto(
         String levelCode,
         Double epdo,
         Accidents accidents,
-        Context context
+        Context context,
+        Guide guide
 ) {
     @JsonIgnoreProperties(ignoreUnknown = true)
     public record Center(Double lat, Double lng) {
@@ -33,6 +34,12 @@ public record RiskZoneImportDto(
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public record Context(String district, String road, String topAccidentType, String topRoadType) {
+    }
+
+    // v4부터 79개 위험구역 전부에 미리 다듬어진 안내문이 채워져 있음(source="llm").
+    // model/reviewed는 데이터 관리용 메타라 지금은 안 씀(ignoreUnknown)
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    public record Guide(String parent, String child, String source) {
     }
 
     /*
@@ -60,7 +67,10 @@ public record RiskZoneImportDto(
                 context.district(),
                 context.road(),
                 context.topRoadType(),
-                context.topAccidentType()
+                context.topAccidentType(),
+                guide == null ? null : guide.parent(),
+                guide == null ? null : guide.child(),
+                guide == null ? null : guide.source()
         );
     }
 }

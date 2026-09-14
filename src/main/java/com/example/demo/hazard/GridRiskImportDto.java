@@ -45,9 +45,11 @@ public record GridRiskImportDto(
     public record Accidents(Integer total3yr, Integer fatal3yr, Integer total2025, Integer fatal2025) {
     }
 
-    // 사고 이력이 없는 격자에서는 두 값 모두 null로 들어옴
+    // 사고 이력이 없는 격자에서는 parent/child가 null로 들어옴.
+    // source는 "llm"(미리 다듬어짐)/"rule"(규칙 기반)/"template_pending"(아직 안 다듬어진 placeholder) 등 -
+    // AiExplainService가 이 값으로 실시간 LLM 호출 여부를 판단함. model/reviewed는 데이터 관리용 메타라 지금은 안 씀(ignoreUnknown)
     @JsonIgnoreProperties(ignoreUnknown = true)
-    public record Guide(String parent, String child) {
+    public record Guide(String parent, String child, String source) {
     }
 
     // v3 JSON에는 등급 코드가 없고 숫자 level만 있어서, 프론트가 쓰던 코드 문자열을 여기서 되살림
@@ -98,6 +100,7 @@ public record GridRiskImportDto(
                 shapFactorsNegative,
                 guide == null ? null : guide.parent(),
                 guide == null ? null : guide.child(),
+                guide == null ? null : guide.source(),
                 modelNote
         );
     }

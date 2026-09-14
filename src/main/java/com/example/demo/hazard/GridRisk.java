@@ -127,6 +127,11 @@ public class GridRisk {
     @Column(name = "guide_child")
     private String guideChild;
 
+    // "llm"(오프라인에서 미리 생성/검수) | "rule"(규칙 기반) | "template_pending"(아직 안 다듬어진 placeholder) 등.
+    // AiExplainService가 이 값으로 "이미 다듬어진 안내문이라 그대로 쓸지, 아직 미완성이라 LLM을 실시간 호출할지"를 판단함
+    @Column(name = "guide_source")
+    private String guideSource;
+
     // 모든 격자에 동일하게 붙는 모델 한계 고지 문구
     @Column(name = "model_note")
     private String modelNote;
@@ -140,7 +145,7 @@ public class GridRisk {
                      Integer cctvDistM, Integer cctvCount200m, Integer schoolZoneDistM, Boolean inSchoolZone,
                      Integer intersectionAccidents300m, List<String> reasons, List<String> locationInfo,
                      List<ShapFactor> shapPositive, List<ShapFactor> shapNegative,
-                     String guideParent, String guideChild, String modelNote) {
+                     String guideParent, String guideChild, String guideSource, String modelNote) {
         this.gridId = gridId;
         this.center = center;
         this.sizeM = sizeM;
@@ -166,6 +171,7 @@ public class GridRisk {
         this.shapNegative = shapNegative;
         this.guideParent = guideParent;
         this.guideChild = guideChild;
+        this.guideSource = guideSource;
         this.modelNote = modelNote;
     }
 
@@ -267,6 +273,10 @@ public class GridRisk {
 
     public String getGuideChild() {
         return guideChild;
+    }
+
+    public String getGuideSource() {
+        return guideSource;
     }
 
     public String getModelNote() {

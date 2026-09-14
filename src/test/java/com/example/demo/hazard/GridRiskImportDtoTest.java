@@ -89,4 +89,17 @@ class GridRiskImportDtoTest {
         assertThat(grids).allMatch(g -> g.getLocationInfo() != null && !g.getLocationInfo().isEmpty());
         assertThat(grids).allMatch(g -> g.getModelNote() != null);
     }
+
+    @Test
+    void 다듬어진_안내문과_아직_안_다듬어진_안내문이_source로_구분된다() {
+        // AiExplainService가 guide_source로 "LLM을 실시간 호출할지"를 가르기 때문에, 이 필드가
+        // 하나라도 원본 문구와 다르게 파싱되면(예: null로 유실) 이미 다듬어진 안내문을 다시 LLM으로
+        // 생성하거나, 반대로 미완성 placeholder를 그대로 사용자에게 내려주는 사고로 이어짐
+        assertThat(grids).allMatch(g -> g.getGuideSource() != null);
+        assertThat(grids).anyMatch(g -> "llm".equals(g.getGuideSource()));
+        assertThat(grids).anyMatch(g -> "template_pending".equals(g.getGuideSource()));
+        assertThat(grids)
+                .filteredOn(g -> "template_pending".equals(g.getGuideSource()))
+                .allMatch(g -> g.getLevel() == 3);
+    }
 }
