@@ -11,6 +11,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 // V6 마이그레이션이 테이블명을 user가 아닌 app_user로 만들었으므로(user는 Postgres 예약어) 명시적으로 매핑
@@ -37,18 +38,23 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Role role;
 
+    // 선택 입력(부모/자녀 모두 null 가능). 자녀 화면에 생일/나이를 보여주는 용도라 부모 계정은 보통 비어있음
+    @Column(name = "birth_date")
+    private LocalDate birthDate;
+
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
     protected User() {
     }
 
-    public User(String email, String passwordHash, String name, String phoneNumber, Role role) {
+    public User(String email, String passwordHash, String name, String phoneNumber, Role role, LocalDate birthDate) {
         this.email = email;
         this.passwordHash = passwordHash;
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.role = role;
+        this.birthDate = birthDate;
         this.createdAt = LocalDateTime.now();
         this.updatedAt = this.createdAt;
     }
@@ -75,6 +81,10 @@ public class User {
 
     public Role getRole() {
         return role;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
     }
 
     public LocalDateTime getCreatedAt() {

@@ -53,8 +53,10 @@ app:
     # Railway 환경변수(JWT_SECRET)로만 넣음. 기본값은 로컬 개발용이며 HS256 최소 요구치인 32바이트를 넘도록 맞춰둠.
     # [주의] 운영 환경에서 이 기본값을 그대로 쓰면 누구나 토큰을 위조할 수 있으므로 반드시 JWT_SECRET을 따로 설정할 것
     secret: ${JWT_SECRET:local-dev-only-change-me-32bytes-minimum}
-    # 토큰 유효기간(일). 만료되면 프론트가 다시 로그인해야 함 (리프레시 토큰은 아직 없음)
+    # 액세스 토큰 유효기간(일). 만료되면 리프레시 토큰으로 재발급받아야 함(/api/auth/refresh)
     expiration-days: ${JWT_EXPIRATION_DAYS:7}
+    # 리프레시 토큰 유효기간(일). 이 기간이 지나면 재로그인해야 함. 액세스 토큰보다 훨씬 길게 잡음
+    refresh-expiration-days: ${JWT_REFRESH_EXPIRATION_DAYS:30}
 
 # AI 설명 생성 API(/api/ai-explain)가 xAI(Grok)를 호출할 때 쓰는 설정.
 # api-key가 비어있으면 AiExplainService가 호출 자체를 건너뛰고 곧바로 규칙 기반 폴백 문장을 돌려줌

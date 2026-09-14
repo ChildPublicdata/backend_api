@@ -56,6 +56,19 @@ public class FamilyController {
         this.userRepository = userRepository;
     }
 
+    @Operation(summary = "연동 상태 확인", description = "부모/자녀 계정 모두 사용 가능. 부모는 연동된 자녀 수, 자녀는 연동된 부모 수를 반환한다.")
+    @GetMapping("/api/family/status")
+    public FamilyStatusResponse status(Authentication authentication) {
+        Long userId = CurrentUser.id(authentication);
+        Role role = CurrentUser.role(authentication);
+
+        long linkedCount = role == Role.PARENT
+                ? familyLinkRepository.countByParentId(userId)
+                : familyLinkRepository.countByChildId(userId);
+
+        return FamilyStatusResponse.of(linkedCount);
+    }
+
     @Operation(summary = "연동 코드 발급 (자녀 전용)", description = "10분간 유효한 6자리 숫자 코드를 발급한다. 이 코드를 부모에게 알려주면 된다.")
     @PostMapping("/api/family/codes")
     @ResponseStatus(HttpStatus.CREATED)
@@ -134,6 +147,7 @@ public class FamilyController {
                     return new ChildSummaryResponse(
                             link.getChildId(),
                             child != null ? child.getName() : "(알 수 없음)",
+                            child != null ? child.getBirthDate() : null,
                             location != null ? location.getLat() : null,
                             location != null ? location.getLon() : null,
                             location != null ? location.getUpdatedAt() : null

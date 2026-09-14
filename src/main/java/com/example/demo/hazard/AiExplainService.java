@@ -9,6 +9,11 @@
 // 2) temperature를 낮게(0.2) 설정 - 창의성보다 일관성이 중요한 정형 안내문이라 낮은 값이 적합.
 // 3) 프롬프트에 실제 DB 수치(riskScore/accidents 등)를 그대로 박아 넣고 "숫자는 구체적으로"를 명시 -
 //    모델이 숫자를 지어내지 않고 주어진 값만 문장으로 옮기도록 유도.
+//
+// [격자 데이터가 v3로 바뀌면서 달라진 점]
+// v2 격자에는 지역/도로명/도로형태/주요사고유형이 들어있어 그대로 프롬프트에 넣었지만 v3에는 없음.
+// 대신 분석 쪽에서 만든 근거 문장(reasons)과 SHAP 기여도가 들어와서, 그 둘을 프롬프트의 근거로 씀.
+// 즉 격자 안내문의 "이유" 부분은 이제 서버가 수치로 조립한 문장이 아니라 모델 기여도에 기반함.
 package com.example.demo.hazard;
 
 import com.fasterxml.jackson.databind.JsonNode;
@@ -25,10 +30,12 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.time.Duration;
 import java.time.LocalTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 
 @Service
 public class AiExplainService {
@@ -37,6 +44,10 @@ public class AiExplainService {
 
     // LLM 호출 자체의 타임아웃(작성 규칙: "타임아웃 5초"). 이 시간 안에 응답이 없으면 폴백으로 넘어감
     private static final Duration LLM_TIMEOUT = Duration.ofSeconds(5);
+
+    // 프롬프트에 넣을 SHAP 기여 요인 개수 상한. 작성 규칙이 "기여도 높은 요인 1~2개만 언급"이라
+    // 후보를 많이 넣어봐야 모델이 고르기만 어려워지고 토큰만 늘어남
+    private static final int MAX_SHAP_FACTORS = 3;
 
     private final RiskZoneRepository riskZoneRepository;
     private final GridRiskRepository gridRiskRepository;
@@ -50,7 +61,7 @@ public class AiExplainService {
     private String model;
 
     // (zoneId 또는 gridId) + 주간/야간 조합으로 캐시. 서버가 떠 있는 동안만 유지되는 단순 메모리 캐시라
-    // 별도 캐시 라이브러리 없이도 이 정도 규모(위험구역 79 + 격자 846 각각 최대 2개 키)엔 충분함
+    // 별도 캐시 라이브러리 없이도 이 정도 규모(위험구역 79 + 격자 819 각각 최대 2개 키)엔 충분함
     private final Map<String, AiExplainResponse> cache = new ConcurrentHashMap<>();
 
     public AiExplainService(RiskZoneRepository riskZoneRepository,
@@ -94,18 +105,41 @@ public class AiExplainService {
         if (hasZone) {
             RiskZone z = riskZoneRepository.findById(zoneId)
                     .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "RiskZone not found: " + zoneId));
-            return new ExplainContext("zone:" + z.getZoneId(), z.getDistrict(), z.getRoadName(), z.getType(),
-                    z.getRiskScore(), z.getGrade(), z.getAccidents(), z.getFatalities(), z.getSerious(),
-                    z.getTopAccidentType(), z.getRoadType(), null, null, null, null, hour);
+            // 위험구역에는 등급 코드만 있고 "3급 관찰" 같은 이름이 없어서 코드를 그대로 등급 이름 자리에 넣음
+            return new ExplainContext("zone:" + z.getZoneId(), joinNonBlank(z.getDistrict(), z.getRoadName()),
+                    z.getType(), z.getRiskScore(), z.getGrade(), z.getAccidents(), z.getFatalities(), z.getSerious(),
+                    z.getTopAccidentType(), z.getRoadType(), null, null, null, null, List.of(), null, hour);
         }
 
         GridRisk g = gridRiskRepository.findById(gridId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "GridRisk not found: " + gridId));
-        // GridRisk는 DBSCAN이 아니라 AI 예측 결과이므로 type은 항상 predicted로 취급
-        return new ExplainContext("grid:" + g.getGridId(), g.getDistrict(), g.getRoadName(), "predicted",
-                g.getRiskScore(), g.getGrade(), g.getAccidentCount(), g.getFatalities(), null,
-                g.getTopAccidentType(), g.getRoadType(), g.getCctvDistM(), g.getCctvCount200m(),
-                g.getSchoolZoneDistM(), g.getInSchoolZone(), hour);
+        // GridRisk는 DBSCAN이 아니라 격자 단위 분석 결과이므로 type은 항상 predicted로 취급.
+        // v3 격자에는 지역/도로명/도로형태/주요사고유형이 없어서 그 자리는 전부 null로 두고,
+        // 대신 reasons/locationInfo/SHAP을 모은 근거 목록을 넘김
+        return new ExplainContext("grid:" + g.getGridId(), null, "predicted",
+                g.getRiskScore(), g.getLevelName(), g.getAccidentCount(), g.getFatalities(), null,
+                null, null, g.getCctvDistM(), g.getCctvCount200m(),
+                g.getSchoolZoneDistM(), g.getInSchoolZone(), buildEvidence(g), g.getModelNote(), hour);
+    }
+
+    // v3 격자가 함께 내려주는 근거 문장과 SHAP 상위 기여 요인을 프롬프트에 넣을 한 덩어리로 모음.
+    // 위험도를 "올린" 요인(shapPositive)만 넣는 이유는 안내문이 주의를 당부하는 글이라
+    // 위험도를 낮춘 요인은 근거로 삼을 일이 없기 때문
+    private List<String> buildEvidence(GridRisk g) {
+        List<String> evidence = new ArrayList<>();
+        if (g.getReasons() != null) {
+            evidence.addAll(g.getReasons());
+        }
+        if (g.getLocationInfo() != null) {
+            evidence.addAll(g.getLocationInfo());
+        }
+        if (g.getShapPositive() != null) {
+            g.getShapPositive().stream()
+                    .limit(MAX_SHAP_FACTORS)
+                    .forEach(f -> evidence.add("%s (실측값 %s, 위험도 기여 +%s)"
+                            .formatted(f.feature(), orElse(f.rawValue()), orElse(f.shapValue()))));
+        }
+        return evidence;
     }
 
     // 응답 JSON이 summary/message/action 세 필드만 갖도록 강제하는 스키마.
@@ -175,60 +209,94 @@ public class AiExplainService {
                 아래 분석 결과를 보호자가 이해하고 행동할 수 있는 안내문으로 작성하라.
 
                 [입력]
-                위치: %s %s
-                구분: %s  (confirmed=실제 사고 발생 / predicted=AI 예측)
-                위험도: %s점 (%s등급)
-                사고 이력: %s건 (사망 %s, 중상 %s)
+                위치: %s
+                구분: %s  (confirmed=실제 사고 발생 / predicted=격자 단위 분석)
+                등급: %s (참고 점수 %s점)
+                사고 이력(최근 3년): %s건 (사망 %s, 중상 %s)
                 주요 사고유형: %s
                 도로형태: %s
                 최근접 CCTV: %s, 반경 200m 내 %s개
                 어린이보호구역: %s 거리, 포함여부 %s
+                분석 근거:
+                %s
                 현재 시각: %s시
+                모델 유의사항: %s
 
                 [규칙]
                 1. 3문장 이내. ①상황 ②이유 ③행동 제안 순서.
                 2. type이 predicted면 "위험합니다" 대신
                    "유사한 조건의 지점에서 사고가 많았습니다"로 표현할 것.
                 3. type이 confirmed면 실제 사고 통계를 근거로 제시할 것.
-                4. 기여도 높은 요인 1~2개만 언급. 전부 나열 금지.
+                4. 분석 근거 중 1~2개만 골라 언급. 전부 나열 금지.
                 5. 숫자는 구체적으로. 공포 조장 금지. 존댓말.
-                6. 반드시 아래 JSON 형식으로만 응답. 마크다운 코드블록 금지.
+                6. "정보 없음"인 항목은 아예 언급하지 말 것. 없는 값을 지어내지 말 것.
+                7. type이 predicted면 참고 점수가 등급을 정하는 값이 아니므로 등급만 말하고 점수는 언급하지 말 것.
+                8. 반드시 아래 JSON 형식으로만 응답. 마크다운 코드블록 금지.
 
                 {"summary":"20자 이내 요약","message":"3문장 이내","action":"권장 행동 한 문장"}
                 """.formatted(
-                orElse(c.district()), orElse(c.roadName()),
+                orElse(c.location()),
                 c.type(),
-                orElse(c.riskScore()), orElse(c.grade()),
+                orElse(c.levelName()), orElse(c.riskScore()),
                 orElse(c.accidents()), orElse(c.fatalities()), orElse(c.serious()),
                 orElse(c.topAccidentType()), orElse(c.roadType()),
                 c.cctvDistM() == null ? "정보 없음" : c.cctvDistM() + "m", orElse(c.cctvCount200m()),
                 c.schoolZoneDistM() == null ? "정보 없음" : c.schoolZoneDistM() + "m",
                 c.inSchoolZone() == null ? "정보 없음" : (c.inSchoolZone() ? "포함" : "미포함"),
-                c.hour()
+                formatEvidence(c.evidence()),
+                c.hour(),
+                orElse(c.modelNote())
         );
     }
 
-    // LLM 호출이 실패했을 때 features 값을 그대로 나열한 기본 문장 (작성 규칙: LLM 실패 시 폴백)
+    // 근거 목록을 프롬프트에 넣을 여러 줄 불릿으로 바꿈. 위험구역처럼 근거가 없으면 "정보 없음"이 되고,
+    // 규칙 6번에 따라 모델이 그 항목을 언급하지 않음
+    private static String formatEvidence(List<String> evidence) {
+        if (evidence == null || evidence.isEmpty()) {
+            return "- 정보 없음";
+        }
+        return evidence.stream().map(line -> "- " + line).collect(Collectors.joining("\n"));
+    }
+
+    // LLM 호출이 실패했을 때 주어진 값을 그대로 나열한 기본 문장 (작성 규칙: LLM 실패 시 폴백)
     private AiExplainResponse buildFallback(ExplainContext c) {
-        String summary = orElse(c.grade()) + "등급 안전 정보";
+        String summary = orElse(c.levelName()) + " 안전 정보";
         if (summary.length() > 20) {
             summary = summary.substring(0, 20);
         }
 
         StringBuilder message = new StringBuilder();
-        message.append(orElse(c.district())).append(" ").append(orElse(c.roadName()))
-                .append("의 위험도는 ").append(orElse(c.riskScore())).append("점(")
-                .append(orElse(c.grade())).append("등급)입니다. ");
+        // 위치를 모르는 격자(v3)에서 "정보 없음의 안전 등급은..." 같은 문장이 되지 않도록 앞부분을 생략
+        if (c.location() != null) {
+            message.append(c.location()).append("의 ");
+        }
+        message.append("안전 등급은 ").append(orElse(c.levelName())).append("입니다. ");
         if (c.accidents() != null) {
-            message.append("사고 이력 ").append(c.accidents()).append("건");
+            message.append("최근 3년간 사고 이력 ").append(c.accidents()).append("건");
             if (c.topAccidentType() != null) {
                 message.append("(주요 유형: ").append(c.topAccidentType()).append(")");
             }
             message.append("이 확인되었습니다. ");
         }
+        // 근거는 첫 줄 하나만 덧붙임 (프롬프트 규칙 4번의 "1~2개만 언급"과 같은 취지)
+        if (c.evidence() != null && !c.evidence().isEmpty()) {
+            message.append(c.evidence().get(0)).append(". ");
+        }
         message.append("이동 시 주변을 살피고 안전에 유의해 주세요.");
 
         return new AiExplainResponse(summary, message.toString(), "아이 손을 꼭 잡고 주변을 살피며 이동해 주세요.");
+    }
+
+    // 위험구역의 "만안구 선부로"처럼 두 조각을 합치되, 한쪽이 비어 있으면 어색한 공백이 남지 않게 함.
+    // 둘 다 없으면 null을 돌려줘서 폴백 문장이 위치 부분을 통째로 건너뛰게 함
+    private static String joinNonBlank(String... parts) {
+        List<String> kept = new ArrayList<>();
+        for (String part : parts) {
+            if (part != null && !part.isBlank()) {
+                kept.add(part);
+            }
+        }
+        return kept.isEmpty() ? null : String.join(" ", kept);
     }
 
     private static String orElse(Object value) {
@@ -236,11 +304,13 @@ public class AiExplainService {
     }
 
     // Repository 조회 결과(RiskZone 또는 GridRisk)를 공통 모양으로 합친 내부 전용 타입.
-    // 두 엔티티가 겹치지 않는 필드(cctv/school 등)를 갖고 있어서 안 쓰는 값은 null로 둠
+    // 두 엔티티가 겹치지 않는 필드는 안 쓰는 쪽을 null로 둠: 위험구역은 도로명/사고유형을 갖고 근거 목록이
+    // 없고, v3 격자는 반대로 위치 정보가 없는 대신 reasons/SHAP 근거를 갖고 있음
     private record ExplainContext(
-            String id, String district, String roadName, String type, Integer riskScore, String grade,
+            String id, String location, String type, Integer riskScore, String levelName,
             Integer accidents, Integer fatalities, Integer serious, String topAccidentType, String roadType,
-            Integer cctvDistM, Integer cctvCount200m, Integer schoolZoneDistM, Boolean inSchoolZone, int hour
+            Integer cctvDistM, Integer cctvCount200m, Integer schoolZoneDistM, Boolean inSchoolZone,
+            List<String> evidence, String modelNote, int hour
     ) {
     }
 }

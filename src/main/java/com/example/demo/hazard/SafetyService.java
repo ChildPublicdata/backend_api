@@ -65,6 +65,8 @@ public class SafetyService {
                 lng,
                 grid.map(GridRisk::getRiskScore).orElse(null),
                 grid.map(GridRisk::getGrade).orElse(null),
+                // 등급 코드(SAFE)만으로는 화면에 그대로 쓸 수 없어서 "5급 안전"이라는 이름도 함께 내려줌
+                grid.map(GridRisk::getLevelName).orElse(null),
                 nearbyZones,
                 nearestCctvDistanceM,
                 cctvCount200m,
@@ -73,12 +75,33 @@ public class SafetyService {
         );
     }
 
-    // 격자의 features 값을 사람이 읽을 문장으로 바꿔 "위험 기여 요인 리스트"를 구성 (작성 규칙 3번)
+    /*
+     * [왜 격자의 reasons를 그대로 쓰나]
+     * v3 격자 데이터는 "최근 3년간 사고 1건 (EPDO 0.7)", "방범시설 밀도 낮음 (최근접 CCTV 482m)"처럼
+     * 이미 사람이 읽을 수 있는 근거 문장(reasons)과 위치 설명(locationInfo)을 함께 내려줌.
+     * 예전처럼 서버가 수치를 문장으로 조립하면 분석 쪽 표현과 어긋나므로, 있는 그대로 이어 붙임.
+     */
     private List<String> buildRiskFactors(GridRisk grid) {
         List<String> factors = new ArrayList<>();
         if (grid == null) {
             return factors;
         }
+        if (grid.getReasons() != null) {
+            factors.addAll(grid.getReasons());
+        }
+        if (grid.getLocationInfo() != null) {
+            factors.addAll(grid.getLocationInfo());
+        }
+        // reasons/locationInfo가 비어 있는 격자(원본 데이터가 더 바뀌는 경우)를 대비한 폴백.
+        // 적재 때 SHAP에서 되살려둔 수치로 예전과 같은 문장을 만들어 최소한의 정보는 내려줌
+        if (factors.isEmpty()) {
+            factors.addAll(buildRiskFactorsFromFeatures(grid));
+        }
+        return factors;
+    }
+
+    private List<String> buildRiskFactorsFromFeatures(GridRisk grid) {
+        List<String> factors = new ArrayList<>();
         if (grid.getCctvDistM() != null) {
             factors.add("최근접 CCTV까지 " + grid.getCctvDistM() + "m");
         }

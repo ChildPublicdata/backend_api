@@ -5,11 +5,12 @@ package com.example.demo.auth;
 
 public record AuthResponse(
         String token,
+        String refreshToken,
         Long userId,
         String name,
         Role role
 ) {
-    public static AuthResponse of(String token, User user) {
-        return new AuthResponse(token, user.getId(), user.getName(), user.getRole());
+    public static AuthResponse of(String token, String refreshToken, User user) {
+        return new AuthResponse(token, refreshToken, user.getId(), user.getName(), user.getRole());
     }
 }

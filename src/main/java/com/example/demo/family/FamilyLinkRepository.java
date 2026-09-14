@@ -13,4 +13,9 @@ public interface FamilyLinkRepository extends JpaRepository<FamilyLink, Long> {
 
     // "이 부모가 연동한 자녀 전체 목록" (부모 화면에 자녀 리스트를 보여줄 때 사용)
     List<FamilyLink> findByParentId(Long parentId);
+
+    // "이 부모가 연동한 자녀 수" / "이 자녀가 연동된 부모 수" (연동 상태 확인, /api/family/status)
+    long countByParentId(Long parentId);
+
+    long countByChildId(Long childId);
 }

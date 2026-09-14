@@ -3,11 +3,13 @@
 // 자녀가 아직 위치를 한 번도 보고하지 않았을 수 있어 lat/lon/updatedAt은 nullable로 둠.
 package com.example.demo.family;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public record ChildSummaryResponse(
         Long childId,
         String name,
+        LocalDate birthDate,
         Double lat,
         Double lon,
         LocalDateTime updatedAt

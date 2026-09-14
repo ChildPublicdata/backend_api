@@ -3,6 +3,9 @@
 // 성공하면 이후 요청에 계속 쓸 JWT를 돌려줌.
 package com.example.demo.auth;
 
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtException;
+
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
@@ -50,10 +53,11 @@ public class AuthController {
                 passwordEncoder.encode(request.password()),
                 request.name(),
                 request.phoneNumber(),
-                request.role()
+                request.role(),
+                request.birthDate()
         ));
 
-        return AuthResponse.of(jwtService.generate(user), user);
+        return AuthResponse.of(jwtService.generateAccessToken(user), jwtService.generateRefreshToken(user), user);
     }
 
     @Operation(summary = "로그인", description = "이메일/비밀번호로 로그인하고 JWT를 받는다.")
@@ -69,6 +73,28 @@ public class AuthController {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "이메일 또는 비밀번호가 올바르지 않습니다");
         }
 
-        return AuthResponse.of(jwtService.generate(user), user);
+        return AuthResponse.of(jwtService.generateAccessToken(user), jwtService.generateRefreshToken(user), user);
+    }
+
+    @Operation(summary = "액세스 토큰 재발급", description = "로그인 시 받은 리프레시 토큰으로 새 액세스 토큰을 받는다. 리프레시 토큰 자체도 만료됐다면 다시 로그인해야 한다.")
+    @PostMapping("/api/auth/refresh")
+    public RefreshResponse refresh(@Valid @RequestBody RefreshRequest request) {
+        Claims claims;
+        try {
+            claims = jwtService.parse(request.refreshToken());
+        } catch (JwtException | IllegalArgumentException e) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "리프레시 토큰이 유효하지 않거나 만료되었습니다");
+        }
+
+        // 액세스 토큰이 실수로(혹은 악의적으로) 이 API에 들어오는 걸 막음. 액세스 토큰은 이 API를 통과할 이유가 없음
+        if (!jwtService.isRefreshToken(claims)) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "리프레시 토큰이 유효하지 않거나 만료되었습니다");
+        }
+
+        // 탈퇴 등으로 회원이 이미 사라졌을 수 있으므로 다시 조회해서 확인함 (토큰 안의 role/name은 발급 시점 스냅샷이라 신뢰하지 않음)
+        User user = userRepository.findById(jwtService.getUserId(claims))
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "존재하지 않는 계정입니다"));
+
+        return new RefreshResponse(jwtService.generateAccessToken(user));
     }
 }

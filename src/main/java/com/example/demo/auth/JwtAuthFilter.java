@@ -49,6 +49,15 @@ public class JwtAuthFilter extends OncePerRequestFilter {
             String token = header.substring(PREFIX.length());
             try {
                 Claims claims = jwtService.parse(token);
+
+                // 리프레시 토큰은 /api/auth/refresh 전용이라, 여기로 들어오면(=API 인증에 쓰이면) 거부함.
+                // 그렇지 않으면 만료 기간이 훨씬 긴 리프레시 토큰이 그대로 액세스 토큰 대신 쓰일 수 있음.
+                if (!jwtService.isAccessToken(claims)) {
+                    SecurityContextHolder.clearContext();
+                    filterChain.doFilter(request, response);
+                    return;
+                }
+
                 Long userId = jwtService.getUserId(claims);
                 Role role = jwtService.getRole(claims);
 

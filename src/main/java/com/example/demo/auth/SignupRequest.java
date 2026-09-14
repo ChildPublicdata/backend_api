@@ -7,8 +7,11 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+
+import java.time.LocalDate;
 
 public record SignupRequest(
 
@@ -38,6 +41,12 @@ public record SignupRequest(
         // 가입 시점에 부모/자녀를 명확히 갈라야 이후 코드 발급(자녀 전용)/코드 입력(부모 전용) 권한을 판정할 수 있음
         @Schema(description = "PARENT(부모) 또는 CHILD(자녀)", example = "PARENT")
         @NotNull(message = "role은 필수입니다 (PARENT 또는 CHILD)")
-        Role role
+        Role role,
+
+        // 부모/자녀 모두 선택 입력. 필수로 걸지 않는 이유는 부모 계정에는 큰 의미가 없는 정보이기 때문
+        // (자녀 화면에 나이/생일을 보여주는 용도로, 없으면 그냥 null로 저장되고 화면에서 생략됨)
+        @Schema(description = "생년월일 (선택 입력, 과거 날짜만 허용)", example = "2015-03-21")
+        @Past(message = "생년월일은 과거 날짜여야 합니다")
+        LocalDate birthDate
 ) {
 }
