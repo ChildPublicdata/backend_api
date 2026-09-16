@@ -26,7 +26,7 @@ import org.springframework.web.server.ResponseStatusException; // 특정 HTTP �
  * Controller 자체는 "요청 -> 응답" 흐름만 담당하게 해서 코드를 읽기 쉽게 유지함.
  */
 @RestController // 이 클래스의 각 메서드 반환값을 자동으로 JSON으로 변환해서 HTTP 응답 본문에 담아줌
-@Tag(name = "CCTV", description = "CCTV 위치 데이터 (대전광역시 서구 / 경기도 안양시)") // Swagger 문서에서 "CCTV" 그룹으로 보이게 함
+@Tag(name = "CCTV", description = "CCTV 위치 데이터 (경기도 안양시)") // Swagger 문서에서 "CCTV" 그룹으로 보이게 함
 public class CctvController {
 
     private final CctvRepository cctvRepository;

@@ -23,11 +23,11 @@ public record SafetyResponse(
                 + "안전 여부 판단에는 grade/levelName을 쓸 것", example = "26")
         Integer riskScore,
 
-        @Schema(description = "격자 등급 코드 (DANGER/CAUTION/WATCH/NORMAL/SAFE). 3년 누적 실측 EPDO 기준",
+        @Schema(description = "격자 등급 코드 (DANGER/CAUTION/WATCH/SAFE). 3년 누적 실측 EPDO 기준",
                 example = "SAFE")
         String grade,
 
-        @Schema(description = "사람이 읽는 격자 등급 이름", example = "5급 안전")
+        @Schema(description = "사람이 읽는 격자 등급 이름", example = "4급 안전")
         String levelName,
 
         @Schema(description = "반경 300m 안에 있는 실제 사고 군집 구역. 가까운 순으로 정렬됨")

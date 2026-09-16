@@ -26,9 +26,9 @@ public class GridController {
             description = """
                     지도 화면 범위(swLat/swLng ~ neLat/neLng) 안의 격자를 반환한다.
 
-                    등급(level 1~5)은 2023~2025년 3년 누적 실측 EPDO로 매겨지고, riskScore는 2023~24년 \
+                    등급(level 1~4)은 2023~2025년 3년 누적 실측 EPDO로 매겨지고, riskScore는 2023~24년 \
                     데이터로 2025년 사고를 예측한 시간분리 모델의 참고값이라 등급 산정에 쓰이지 않는다. \
-                    그래서 riskScore가 높아도 level이 안전(5)일 수 있다. 지도에 위험한 곳만 그리려면 \
+                    그래서 riskScore가 높아도 level이 안전(4)일 수 있다. 지도에 위험한 곳만 그리려면 \
                     minRisk가 아니라 응답의 level로 거르는 편이 의도에 맞다.
 
                     각 격자는 왜 그 등급인지를 reasons(근거 문장)와 shapPositive/shapNegative\

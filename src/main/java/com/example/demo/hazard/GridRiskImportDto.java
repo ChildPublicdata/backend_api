@@ -19,7 +19,8 @@ public record GridRiskImportDto(
         String gridId,
         Center center,
         Integer sizeM,
-        // 1(위험) ~ 5(안전). v3의 등급은 3년 누적 실측 EPDO로 정해짐
+        // 1(위험) ~ 4(안전). v3의 등급은 3년 누적 실측 EPDO로 정해짐.
+        // 원본 JSON은 옛 5단계 체계(1~3,5. 4=NORMAL은 폐지)를 그대로 내려주므로 toEntity()에서 4단계로 당겨 담음
         Integer level,
         String levelName,
         String color,
@@ -52,14 +53,18 @@ public record GridRiskImportDto(
     public record Guide(String parent, String child, String source) {
     }
 
-    // v3 JSON에는 등급 코드가 없고 숫자 level만 있어서, 프론트가 쓰던 코드 문자열을 여기서 되살림
+    // v3 JSON에는 등급 코드가 없고 숫자 level만 있어서, 프론트가 쓰던 코드 문자열을 여기서 되살림.
+    // 4단계 체계라 4=SAFE이고 NORMAL은 더 이상 쓰지 않음
     private static final Map<Integer, String> LEVEL_CODES = Map.of(
             1, "DANGER",
             2, "CAUTION",
             3, "WATCH",
-            4, "NORMAL",
-            5, "SAFE"
+            4, "SAFE"
     );
+
+    // 원본 JSON은 옛 5단계 체계로 내려오고 4(NORMAL)가 이미 빠져있어 1~3,5만 존재함.
+    // 5를 4로 당겨서 "1~4, 4=SAFE" 4단계로 맞춤 (그 외 값은 그대로 통과)
+    private static final Map<Integer, Integer> LEVEL_REMAP = Map.of(5, 4);
 
     // SHAP 기여도 목록에 실려 오는 피처 이름들. 아래 findRawValue()로 원래 수치를 되찾는 데 씀
     private static final String FEATURE_CCTV_DIST = "최근접 CCTV 거리";
@@ -74,14 +79,15 @@ public record GridRiskImportDto(
     private static final Pattern CCTV_DIST_PATTERN = Pattern.compile("최근접 CCTV\\s*(\\d+)m");
 
     public GridRisk toEntity(GeometryFactory geometryFactory) {
+        Integer remappedLevel = LEVEL_REMAP.getOrDefault(level, level);
         return new GridRisk(
                 gridId,
                 geometryFactory.createPoint(new Coordinate(center.lng(), center.lat())),
                 sizeM,
                 aiScore,
-                level,
-                levelName,
-                LEVEL_CODES.get(level),
+                remappedLevel,
+                remappedLevelName(remappedLevel),
+                LEVEL_CODES.get(remappedLevel),
                 color,
                 accidents.total3yr() != null && accidents.total3yr() > 0,
                 accidents.total3yr(),
@@ -103,6 +109,15 @@ public record GridRiskImportDto(
                 guide == null ? null : guide.source(),
                 modelNote
         );
+    }
+
+    // levelName은 JSON에 "5급 안전"처럼 등급 숫자가 문자열 앞에 박혀서 내려오므로,
+    // level을 4단계로 당길 때 이름 앞자리 숫자도 같이 바꿔줘야 "5급 안전" 같은 표기가 안 남음
+    private String remappedLevelName(Integer remappedLevel) {
+        if (levelName == null) {
+            return null;
+        }
+        return levelName.replaceFirst("^\\d+", String.valueOf(remappedLevel));
     }
 
     /*

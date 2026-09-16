@@ -91,7 +91,7 @@ public class AiExplainService {
         ExplainContext context = loadContext(zoneId, gridId);
 
         // 이미 다듬어진 안내문이 있으면 그대로 돌려주고 끝냄. 시간(주간/야간)에 따라 달라지는 문구가 아니라서
-        // 캐시에 넣을 필요도, LLM을 호출할 필요도 없음 - 79개 위험구역 전부와 격자 1·2·5급이 여기 해당함
+        // 캐시에 넣을 필요도, LLM을 호출할 필요도 없음 - 79개 위험구역 전부와 격자 1·2·4급이 여기 해당함
         if (context.hasFinishedGuide()) {
             return buildFromGuide(context);
         }
@@ -281,7 +281,7 @@ public class AiExplainService {
     }
 
     // 이미 다듬어진 안내문(guide_source가 llm/rule)이 있을 때 쓰는 경로. LLM을 아예 호출하지 않음
-    // - 79개 위험구역 전부, 격자 1·2급(미리 사람이 다듬음)·5급(사고 이력 없어 규칙 문장 하나로 충분)이 여기 해당
+    // - 79개 위험구역 전부, 격자 1·2급(미리 사람이 다듬음)·4급(사고 이력 없어 규칙 문장 하나로 충분)이 여기 해당
     private AiExplainResponse buildFromGuide(ExplainContext c) {
         return new AiExplainResponse(summaryFor(c), c.guideParent(), DEFAULT_ACTION, c.guideChild());
     }

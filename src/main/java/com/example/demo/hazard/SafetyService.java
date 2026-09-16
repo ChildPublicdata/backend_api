@@ -65,7 +65,7 @@ public class SafetyService {
                 lng,
                 grid.map(GridRisk::getRiskScore).orElse(null),
                 grid.map(GridRisk::getGrade).orElse(null),
-                // 등급 코드(SAFE)만으로는 화면에 그대로 쓸 수 없어서 "5급 안전"이라는 이름도 함께 내려줌
+                // 등급 코드(SAFE)만으로는 화면에 그대로 쓸 수 없어서 "4급 안전"이라는 이름도 함께 내려줌
                 grid.map(GridRisk::getLevelName).orElse(null),
                 nearbyZones,
                 nearestCctvDistanceM,

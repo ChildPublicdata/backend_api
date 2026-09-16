@@ -42,14 +42,14 @@ public class GridRisk {
     @Column(name = "risk_score")
     private Integer riskScore;
 
-    // 1(위험) ~ 5(안전). v3의 등급 기준은 3년 누적 실측 EPDO임
+    // 1(위험) ~ 4(안전). v3의 등급 기준은 3년 누적 실측 EPDO임
     private Integer level;
 
     // "3급 관찰"처럼 사람이 읽는 등급 이름
     @Column(name = "level_name")
     private String levelName;
 
-    // level에서 파생한 코드(DANGER/CAUTION/WATCH/NORMAL/SAFE). v3 JSON에는 없지만 프론트가 이미
+    // level에서 파생한 코드(DANGER/CAUTION/WATCH/SAFE). v3 JSON에는 없지만 프론트가 이미
     // 쓰고 있어서 적재 시 level로부터 만들어 채움
     private String grade;
 

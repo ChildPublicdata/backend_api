@@ -23,7 +23,7 @@ public interface CctvRepository extends JpaRepository<Cctv, Long> {
     // "SELECT * FROM cctv WHERE dong LIKE %?%" 같은 쿼리를 알아서 만들어줌. 직접 SQL을 안 짜도 됨.
     Page<Cctv> findByDongContaining(String dong, Pageable pageable);
 
-    // city(예: 대전광역시 서구, 경기도 안양시)만으로 검색
+    // city(예: 경기도 안양시)만으로 검색
     Page<Cctv> findByCityContaining(String city, Pageable pageable);
 
     // city와 dong을 함께 좁혀서 검색 (같은 동 이름이 여러 도시에 있을 수 있어서 필요)

@@ -26,7 +26,7 @@ public class Cctv {
     private String address;   // 주소
     private String detail;    // 상세 위치 설명 (예: "그린빌라 인근")
     private String dong;      // 행정동 이름 (예: 갈마1동)
-    private String city;      // 도시(관할 지자체) 이름 (예: 대전광역시 서구, 경기도 안양시)
+    private String city;      // 도시(관할 지자체) 이름 (예: 경기도 안양시)
     private Double lat;       // 위도
     private Double lon;       // 경도
     private Integer cameras;  // 카메라 대수

@@ -36,13 +36,13 @@ public record GridResponse(
                 + "지도 색칠에는 level을 쓸 것", example = "26")
         Integer riskScore,
 
-        @Schema(description = "위험 등급. 1(위험)~5(안전)이며 3년 누적 실측 EPDO로 매겨짐", example = "5")
+        @Schema(description = "위험 등급. 1(위험)~4(안전)이며 3년 누적 실측 EPDO로 매겨짐", example = "4")
         Integer level,
 
-        @Schema(description = "사람이 읽는 등급 이름", example = "5급 안전")
+        @Schema(description = "사람이 읽는 등급 이름", example = "4급 안전")
         String levelName,
 
-        @Schema(description = "등급 코드. level에서 파생됨 (1=DANGER, 2=CAUTION, 3=WATCH, 4=NORMAL, 5=SAFE)",
+        @Schema(description = "등급 코드. level에서 파생됨 (1=DANGER, 2=CAUTION, 3=WATCH, 4=SAFE)",
                 example = "SAFE")
         String grade,
 
