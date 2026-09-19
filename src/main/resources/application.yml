@@ -45,9 +45,10 @@ server:
 
 app:
   cors:
-    # 프론트엔드(브라우저)에서 이 서버로 API 요청을 허용할 주소.
-    # 환경변수 CORS_ALLOWED_ORIGINS가 없으면 기본값으로 로컬 개발 서버 주소(localhost:5173)를 허용
-    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173}
+    # 프론트엔드(브라우저)에서 이 서버로 API 요청을 허용할 주소. 콤마로 여러 개 지정 가능(WebConfig가 split(",")로 나눔).
+    # 환경변수 CORS_ALLOWED_ORIGINS가 없으면 기본값으로 로컬 개발 서버(localhost:5173)와
+    # 배포된 프론트(https://ibom-web.vercel.app)를 함께 허용
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,https://ibom-web.vercel.app}
   jwt:
     # 로그인 토큰(JWT)에 서명할 때 쓰는 비밀키. api-key와 같은 이유로 코드에 실제 값을 적지 않고
     # Railway 환경변수(JWT_SECRET)로만 넣음. 기본값은 로컬 개발용이며 HS256 최소 요구치인 32바이트를 넘도록 맞춰둠.

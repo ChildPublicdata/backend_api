@@ -147,6 +147,7 @@ public class FamilyController {
                     return new ChildSummaryResponse(
                             link.getChildId(),
                             child != null ? child.getName() : "(알 수 없음)",
+                            child != null ? child.getPhoneNumber() : null,
                             child != null ? child.getBirthDate() : null,
                             location != null ? location.getLat() : null,
                             location != null ? location.getLon() : null,

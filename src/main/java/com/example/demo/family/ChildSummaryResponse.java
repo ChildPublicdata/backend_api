@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 public record ChildSummaryResponse(
         Long childId,
         String name,
+        String phoneNumber,
         LocalDate birthDate,
         Double lat,
         Double lon,
