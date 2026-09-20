@@ -5,8 +5,8 @@
 // [왜 대부분의 API를 permitAll로 열어두나 - 중요]
 // 이 저장소의 기존 API(SafeZone, SafePlace, Cctv 등)는 로그인 없이 X-Device-Id 헤더로만 동작하도록
 // 이미 만들어져 있음. Spring Security를 새로 추가하면서 기본값을 "인증 필요"로 잡으면 그 기존 API들이
-// 전부 401로 막혀버림. 그래서 "부모/자녀 연동(family) API만 새로 인증을 요구"하고, 그 외(기존 API +
-// 회원가입/로그인 자체 + Swagger 문서)는 그대로 열어둠.
+// 전부 401로 막혀버림. 그래서 "부모/자녀 연동(family) API + 학부모 민원(complaint) API만 새로 인증을
+// 요구"하고, 그 외(기존 API + 회원가입/로그인 자체 + Swagger 문서)는 그대로 열어둠.
 package com.example.demo.auth;
 
 import jakarta.servlet.http.HttpServletResponse;
@@ -53,8 +53,9 @@ public class SecurityConfig {
                 .formLogin(AbstractHttpConfigurer::disable)
                 .httpBasic(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        // 부모/자녀 연동 + 위치 API만 로그인(JWT)을 요구함
+                        // 부모/자녀 연동 + 위치 API, 그리고 학부모 민원 API만 로그인(JWT)을 요구함
                         .requestMatchers("/api/family/**").authenticated()
+                        .requestMatchers("/api/complaints/**").authenticated()
                         // 그 외 전부(회원가입/로그인 포함 기존 공공데이터 API들)는 그대로 공개
                         .anyRequest().permitAll()
                 )
